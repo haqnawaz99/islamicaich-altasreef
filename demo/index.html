@@ -228,6 +228,7 @@ function renderScenario(i) {
   document.getElementById("given-label").textContent = s.given_value;
   document.getElementById("correct-label").textContent = s.correct_value;
   document.getElementById("result").innerHTML = "";
+  explainShown = false;
 }
 
 document.getElementById("scenario-select").addEventListener("change", (e) => {
@@ -243,15 +244,11 @@ document.getElementById("script-row").querySelectorAll("button").forEach(btn => 
   });
 });
 
-document.getElementById("explain-lang-row").querySelectorAll("button").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.getElementById("explain-lang-row").querySelectorAll("button").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    lang = btn.dataset.lang;
-  });
-});
+let explainShown = false; // becomes true once a real explanation has been shown -- so switching
+                           // language re-explains in place, but doesn't fire a request before
+                           // the student has ever clicked Explain at all
 
-document.getElementById("explain-btn").addEventListener("click", async () => {
+async function runExplain() {
   const i = parseInt(document.getElementById("scenario-select").value);
   const s = scenarios[i];
   const resultDiv = document.getElementById("result");
@@ -266,6 +263,7 @@ document.getElementById("explain-btn").addEventListener("click", async () => {
     }),
   });
   const data = await res.json();
+  explainShown = true;
 
   if (!data.matched) {
     resultDiv.innerHTML = `<div class="abstain">No pre-authored rule matches this case — the system abstains rather than guess (reason: ${data.reason}).</div>`;
@@ -282,7 +280,18 @@ document.getElementById("explain-btn").addEventListener("click", async () => {
     <div class="badge ${isDisclosure ? 'disclosure-badge' : ''}">${isDisclosure ? 'KNOWN SYSTEM LIMITATION — NOT A REAL MISTAKE' : 'RULE: ' + data.rule_id}</div>
     <div class="explanation ${isDisclosure ? 'disclosure' : ''}" dir="${lang === 'en' ? 'ltr' : 'rtl'}" style="${EXPLAIN_FONT[lang] || ''}">${data.tier_a}</div>
   `;
+}
+
+document.getElementById("explain-lang-row").querySelectorAll("button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.getElementById("explain-lang-row").querySelectorAll("button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    lang = btn.dataset.lang;
+    if (explainShown) runExplain();
+  });
 });
+
+document.getElementById("explain-btn").addEventListener("click", runExplain);
 
 // تعلیل rule text comes back in whichever of these 3 languages is active --
 // RULE_TEXT in taaleelat_rules.py already carries all three, this just picks
