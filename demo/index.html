@@ -192,8 +192,9 @@
 </footer>
 
 <script>
-// Change this to your deployed Render URL before publishing.
-const API_BASE = window.ALTASREEF_API_BASE || "http://127.0.0.1:8077";
+// Live Render backend -- override with window.ALTASREEF_API_BASE for local dev
+// (e.g. a <script> tag before this one setting it to http://127.0.0.1:8077).
+const API_BASE = window.ALTASREEF_API_BASE || "https://islamicaich-altasreef.onrender.com";
 document.getElementById("api-base").textContent = API_BASE;
 
 let scenarios = [];
