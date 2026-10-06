@@ -189,6 +189,19 @@
     <div id="ilal-result"></div>
   </div>
 
+  <div class="card">
+    <div class="meta" style="margin-bottom:10px">
+      <b>A third mode:</b> full verse-by-verse tagging for Surah 114 (الناس) — every word, every
+      ayah, fully tagged (root, pattern, case, i'rab role, etc). This is the same data the private
+      app's Word Viewer shows internally, redacted down to just this one surah for public,
+      independent inspection. Click any word to see its full grammatical breakdown.
+    </div>
+    <div class="lang-row" id="ayah-tabs" style="flex-wrap:wrap"></div>
+    <div class="verse script-indopak" id="s114-verse" style="margin-top:10px"></div>
+    <div id="s114-words" style="direction:rtl; display:flex; flex-wrap:wrap; gap:8px; margin-top:10px"></div>
+    <div id="s114-detail" style="margin-top:14px"></div>
+  </div>
+
   <p class="api-note">
     API base: <code id="api-base"></code> — this page calls <code>/explain</code> and <code>/ilal</code> directly,
     both retrieval-only (no LLM call, no generated text — see README).
@@ -361,6 +374,119 @@ document.getElementById("ilal-btn").addEventListener("click", async () => {
 });
 
 loadScenarios();
+
+// ── Surah 114 verse-by-verse viewer ─────────────────────────────────────
+const FIELD_LABELS = {
+  word_class: "Class", tense: "Tense", person: "Person", gender: "Gender",
+  number: "Number", voice: "Voice", pattern: "Baab", mood: "Mood",
+  noun_type: "Type", case_: "Case", definiteness: "Definiteness",
+  pronoun_type: "Pronoun type", seven_types: "Root type",
+  sabab_marifah: "Def. reason", irab_wajah: "I'rab role",
+  irab_alamah: "Case marker", harf_type: "Particle type",
+  root: "Root", wazn: "Pattern (wazn)", base_form: "Base form",
+  variant_reason: "Variant reason",
+};
+// Same order the private app's Word Viewer uses -- coded fields decoded via
+// /codes, free-text fields (root/wazn/base_form/variant_reason) shown as-is.
+const ATTR_ORDER = [
+  ["tense", true], ["voice", true], ["number", true], ["gender", true], ["person", true],
+  ["pattern", true], ["root", false], ["seven_types", true], ["mood", true], ["wazn", false],
+  ["noun_type", true], ["pronoun_type", true], ["harf_type", true],
+  ["definiteness", true], ["sabab_marifah", true], ["case_", true],
+  ["irab_alamah", true], ["irab_wajah", true], ["base_form", false], ["variant_reason", false],
+];
+const CLASS_COLOR = { 1: "#047857", 2: "#c2410c", 3: "#1d4ed8", 4: "#b45309" };
+
+let s114 = null, s114codes = null, s114ayah = 0;
+
+function gloss114(field, code) {
+  if (code === null || code === undefined || code === "") return null;
+  return s114codes?.[field]?.[String(code)]?.en ?? String(code);
+}
+
+async function loadSurah114() {
+  const [surahRes, codesRes] = await Promise.all([
+    fetch(API_BASE + "/surah114"), fetch(API_BASE + "/codes"),
+  ]);
+  s114 = (await surahRes.json())[0];
+  s114codes = await codesRes.json();
+
+  const tabsDiv = document.getElementById("ayah-tabs");
+  tabsDiv.innerHTML = s114.ayahs.map(a =>
+    `<button class="ayah-tab" data-ayah="${a.ayah}" style="padding:6px 12px">${a.ayah === 0 ? "بسملہ" : "آیت " + a.ayah}</button>`
+  ).join("");
+  tabsDiv.querySelectorAll(".ayah-tab").forEach(btn => {
+    btn.addEventListener("click", () => renderAyah(parseInt(btn.dataset.ayah)));
+  });
+  renderAyah(0);
+}
+
+function renderAyah(ayahNum) {
+  s114ayah = ayahNum;
+  document.querySelectorAll(".ayah-tab").forEach(b => {
+    b.classList.toggle("active", parseInt(b.dataset.ayah) === ayahNum);
+  });
+  const ayah = s114.ayahs.find(a => a.ayah === ayahNum);
+  document.getElementById("s114-verse").textContent = ayah.verse_indopak;
+  document.getElementById("s114-detail").innerHTML = "";
+
+  // Parent (unsplit) words only in the chip row -- a split word (e.g.
+  // بِسْمِ -> بِ + سْمِ) shows as one chip for its original combined
+  // spelling; clicking it reveals both independently-tagged sub-words below.
+  const parents = ayah.words.filter(w => w.split_index === undefined || w.split_index === null);
+  const childrenByNum = {};
+  ayah.words.filter(w => w.split_index !== undefined && w.split_index !== null).forEach(w => {
+    (childrenByNum[w.word_number] ??= []).push(w);
+  });
+
+  document.getElementById("s114-words").innerHTML = parents.map(w => {
+    const color = w.tagged && w.word_class ? CLASS_COLOR[w.word_class] : "#999";
+    return `<span class="s114-word" data-wn="${w.word_number}"
+      style="cursor:pointer; padding:4px 10px; border-radius:8px; border:1px solid ${color}; color:${color}; font-family:'NoorehudaUTF',serif; font-size:22px">
+      ${w.word_text}</span>`;
+  }).join("");
+
+  document.querySelectorAll(".s114-word").forEach(el => {
+    el.addEventListener("click", () => {
+      const wn = parseInt(el.dataset.wn);
+      const parent = parents.find(w => w.word_number === wn);
+      const kids = childrenByNum[wn];
+      renderWordDetail(kids && kids.length ? kids : [parent]);
+    });
+  });
+}
+
+function wordDetailCard(w) {
+  const attrs = ATTR_ORDER
+    .map(([key, coded]) => ({ label: FIELD_LABELS[key], value: coded ? gloss114(key, w[key]) : (w[key] || null) }))
+    .filter(a => a.value);
+
+  const isAjwafWawiVerb = w.word_class === 2 && w.seven_types === 4 && w.root && w.root.length === 3;
+
+  return `
+    <div class="explanation" style="margin-bottom:10px">
+      <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap">
+        <span style="font-family:'NoorehudaUTF',serif; font-size:28px" dir="rtl">${w.word_text}</span>
+        ${w.word_class ? `<span class="pill correct">${gloss114("word_class", w.word_class)}</span>` : ""}
+        ${!w.tagged ? "<span class='meta'>untagged</span>" : ""}
+      </div>
+      ${attrs.length ? `
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:10px; font-size:13px">
+          ${attrs.map(a => `<div><span class="meta">${a.label}:</span> <b dir="auto">${a.value}</b></div>`).join("")}
+        </div>` : ""}
+      ${isAjwafWawiVerb ? `
+        <div style="margin-top:10px">
+          <span class="meta">اجوف واوی verb (باب نصر) — see its full گردان above using root <b dir="rtl" style="font-family:'NoorehudaUTF',serif">${w.root}</b> (select it in the dropdown, or try typing it if not listed).</span>
+        </div>` : ""}
+    </div>
+  `;
+}
+
+function renderWordDetail(words) {
+  document.getElementById("s114-detail").innerHTML = words.map(wordDetailCard).join("");
+}
+
+loadSurah114();
 </script>
 
 </body>

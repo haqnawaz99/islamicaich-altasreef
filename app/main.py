@@ -9,6 +9,11 @@ production backend (which stays closed-source -- see README). It exposes:
                       currently covers اجوف واوی roots in باب نصر only
   GET  /sample    -- a few real seeded questions (Surah 114 data) for the
                       judge-facing demo page to call against with no login
+  GET  /surah114  -- the full Surah 114 occurrence-level tagging (every word,
+                      every ayah), the same data the private app's Word
+                      Viewer reads, redacted to just this one surah
+  GET  /codes     -- the integer-code -> label mapper needed to decode
+                      /surah114's coded fields (word_class, gender, ... etc)
 
 No user data, no production database, no secrets. CORS is wide open on
 purpose -- this is a public, no-auth demo API, not a production service.
@@ -33,6 +38,8 @@ app.add_middleware(
 )
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "demo_scenarios.json")
+SURAH114_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "surah_114_sample.json")
+CODES_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "tag_codes.json")
 
 
 class ExplainRequest(BaseModel):
@@ -75,6 +82,18 @@ def sample():
         return json.load(f)
 
 
+@app.get("/surah114")
+def surah114():
+    with open(SURAH114_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
+@app.get("/codes")
+def codes():
+    with open(CODES_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
 @app.get("/")
 def root():
-    return {"service": "altasreef-ai-tutor", "endpoints": ["/explain", "/ilal", "/sample"]}
+    return {"service": "altasreef-ai-tutor", "endpoints": ["/explain", "/ilal", "/sample", "/surah114", "/codes"]}
