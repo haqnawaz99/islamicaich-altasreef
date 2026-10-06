@@ -5,3 +5,4 @@ venv/
 .venv/
 node_modules/
 NEXT_STEPS.md
+deck_build/
