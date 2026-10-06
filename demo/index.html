@@ -168,10 +168,24 @@
 
   <div class="card">
     <div class="meta" style="margin-bottom:10px">
-      <b>A second, separate mode:</b> step-by-step إعلال (morphological derivation) for اجوف واوی roots in باب نصر —
-      e.g. why قَوَلَ becomes قَالَ.
+      <b>A second, separate mode:</b> full conjugation table for اجوف واوی roots in باب نصر,
+      with a step-by-step إعلال (morphological derivation) chain for every single word —
+      e.g. why قَوَلَ becomes قَالَ. New work from the Oct 4–6 window, built on
+      <code>app/taaleelat_rules.py</code> (root-generic, not hardcoded to one word).
     </div>
-    <button id="ilal-btn">Show derivation for قول (ماضی)</button>
+    <div class="answer-row" style="flex-wrap:wrap">
+      <select id="ilal-root" style="flex:1; min-width:120px">
+        <option value="قول">قول (say)</option>
+        <option value="قوم">قوم (stand)</option>
+        <option value="كون">كون (be)</option>
+      </select>
+      <select id="ilal-tense" style="flex:1; min-width:120px">
+        <option value="ماضی">ماضی (Past)</option>
+        <option value="مضارع">مضارع (Present)</option>
+        <option value="امر">امر (Imperative)</option>
+      </select>
+      <button id="ilal-btn">Show full conjugation</button>
+    </div>
     <div id="ilal-result"></div>
   </div>
 
@@ -273,29 +287,77 @@ document.getElementById("explain-btn").addEventListener("click", async () => {
   `;
 });
 
+let ilalRows = [];
+
 document.getElementById("ilal-btn").addEventListener("click", async () => {
+  const root = document.getElementById("ilal-root").value;
+  const tense = document.getElementById("ilal-tense").value;
   const resultDiv = document.getElementById("ilal-result");
   resultDiv.innerHTML = "<p class='meta'>Loading...</p>";
+
   const res = await fetch(API_BASE + "/ilal", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ root_word: "قول", baab_name: "نصر", tense: "ماضی" }),
+    body: JSON.stringify({ root_word: root, baab_name: "نصر", tense }),
   });
   const data = await res.json();
+
   if (!data.matched) {
     resultDiv.innerHTML = "<div class='abstain'>Unsupported combination.</div>";
     return;
   }
-  resultDiv.innerHTML = data.rows.slice(0, 3).map(row => `
-    <div class="explanation">
-      <b>${row.person_reference}</b> → <span class="verse" style="font-size:20px">${row.final_form}</span>
-      <div style="margin-top:8px; direction:rtl">
-        ${row.ilal_chain.map(step =>
-          `<div>${step.form}${step.rule ? ' <span style="color:#888">(' + step.rule + ')</span>' : ' (الأصل)'}</div>`
-        ).join("")}
-      </div>
-    </div>
-  `).join("");
+
+  ilalRows = data.rows;
+  resultDiv.innerHTML = `
+    <table style="width:100%; border-collapse:collapse; margin-top:14px; font-size:14px">
+      <thead>
+        <tr style="text-align:${document.dir === 'rtl' ? 'right' : 'left'}; border-bottom:2px solid var(--navy)">
+          <th style="padding:8px 6px">الصیغہ (Form)</th>
+          <th style="padding:8px 6px; font-family:'Amiri',serif; font-size:20px">الکلمۃ (Word)</th>
+          <th style="padding:8px 6px"></th>
+        </tr>
+      </thead>
+      <tbody id="ilal-tbody">
+        ${data.rows.map((row, i) => `
+          <tr style="border-bottom:1px solid #eee; cursor:pointer" class="ilal-row" data-i="${i}">
+            <td style="padding:8px 6px">${row.person_reference}</td>
+            <td style="padding:8px 6px; font-family:'Amiri',serif; font-size:22px; direction:rtl">${row.final_form}</td>
+            <td style="padding:8px 6px; color:var(--navy); font-weight:600; font-size:12px">
+              ${row.ilal_chain.length > 1 ? "إعلال (" + (row.ilal_chain.length - 1) + " steps) ▾" : "no إعلال here"}
+            </td>
+          </tr>
+          <tr id="ilal-chain-${i}" style="display:none"><td colspan="3" style="padding:0"></td></tr>
+        `).join("")}
+      </tbody>
+    </table>
+  `;
+
+  document.querySelectorAll(".ilal-row").forEach(tr => {
+    tr.addEventListener("click", () => {
+      const i = tr.dataset.i;
+      const row = ilalRows[i];
+      if (row.ilal_chain.length <= 1) return;
+      const chainRow = document.getElementById("ilal-chain-" + i);
+      const cell = chainRow.querySelector("td");
+      if (chainRow.style.display === "none") {
+        cell.innerHTML = `
+          <div class="explanation" style="margin:4px 0; direction:rtl; font-family:'Amiri',serif; font-size:18px">
+            ${row.ilal_chain.map(step => `
+              <div style="margin:6px 0">
+                <span style="font-weight:bold">${step.form}</span>
+                <span style="font-size:13px; font-family:-apple-system,sans-serif; color:#555">
+                  ${step.rule ? ' — ' + step.rule : ' (الأصل — original form)'}
+                </span>
+              </div>
+            `).join("")}
+          </div>
+        `;
+        chainRow.style.display = "";
+      } else {
+        chainRow.style.display = "none";
+      }
+    });
+  });
 });
 
 loadScenarios();
