@@ -149,7 +149,7 @@
     <div class="lang-row" id="script-row">
       <button data-script="indopak" class="active">IndoPak script</button>
       <button data-script="uthmani">Uthmani script</button>
-      <span class="meta" style="align-self:center; margin-left:6px">(word highlighting shown on IndoPak only — see note below)</span>
+      <span class="meta" style="align-self:center; margin-left:6px">(the highlighted word is position-matched between both scripts)</span>
     </div>
     <div class="verse" id="verse-display"></div>
 
@@ -210,11 +210,13 @@ function renderScenario(i) {
   verseEl.className = "verse script-" + script;
   if (script === "indopak") {
     verseEl.innerHTML = s.verse_indopak.replace(s.word, `<span class="word">${s.word}</span>`);
+  } else if (s.word_uthmani) {
+    // Position-matched against the IndoPak verse (same method the production
+    // Noun Tagger uses) -- found by index, not a text-match, since the
+    // spelling genuinely differs between scripts.
+    verseEl.innerHTML = s.verse_uthmani.replace(s.word_uthmani, `<span class="word">${s.word_uthmani}</span>`);
   } else {
-    // Uthmani spelling differs from the IndoPak matched_word string, so we
-    // can't do a text-match highlight here -- shown plain, word named below
-    // instead of highlighted inline.
-    verseEl.innerHTML = s.verse_uthmani + `<div class="meta" style="margin-top:6px; direction:ltr; font-family:-apple-system,sans-serif">(the word in question is ${s.word} in IndoPak spelling)</div>`;
+    verseEl.innerHTML = s.verse_uthmani + `<div class="meta" style="margin-top:6px; direction:ltr; font-family:-apple-system,sans-serif">(the word in question is ${s.word} in IndoPak spelling -- Uthmani position not resolved for this verse)</div>`;
   }
   document.getElementById("dim-label").textContent = s.dim;
   document.getElementById("given-label").textContent = s.given_value;
