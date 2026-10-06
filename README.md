@@ -86,6 +86,7 @@ this challenge needs. This repository is a **standalone, independent service**:
 | Source | License/status | Notes |
 |---|---|---|
 | Quran text in demo verses | [Tanzil Project](https://tanzil.net), CC-BY 3.0 | Verbatim text only, attribution given here and in the demo page |
+| `demo/fonts/NOOREHUDA.TTF` | Third-party font | Bundled with the project owner's explicit confirmation that it may be redistributed publicly; used for IndoPak-script rendering in the demo page (`.script-indopak`). Amiri (Google Fonts, SIL OFL) is used for Uthmani script instead — no license question there. |
 | `data/surah_114_sample.json`, `data/tag_codes.json` | Original work (Team Altasreef) | Output of our own tagging pipeline, not third-party data |
 | `app/taaleelat_rules.py` | Original work, ported from a sibling project kept separate | Algorithm only, root-generic, no external dependency |
 | `rules/wrong_answer_rules.json` | New work, this challenge | Drafted against live production frequency data; flagged `needs_human_review: true` pending final review by the project's own Arabic-morphology instructor before being treated as final |

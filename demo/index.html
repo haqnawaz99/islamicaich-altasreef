@@ -6,8 +6,13 @@
 <title>Altasreef AI Tutor — Live Demo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
+  @font-face {
+    font-family: 'NoorehudaUTF';
+    src: url('fonts/NOOREHUDA.TTF') format('truetype');
+    font-display: swap;
+  }
   :root {
     --navy: #1B2183; --coral: #EA6150; --green: #2CEF2C; --tint: #F2F4FF;
   }
@@ -58,13 +63,15 @@
     line-height: 2.1;
     margin: 10px 0;
   }
-  /* Uthmani script (Tanzil-sourced text): Amiri -- a Naskh font built for
-     standard Quranic orthography (dagger alif, alif-wasla, etc). IndoPak
-     script: Noto Nastaliq Urdu -- shapes the Indo-Pak-specific diacritics
-     (ۡ ۤ ۃ) and letterforms (ک ی) correctly, unlike a plain Naskh font.
-     Both via Google Fonts (SIL OFL) -- no font files bundled in this repo. */
+  /* Uthmani script (Tanzil-sourced text): Amiri, a Naskh font built for
+     standard Quranic orthography (dagger alif, alif-wasla, etc), via Google
+     Fonts. IndoPak script: NoorehudaUTF, the same font the live Altasreef
+     app uses for Indo-Pak diacritics (ۡ ۤ ۃ) and letterforms (ک ی) -- bundled
+     here as demo/fonts/NOOREHUDA.TTF with the project owner's confirmation
+     that it may be redistributed publicly (see README's sources/licenses
+     table). */
   .verse.script-uthmani { font-family: 'Amiri', serif; }
-  .verse.script-indopak { font-family: 'Noto Nastaliq Urdu', serif; font-size: 24px; line-height: 2.4; }
+  .verse.script-indopak { font-family: 'NoorehudaUTF', serif; font-size: 26px; line-height: 2.4; }
   .word { color: var(--coral); font-weight: bold; }
   .meta { font-size: 13px; color: #555; margin-bottom: 4px; }
   .answer-row { display: flex; gap: 10px; margin: 10px 0; font-size: 14px; }
