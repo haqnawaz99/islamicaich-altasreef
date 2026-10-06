@@ -6,7 +6,7 @@
 <title>Altasreef AI Tutor — Live Demo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
 <style>
   @font-face {
     font-family: 'NoorehudaUTF';
@@ -176,6 +176,13 @@
       conjugation table, with a step-by-step إعلال (morphological derivation) chain for every
       single generated word, e.g. why قَوَلَ becomes قَالَ
       (<code>app/taaleelat_rules.py</code>, root-generic, not hardcoded to one word).
+      إعلال rule text is available in three languages — pick one below.
+    </div>
+    <div class="lang-row" id="ilal-lang-row">
+      <span class="meta" style="align-self:center">تعلیل language:</span>
+      <button data-ilal-lang="ur" class="active">اردو</button>
+      <button data-ilal-lang="ar">العربية</button>
+      <button data-ilal-lang="en">English</button>
     </div>
     <div class="lang-row" id="ayah-tabs" style="flex-wrap:wrap"></div>
     <div class="verse script-indopak" id="s114-verse" style="margin-top:10px"></div>
@@ -281,17 +288,35 @@ document.getElementById("explain-btn").addEventListener("click", async () => {
   `;
 });
 
+// تعلیل rule text comes back in whichever of these 3 languages is active --
+// RULE_TEXT in taaleelat_rules.py already carries all three, this just picks
+// which one to request and which font suits its script.
+let ilalLang = "ur";
+let lastGardaan = null; // {containerEl, root, tense} -- so switching language re-renders without re-clicking
+const ILAL_LANG_FONT = { ur: "'Noto Nastaliq Urdu', serif", ar: "'Amiri', serif", en: "-apple-system, sans-serif" };
+const ILAL_LANG_DIR = { ur: "rtl", ar: "rtl", en: "ltr" };
+
+document.getElementById("ilal-lang-row").querySelectorAll("button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.getElementById("ilal-lang-row").querySelectorAll("button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    ilalLang = btn.dataset.ilalLang;
+    if (lastGardaan) renderGardaanTable(lastGardaan.containerEl, lastGardaan.root, lastGardaan.tense);
+  });
+});
+
 // Reusable: fetch the full گردان (conjugation table) for one root/tense and
 // render it into containerEl, each row expandable to its إعلال chain. Used
 // from the Surah 114 word detail panel (e.g. clicking قُلۡ -> Imperative),
 // not from a standalone picker -- there is one module here, not two.
 async function renderGardaanTable(containerEl, root, tense) {
   containerEl.innerHTML = "<p class='meta'>Loading...</p>";
+  lastGardaan = { containerEl, root, tense };
 
   const res = await fetch(API_BASE + "/ilal", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ root_word: root, baab_name: "نصر", tense }),
+    body: JSON.stringify({ root_word: root, baab_name: "نصر", tense, lang: ilalLang }),
   });
   const data = await res.json();
 
@@ -334,12 +359,12 @@ async function renderGardaanTable(containerEl, root, tense) {
       const cell = chainRow.querySelector("td");
       if (chainRow.style.display === "none") {
         cell.innerHTML = `
-          <div class="explanation" style="margin:4px 0; direction:rtl; font-family:'Amiri',serif; font-size:18px">
+          <div class="explanation" style="margin:4px 0">
             ${row.ilal_chain.map(step => `
               <div style="margin:6px 0">
-                <span style="font-weight:bold">${step.form}</span>
-                <span style="font-size:13px; font-family:-apple-system,sans-serif; color:#555">
-                  ${step.rule ? ' — ' + step.rule : ' (الأصل — original form)'}
+                <span style="font-weight:bold; font-family:'Amiri',serif; font-size:18px; direction:rtl">${step.form}</span>
+                <span style="font-size:14px; font-family:${ILAL_LANG_FONT[ilalLang]}; color:#555" dir="${ILAL_LANG_DIR[ilalLang]}">
+                  ${step.rule ? ' — ' + step.rule : (ilalLang === 'en' ? ' (original form)' : ' (الأصل — original form)')}
                 </span>
               </div>
             `).join("")}

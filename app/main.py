@@ -56,6 +56,7 @@ class IlalRequest(BaseModel):
     root_word: str
     baab_name: str = "نصر"
     tense: str = "ماضی"
+    lang: str = "ur"
 
 
 @app.post("/explain")
@@ -68,7 +69,7 @@ def explain_endpoint(req: ExplainRequest):
 
 @app.post("/ilal")
 def ilal_endpoint(req: IlalRequest):
-    rows = taaleelat_rules.get_full_gardaan_taaleelat(req.root_word, req.baab_name, req.tense)
+    rows = taaleelat_rules.get_full_gardaan_taaleelat(req.root_word, req.baab_name, req.tense, lang=req.lang)
     if not rows:
         return {"matched": False, "reason": "unsupported_combination"}
     return {"matched": True, "rows": rows}

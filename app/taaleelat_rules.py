@@ -206,7 +206,7 @@ def to_ilal_chain(original, intermediates, final, rules, lang="ur"):
     return chain
 
 
-def get_full_gardaan_taaleelat(root_word, baab_name, tense):
+def get_full_gardaan_taaleelat(root_word, baab_name, tense, lang="ur"):
     """
     Full conjugation table + per-صیغہ تعلیل for one tense, root-generic.
 
@@ -214,6 +214,9 @@ def get_full_gardaan_taaleelat(root_word, baab_name, tense):
         root_word: Three-letter root (e.g. "قول")
         baab_name: Baab pattern -- currently only "نصر" has rules
         tense: One of "ماضی", "مضارع", "امر"
+        lang: "ur" | "ar" | "en" -- which RULE_TEXT translation to use for
+            each step's rule text (falls back to "ur" for an unknown lang,
+            same as to_ilal_chain's own default)
 
     Returns:
         list of {"person_reference", "final_form", "ilal_chain"} -- 14 rows
@@ -233,7 +236,7 @@ def get_full_gardaan_taaleelat(root_word, baab_name, tense):
             rows.append({
                 "person_reference": UrduZameerTitle[i],
                 "final_form": final,
-                "ilal_chain": to_ilal_chain(original, intermediates, final, rules),
+                "ilal_chain": to_ilal_chain(original, intermediates, final, rules, lang=lang),
             })
     elif tense == "مضارع":
         for i in range(len(AlaamatMuzaraStart)):
@@ -241,7 +244,7 @@ def get_full_gardaan_taaleelat(root_word, baab_name, tense):
             rows.append({
                 "person_reference": UrduZameerTitle[i],
                 "final_form": final,
-                "ilal_chain": to_ilal_chain(original, intermediates, final, rules),
+                "ilal_chain": to_ilal_chain(original, intermediates, final, rules, lang=lang),
             })
     elif tense == "امر":
         for i in AMR_HAAZIR_INDICES:
@@ -249,7 +252,7 @@ def get_full_gardaan_taaleelat(root_word, baab_name, tense):
             rows.append({
                 "person_reference": UrduZameerTitle[i],
                 "final_form": final,
-                "ilal_chain": to_ilal_chain(original, intermediates, final, rules),
+                "ilal_chain": to_ilal_chain(original, intermediates, final, rules, lang=lang),
             })
 
     return rows
