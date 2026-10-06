@@ -47,6 +47,26 @@ UrduZameerTitle = [
     "واحد مذکر/مونث متکلم", "تثنیہ/جمع مذکر/مونث متکلم"
 ]
 
+# English/Arabic translations of the same 14 person_reference labels above --
+# added alongside the already-translated RULE_TEXT so the گردان row labels
+# follow the same lang param as the step-by-step rule text, instead of
+# always showing Urdu regardless of the active language.
+EnglishZameerTitle = [
+    "3rd person singular masculine", "3rd person dual masculine", "3rd person plural masculine",
+    "3rd person singular feminine", "3rd person dual feminine", "3rd person plural feminine",
+    "2nd person singular masculine", "2nd person dual masculine", "2nd person plural masculine",
+    "2nd person singular feminine", "2nd person dual feminine", "2nd person plural feminine",
+    "1st person singular", "1st person dual/plural",
+]
+ArabicZameerTitle = [
+    "الغائب المفرد المذكر", "الغائبان المذكر", "الغائبون المذكر",
+    "الغائبة المفردة", "الغائبتان", "الغائبات",
+    "المخاطَب المفرد", "المخاطَبان", "المخاطَبون",
+    "المخاطَبة المفردة", "المخاطَبتان", "المخاطَبات",
+    "المتكلم وحده", "المتكلم مع غيره",
+]
+_ZAMEER_TITLES = {"ur": UrduZameerTitle, "en": EnglishZameerTitle, "ar": ArabicZameerTitle}
+
 # امر only exists for حاضر persons (indices 6-11) -- there is no غائب or
 # متکلم امر in Arabic. Endings per index, matching the real Arabic forms
 # (قُلْ، قُولَا، قُولُوْا، قُولِیْ، قُولَا، قُلْنَ).
@@ -229,12 +249,14 @@ def get_full_gardaan_taaleelat(root_word, baab_name, tense, lang="ur"):
     if ain != waw:
         return []  # only اجوف واوی roots have rules today
 
+    titles = _ZAMEER_TITLES.get(lang, UrduZameerTitle)
+
     rows = []
     if tense == "ماضی":
         for i in range(len(AlaamatMaazi)):
             original, intermediates, final, rules = ajwaf_wawi_mazi_forms(root_word, i)
             rows.append({
-                "person_reference": UrduZameerTitle[i],
+                "person_reference": titles[i],
                 "final_form": final,
                 "ilal_chain": to_ilal_chain(original, intermediates, final, rules, lang=lang),
             })
@@ -242,7 +264,7 @@ def get_full_gardaan_taaleelat(root_word, baab_name, tense, lang="ur"):
         for i in range(len(AlaamatMuzaraStart)):
             original, intermediates, final, rules = ajwaf_wawi_muzare_forms(root_word, i)
             rows.append({
-                "person_reference": UrduZameerTitle[i],
+                "person_reference": titles[i],
                 "final_form": final,
                 "ilal_chain": to_ilal_chain(original, intermediates, final, rules, lang=lang),
             })
@@ -250,7 +272,7 @@ def get_full_gardaan_taaleelat(root_word, baab_name, tense, lang="ur"):
         for i in AMR_HAAZIR_INDICES:
             original, intermediates, final, rules = ajwaf_wawi_amr_forms(root_word, i)
             rows.append({
-                "person_reference": UrduZameerTitle[i],
+                "person_reference": titles[i],
                 "final_form": final,
                 "ilal_chain": to_ilal_chain(original, intermediates, final, rules, lang=lang),
             })

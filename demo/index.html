@@ -360,23 +360,34 @@ async function renderGardaanTable(containerEl, root, tense) {
     return;
   }
 
+  const GARDAAN_HEADERS = {
+    en: ["Form", "Word", ""], ur: ["صیغہ", "لفظ", ""], ar: ["الصيغة", "الكلمة", ""],
+  };
+  const STEPS_LABEL = {
+    en: (n) => `إعلال (${n} steps) ▾`, ur: (n) => `تعلیل (${n} مراحل) ▾`, ar: (n) => `إعلال (${n} خطوات) ▾`,
+  };
+  const NO_ILAL_LABEL = { en: "no إعلال here", ur: "کوئی تعلیل نہیں", ar: "لا إعلال هنا" };
+  const [hForm, hWord] = GARDAAN_HEADERS[ilalLang] || GARDAAN_HEADERS.en;
+  const tdDir = ILAL_LANG_DIR[ilalLang];
+  const tdFont = ILAL_LANG_FONT[ilalLang];
+
   const ilalRows = data.rows;
   containerEl.innerHTML = `
-    <table style="width:100%; border-collapse:collapse; margin-top:14px; font-size:14px">
+    <table style="width:100%; border-collapse:collapse; margin-top:14px; font-size:14px" dir="${tdDir}">
       <thead>
-        <tr style="text-align:${document.dir === 'rtl' ? 'right' : 'left'}; border-bottom:2px solid var(--navy)">
-          <th style="padding:8px 6px">الصیغہ (Form)</th>
-          <th style="padding:8px 6px; font-family:'Amiri',serif; font-size:20px">الکلمۃ (Word)</th>
+        <tr style="text-align:${tdDir === 'rtl' ? 'right' : 'left'}; border-bottom:2px solid var(--navy); font-family:${tdFont}">
+          <th style="padding:8px 6px">${hForm}</th>
+          <th style="padding:8px 6px; font-family:'Amiri',serif; font-size:20px">${hWord}</th>
           <th style="padding:8px 6px"></th>
         </tr>
       </thead>
       <tbody id="ilal-tbody">
         ${data.rows.map((row, i) => `
           <tr style="border-bottom:1px solid #eee; cursor:pointer" class="ilal-row" data-i="${i}">
-            <td style="padding:8px 6px">${row.person_reference}</td>
+            <td style="padding:8px 6px; font-family:${tdFont}">${row.person_reference}</td>
             <td style="padding:8px 6px; font-family:'Amiri',serif; font-size:22px; direction:rtl">${row.final_form}</td>
-            <td style="padding:8px 6px; color:var(--navy); font-weight:600; font-size:12px">
-              ${row.ilal_chain.length > 1 ? "إعلال (" + (row.ilal_chain.length - 1) + " steps) ▾" : "no إعلال here"}
+            <td style="padding:8px 6px; color:var(--navy); font-weight:600; font-size:12px; font-family:${tdFont}">
+              ${row.ilal_chain.length > 1 ? STEPS_LABEL[ilalLang](row.ilal_chain.length - 1) : (NO_ILAL_LABEL[ilalLang] || NO_ILAL_LABEL.en)}
             </td>
           </tr>
           <tr id="ilal-chain-${i}" style="display:none"><td colspan="3" style="padding:0"></td></tr>
