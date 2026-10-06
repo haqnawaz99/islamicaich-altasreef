@@ -180,6 +180,132 @@
         "ar": "{word} (الجذر {root}، {ref}) صيغة متكلم (\"نحن\")، وعلامتها (ـنَا) تحتمل الاثنين والجمع معاً. أجبتَ بالقيمة المجموعة، بينما يسجّل النظام هنا قيمة واحدة فقط ({correct_label})؛ هذا قيد معروف في طريقة تمثيل هذا الالتباس حالياً، لا خطأ نحوي حقيقي منك."
       },
       "is_system_limitation_disclosure": true
+    },
+    {
+      "dim": "root", "correct": "جعل", "given": "فعل",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref})'s root is ج-ع-ل, not ف-ع-ل. The leading ف in فَجَعَلۡنٰہَا is the connective particle \"فَ\" (\"so/then\"), not part of the root — strip it off first, and the three radicals left (ج، ع، ل) are the real root.",
+        "ar": "{word} (الجذر {root}، {ref}) جذره ج-ع-ل، لا ف-ع-ل. الفاء في أول الكلمة هي فاء العطف/السببية، وليست من أصل الكلمة — بعد حذفها يبقى الجذر الحقيقي ج-ع-ل."
+      }
+    },
+    {
+      "dim": "root", "correct": "فشل", "given": "فتل",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref})'s root is ف-ش-ل, not ف-ت-ل — the middle radical is ش, not ت. Compare the two letters directly on the word itself.",
+        "ar": "{word} (الجذر {root}، {ref}) جذره ف-ش-ل لا ف-ت-ل؛ الحرف الأوسط هو الشين لا التاء."
+      }
+    },
+    {
+      "dim": "root", "correct": "كفر", "given": "كفل",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref})'s root is ك-ف-ر, not ك-ف-ل — the third radical is ر, not ل. Look at the final letter of the stem before the ending.",
+        "ar": "{word} (الجذر {root}، {ref}) جذره ك-ف-ر لا ك-ف-ل؛ الحرف الأخير هو الراء لا اللام."
+      }
+    },
+    {
+      "dim": "seven_types", "correct": "صحیح", "given": "اجوف واوی",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is صحیح (sound) -- none of its three radicals is a weak letter (و/ي/ا). اجوف واوی specifically means the middle radical is و; this root's middle radical is ر, a plain consonant, so the word is sound.",
+        "ar": "{word} (الجذر {root}، {ref}) صحیح؛ لا يوجد حرف علة بين أحرفه الثلاثة. الأجوف الواوي عينه حرف الواو تحديداً، وهذا الجذر عينه راء، فهو صحیح."
+      }
+    },
+    {
+      "dim": "seven_types", "correct": "صحیح", "given": "مہموز العین",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is صحیح (sound) -- مہموز العین specifically means the middle radical is a hamza (ء). This root's middle radical is ش, not ء, so the word is sound, not hamzated.",
+        "ar": "{word} (الجذر {root}، {ref}) صحیح؛ المهموز العین عينه همزة تحديداً، وهذا الجذر عينه شین لا همزة."
+      }
+    },
+    {
+      "dim": "pattern", "correct": "ثلاثی", "given": "تفعل",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is a plain Form I (ثلاثی) verb, not Form V (تفعل). تفعل has its own distinct shape -- a تَ-prefix plus a doubled (gemmated) middle radical (تَفَعَّلَ) -- neither of which appears here: this word is a passive مضارع of the unaugmented three-letter root.",
+        "ar": "{word} (الجذر {root}، {ref}) من الثلاثي المجرد، لا وزن تفعل. وزن تفعل له شكل خاص (تاء في أوله وتشديد العین)، وهذا غير موجود هنا."
+      }
+    },
+    {
+      "dim": "pattern", "correct": "نصر", "given": "ثلاثی",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) belongs specifically to باب نصر, not just the generic \"ثلاثی\" bucket. باب نصر's own signature is fatha in ماضی and damma in مضارع -- the damma on this word's مضارع stem is exactly that marker.",
+        "ar": "{word} (الجذر {root}، {ref}) من باب نصر تحديداً. علامة باب نصر فتح الماضي وضم المضارع، وهذا هو الضم الظاهر في هذه الكلمة."
+      }
+    },
+    {
+      "dim": "noun_type", "correct": "اسم فاعل", "given": "اسم مفعول",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is اسم فاعل (\"one who does/is\"), not اسم مفعول (\"one to whom it's done\"). Compare the vowel under the middle radical: اسم فاعل here has a kasra (مُفْعِل shape, \"-lim-\"), while اسم مفعول would carry a fatha instead (مُفْعَل shape, \"-lam-\").",
+        "ar": "{word} (الجذر {root}، {ref}) اسم فاعل لا اسم مفعول. الفرق في حركة العین: اسم الفاعل بالكسر (مُفْعِل)، واسم المفعول بالفتح (مُفْعَل)."
+      }
+    },
+    {
+      "dim": "noun_type", "correct": "اسم مفعول", "given": "اسم فاعل",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is اسم مفعول (\"one to whom it's done\"), not اسم فاعل. Compare the vowel under the middle radical: اسم مفعول here has a fatha (مُفْعَل shape), while اسم فاعل would carry a kasra instead (مُفْعِل shape).",
+        "ar": "{word} (الجذر {root}، {ref}) اسم مفعول لا اسم فاعل. حركة العین هنا فتحة (مُفْعَل)، بخلاف اسم الفاعل الذي يكون بالكسر (مُفْعِل)."
+      }
+    },
+    {
+      "dim": "definiteness", "correct": "معرفہ", "given": "نکرہ",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is معرفہ (definite), not نکرہ (indefinite) -- it carries the definite article ال, which alone makes a noun definite.",
+        "ar": "{word} (الجذر {root}، {ref}) معرفة لا نكرة، لدخول \"ال\" عليها وهي وحدها كافية للتعريف."
+      }
+    },
+    {
+      "dim": "definiteness", "correct": "نکرہ", "given": "معرفہ",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is نکرہ (indefinite), not معرفہ -- it carries none of the definiteness markers (no ال, no إضافہ to a definite noun, no attached pronoun, not a proper name).",
+        "ar": "{word} (الجذر {root}، {ref}) نكرة لا معرفة، لعدم وجود \"ال\" أو إضافة أو ضمير متصل يعرّفها."
+      }
+    },
+    {
+      "dim": "mood", "correct": "مبنی", "given": "منصوب",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is an امر (command) form, and امر verbs are always مبنی (indeclinable) -- اعراب categories like منصوب/مرفوع/مجزوم only apply to مضارع, never to امر.",
+        "ar": "{word} (الجذر {root}، {ref}) فعل أمر، وفعل الأمر دائماً مبني لا معرب؛ تقسيمات الإعراب (منصوب/مرفوع/مجزوم) خاصة بالمضارع فقط."
+      }
+    },
+    {
+      "dim": "mood", "correct": "مرفوع", "given": "مبنی",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is مضارع, and مضارع verbs are مُعرَب (declinable), never مبنی. With no نواصب (مضارع-نصب particle like اَنۡ/لَنۡ) or جوازم (jussive particle) present before it, a مضارع defaults to مرفوع.",
+        "ar": "{word} (الجذر {root}، {ref}) فعل مضارع، والمضارع معرب لا مبني. لعدم وجود ناصب أو جازم قبله، فالأصل فيه الرفع."
+      }
+    },
+    {
+      "dim": "mood", "correct": "منصوب", "given": "مبنی",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is مضارع, and مضارع verbs are مُعرَب (declinable), never مبنی. This one is preceded by اَنۡ (\"اَنۡ تَفۡشَلَا\"-shape), one of the نواصب particles that puts a following مضارع into منصوب.",
+        "ar": "{word} (الجذر {root}، {ref}) فعل مضارع معرب لا مبني، وقد سبقه \"أنْ\" وهي من حروف النصب، فنصبت المضارع بعدها."
+      }
+    },
+    {
+      "dim": "case", "correct": "مجرور", "given": "مرفوع",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is مجرور, not مرفوع. It's preceded by وَ as a واو القسم (oath particle, \"by the...\"), and the object of an oath particle is always مجرور.",
+        "ar": "{word} (الجذر {root}، {ref}) مجرور لا مرفوع؛ سبقته واو القسم، والمقسم به بعد واو القسم مجرور دائماً."
+      }
+    },
+    {
+      "dim": "case", "correct": "منصوب", "given": "مجرور",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is منصوب, not مجرور, despite looking like it -- it's the direct object (مفعول بہ) of یَرۡمُوۡنَ, which takes منصوب. Sound feminine plurals (جمع مؤنث سالم) are a known exception: they mark منصوب with the same کسرہ ending that مجرور also uses, so spelling alone can't tell them apart here -- the grammatical role (direct object) is what settles it.",
+        "ar": "{word} (الجذر {root}، {ref}) منصوب لا مجرور رغم ظاهر الكسرة -- فهو مفعول به لـ \"یَرۡمُوۡنَ\". جمع المؤنث السالم ينصب بالكسرة لا بالفتحة، فلا يمكن التمييز بالشكل وحده، والموقع الإعرابي (المفعولية) هو الفيصل هنا."
+      }
+    },
+    {
+      "dim": "tense", "correct": "مضارع", "given": "امر",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is مضارع, not امر -- امر only exists for 2nd-person (حاضر) addressees; this is a 1st-person (متکلم, \"I will...\") form, and متکلم forms can never be امر.",
+        "ar": "{word} (الجذر {root}، {ref}) مضارع لا أمر -- فعل الأمر لا يكون إلا للمخاطَب، وهذه صيغة متكلم، والمتكلم لا يُبنى منه أمر."
+      }
+    },
+    {
+      "dim": "tense", "correct": "مضارع", "given": "ماضی",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is مضارع, not ماضی. It carries the leading تَ- prefix that marks مضارع (تَفْعَلَا-shape) -- a ماضی dual form of the same meaning would have no such prefix, just the bare stem plus a ـَا ending (فَشَلَا).",
+        "ar": "{word} (الجذر {root}، {ref}) مضارع لا ماضٍ، لوجود تاء المضارعة في أوله. الماضي المقابل له لا يحمل هذه التاء في أوله، بل ينتهي بـ ـَا فقط (فَشَلَا)."
+      }
     }
   ]
 }

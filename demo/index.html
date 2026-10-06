@@ -127,9 +127,16 @@
 
 <main>
   <div class="card">
-    <div class="meta">Pick a real wrong answer sampled from production (Altasreef Evaluation System):</div>
+    <div class="meta">Pick a real wrong answer sampled from production (Altasreef Evaluation System) — all 30, covering every tested dimension:</div>
     <select id="scenario-select"></select>
+
+    <div class="lang-row" id="script-row">
+      <button data-script="indopak" class="active">IndoPak script</button>
+      <button data-script="uthmani">Uthmani script</button>
+      <span class="meta" style="align-self:center; margin-left:6px">(word highlighting shown on IndoPak only — see note below)</span>
+    </div>
     <div class="verse" id="verse-display"></div>
+
     <div class="answer-row">
       <span class="meta">Dimension: <b id="dim-label"></b></span>
       <span class="pill wrong">Student answered: <span id="given-label"></span></span>
@@ -169,6 +176,7 @@ document.getElementById("api-base").textContent = API_BASE;
 
 let scenarios = [];
 let lang = "en";
+let script = "indopak";
 
 async function loadScenarios() {
   const res = await fetch(API_BASE + "/sample");
@@ -182,8 +190,16 @@ async function loadScenarios() {
 
 function renderScenario(i) {
   const s = scenarios[i];
-  document.getElementById("verse-display").innerHTML =
-    s.verse.replace(s.word, `<span class="word">${s.word}</span>`);
+  if (script === "indopak") {
+    document.getElementById("verse-display").innerHTML =
+      s.verse_indopak.replace(s.word, `<span class="word">${s.word}</span>`);
+  } else {
+    // Uthmani spelling differs from the IndoPak matched_word string, so we
+    // can't do a text-match highlight here -- shown plain, word named below
+    // instead of highlighted inline.
+    document.getElementById("verse-display").innerHTML =
+      s.verse_uthmani + `<div class="meta" style="margin-top:6px; direction:ltr">(the word in question is ${s.word} in IndoPak spelling)</div>`;
+  }
   document.getElementById("dim-label").textContent = s.dim;
   document.getElementById("given-label").textContent = s.given_value;
   document.getElementById("correct-label").textContent = s.correct_value;
@@ -192,6 +208,15 @@ function renderScenario(i) {
 
 document.getElementById("scenario-select").addEventListener("change", (e) => {
   renderScenario(parseInt(e.target.value));
+});
+
+document.getElementById("script-row").querySelectorAll("button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.getElementById("script-row").querySelectorAll("button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    script = btn.dataset.script;
+    renderScenario(parseInt(document.getElementById("scenario-select").value));
+  });
 });
 
 document.querySelectorAll(".lang-row button").forEach(btn => {
