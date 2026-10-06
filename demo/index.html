@@ -158,12 +158,12 @@
       <span class="pill wrong">Student answered: <span id="given-label"></span></span>
       <span class="pill correct">Correct: <span id="correct-label"></span></span>
     </div>
+    <p class="meta" style="font-weight:600; margin-bottom:4px">Explain in:</p>
     <div class="lang-row" id="explain-lang-row">
-      <button data-lang="en" class="active">English</button>
+      <button data-lang="en">English</button>
       <button data-lang="ar">العربية</button>
       <button data-lang="ur">اردو</button>
     </div>
-    <button id="explain-btn">Explain</button>
     <div id="result"></div>
   </div>
 
@@ -228,7 +228,7 @@ function renderScenario(i) {
   document.getElementById("given-label").textContent = s.given_value;
   document.getElementById("correct-label").textContent = s.correct_value;
   document.getElementById("result").innerHTML = "";
-  explainShown = false;
+  document.getElementById("explain-lang-row").querySelectorAll("button").forEach(b => b.classList.remove("active"));
 }
 
 document.getElementById("scenario-select").addEventListener("change", (e) => {
@@ -243,10 +243,6 @@ document.getElementById("script-row").querySelectorAll("button").forEach(btn => 
     renderScenario(parseInt(document.getElementById("scenario-select").value));
   });
 });
-
-let explainShown = false; // becomes true once a real explanation has been shown -- so switching
-                           // language re-explains in place, but doesn't fire a request before
-                           // the student has ever clicked Explain at all
 
 async function runExplain() {
   const i = parseInt(document.getElementById("scenario-select").value);
@@ -263,7 +259,6 @@ async function runExplain() {
     }),
   });
   const data = await res.json();
-  explainShown = true;
 
   if (!data.matched) {
     resultDiv.innerHTML = `<div class="abstain">No pre-authored rule matches this case — the system abstains rather than guess (reason: ${data.reason}).</div>`;
@@ -287,11 +282,9 @@ document.getElementById("explain-lang-row").querySelectorAll("button").forEach(b
     document.getElementById("explain-lang-row").querySelectorAll("button").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     lang = btn.dataset.lang;
-    if (explainShown) runExplain();
+    runExplain(); // clicking a language IS the trigger now -- no separate Explain button
   });
 });
-
-document.getElementById("explain-btn").addEventListener("click", runExplain);
 
 // تعلیل rule text comes back in whichever of these 3 languages is active --
 // RULE_TEXT in taaleelat_rules.py already carries all three, this just picks
