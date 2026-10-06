@@ -168,33 +168,14 @@
 
   <div class="card">
     <div class="meta" style="margin-bottom:10px">
-      <b>A second, separate mode:</b> full conjugation table for اجوف واوی roots in باب نصر,
-      with a step-by-step إعلال (morphological derivation) chain for every single word —
-      e.g. why قَوَلَ becomes قَالَ. New work from the Oct 4–6 window, built on
-      <code>app/taaleelat_rules.py</code> (root-generic, not hardcoded to one word).
-    </div>
-    <div class="answer-row" style="flex-wrap:wrap">
-      <select id="ilal-root" style="flex:1; min-width:120px">
-        <option value="قول">قول (say)</option>
-        <option value="قوم">قوم (stand)</option>
-        <option value="كون">كون (be)</option>
-      </select>
-      <select id="ilal-tense" style="flex:1; min-width:120px">
-        <option value="ماضی">ماضی (Past)</option>
-        <option value="مضارع">مضارع (Present)</option>
-        <option value="امر">امر (Imperative)</option>
-      </select>
-      <button id="ilal-btn">Show full conjugation</button>
-    </div>
-    <div id="ilal-result"></div>
-  </div>
-
-  <div class="card">
-    <div class="meta" style="margin-bottom:10px">
-      <b>A third mode:</b> full verse-by-verse tagging for Surah 114 (الناس) — every word, every
-      ayah, fully tagged (root, pattern, case, i'rab role, etc). This is the same data the private
-      app's Word Viewer shows internally, redacted down to just this one surah for public,
-      independent inspection. Click any word to see its full grammatical breakdown.
+      <b>A second mode:</b> full verse-by-verse tagging for Surah 114 (الناس) — every word, every
+      ayah, fully tagged (root, pattern, case, i'rab role, etc), the same data the private app's
+      Word Viewer shows internally, redacted down to just this one surah for public, independent
+      inspection. Click any word for its full grammatical breakdown — and for an اجوف واوی verb
+      like قُلۡ (word 1 of ayah 1), pick Past/Present/Imperative right there to generate its full
+      conjugation table, with a step-by-step إعلال (morphological derivation) chain for every
+      single generated word, e.g. why قَوَلَ becomes قَالَ
+      (<code>app/taaleelat_rules.py</code>, root-generic, not hardcoded to one word).
     </div>
     <div class="lang-row" id="ayah-tabs" style="flex-wrap:wrap"></div>
     <div class="verse script-indopak" id="s114-verse" style="margin-top:10px"></div>
@@ -300,13 +281,12 @@ document.getElementById("explain-btn").addEventListener("click", async () => {
   `;
 });
 
-let ilalRows = [];
-
-document.getElementById("ilal-btn").addEventListener("click", async () => {
-  const root = document.getElementById("ilal-root").value;
-  const tense = document.getElementById("ilal-tense").value;
-  const resultDiv = document.getElementById("ilal-result");
-  resultDiv.innerHTML = "<p class='meta'>Loading...</p>";
+// Reusable: fetch the full گردان (conjugation table) for one root/tense and
+// render it into containerEl, each row expandable to its إعلال chain. Used
+// from the Surah 114 word detail panel (e.g. clicking قُلۡ -> Imperative),
+// not from a standalone picker -- there is one module here, not two.
+async function renderGardaanTable(containerEl, root, tense) {
+  containerEl.innerHTML = "<p class='meta'>Loading...</p>";
 
   const res = await fetch(API_BASE + "/ilal", {
     method: "POST",
@@ -316,12 +296,12 @@ document.getElementById("ilal-btn").addEventListener("click", async () => {
   const data = await res.json();
 
   if (!data.matched) {
-    resultDiv.innerHTML = "<div class='abstain'>Unsupported combination.</div>";
+    containerEl.innerHTML = "<div class='abstain'>Unsupported combination.</div>";
     return;
   }
 
-  ilalRows = data.rows;
-  resultDiv.innerHTML = `
+  const ilalRows = data.rows;
+  containerEl.innerHTML = `
     <table style="width:100%; border-collapse:collapse; margin-top:14px; font-size:14px">
       <thead>
         <tr style="text-align:${document.dir === 'rtl' ? 'right' : 'left'}; border-bottom:2px solid var(--navy)">
@@ -345,12 +325,12 @@ document.getElementById("ilal-btn").addEventListener("click", async () => {
     </table>
   `;
 
-  document.querySelectorAll(".ilal-row").forEach(tr => {
+  containerEl.querySelectorAll(".ilal-row").forEach(tr => {
     tr.addEventListener("click", () => {
       const i = tr.dataset.i;
       const row = ilalRows[i];
       if (row.ilal_chain.length <= 1) return;
-      const chainRow = document.getElementById("ilal-chain-" + i);
+      const chainRow = containerEl.querySelector("#ilal-chain-" + i);
       const cell = chainRow.querySelector("td");
       if (chainRow.style.display === "none") {
         cell.innerHTML = `
@@ -371,7 +351,7 @@ document.getElementById("ilal-btn").addEventListener("click", async () => {
       }
     });
   });
-});
+}
 
 loadScenarios();
 
@@ -456,12 +436,13 @@ function renderAyah(ayahNum) {
   });
 }
 
-function wordDetailCard(w) {
+function wordDetailCard(w, idx) {
   const attrs = ATTR_ORDER
     .map(([key, coded]) => ({ label: FIELD_LABELS[key], value: coded ? gloss114(key, w[key]) : (w[key] || null) }))
     .filter(a => a.value);
 
   const isAjwafWawiVerb = w.word_class === 2 && w.seven_types === 4 && w.root && w.root.length === 3;
+  const gardaanId = `gardaan-${idx}`;
 
   return `
     <div class="explanation" style="margin-bottom:10px">
@@ -475,15 +456,27 @@ function wordDetailCard(w) {
           ${attrs.map(a => `<div><span class="meta">${a.label}:</span> <b dir="auto">${a.value}</b></div>`).join("")}
         </div>` : ""}
       ${isAjwafWawiVerb ? `
-        <div style="margin-top:10px">
-          <span class="meta">اجوف واوی verb (باب نصر) — see its full گردان above using root <b dir="rtl" style="font-family:'NoorehudaUTF',serif">${w.root}</b> (select it in the dropdown, or try typing it if not listed).</span>
+        <div style="margin-top:12px; padding-top:10px; border-top:1px dashed #ccc">
+          <span class="meta">اجوف واوی verb (باب نصر) — generate its full گردان + إعلال:</span>
+          <div style="display:flex; gap:8px; margin-top:6px">
+            <button class="gardaan-btn" data-root="${w.root}" data-tense="ماضی" data-target="${gardaanId}">ماضی</button>
+            <button class="gardaan-btn" data-root="${w.root}" data-tense="مضارع" data-target="${gardaanId}">مضارع</button>
+            <button class="gardaan-btn" data-root="${w.root}" data-tense="امر" data-target="${gardaanId}">امر</button>
+          </div>
+          <div id="${gardaanId}"></div>
         </div>` : ""}
     </div>
   `;
 }
 
 function renderWordDetail(words) {
-  document.getElementById("s114-detail").innerHTML = words.map(wordDetailCard).join("");
+  const el = document.getElementById("s114-detail");
+  el.innerHTML = words.map(wordDetailCard).join("");
+  el.querySelectorAll(".gardaan-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      renderGardaanTable(document.getElementById(btn.dataset.target), btn.dataset.root, btn.dataset.tense);
+    });
+  });
 }
 
 loadSurah114();
