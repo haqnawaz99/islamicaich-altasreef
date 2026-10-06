@@ -299,6 +299,7 @@ document.getElementById("explain-btn").addEventListener("click", async () => {
 // which one to request and which font suits its script.
 let ilalLang = "ur";
 let lastGardaan = null; // {containerEl, root, tense} -- so switching language re-renders without re-clicking
+let lastS114Words = null; // currently-shown word detail card(s), same idea
 const ILAL_LANG_FONT = { ur: "'Noto Nastaliq Urdu', serif", ar: "'Amiri', serif", en: "-apple-system, sans-serif" };
 const ILAL_LANG_DIR = { ur: "rtl", ar: "rtl", en: "ltr" };
 
@@ -308,6 +309,7 @@ document.getElementById("ilal-lang-row").querySelectorAll("button").forEach(btn 
     btn.classList.add("active");
     ilalLang = btn.dataset.ilalLang;
     if (lastGardaan) renderGardaanTable(lastGardaan.containerEl, lastGardaan.root, lastGardaan.tense);
+    if (lastS114Words) renderWordDetail(lastS114Words);
   });
 });
 
@@ -387,16 +389,34 @@ async function renderGardaanTable(containerEl, root, tense) {
 loadScenarios();
 
 // ── Surah 114 verse-by-verse viewer ─────────────────────────────────────
+// Same 3 languages as the تعلیل toggle -- this whole card (word tagging
+// labels/values, not just the ilal chain) now follows ilalLang.
 const FIELD_LABELS = {
-  word_class: "Class", tense: "Tense", person: "Person", gender: "Gender",
-  number: "Number", voice: "Voice", pattern: "Baab", mood: "Mood",
-  noun_type: "Type", case_: "Case", definiteness: "Definiteness",
-  pronoun_type: "Pronoun type", seven_types: "Root type",
-  sabab_marifah: "Def. reason", irab_wajah: "I'rab role",
-  irab_alamah: "Case marker", harf_type: "Particle type",
-  root: "Root", wazn: "Pattern (wazn)", base_form: "Base form",
-  variant_reason: "Variant reason",
+  word_class:    { en: "Class",        ur: "قسم",        ar: "نوع الكلمة" },
+  tense:         { en: "Tense",        ur: "زمانہ",       ar: "الزمن" },
+  person:        { en: "Person",       ur: "صیغہ",        ar: "الشخص" },
+  gender:        { en: "Gender",       ur: "جنس",         ar: "الجنس" },
+  number:        { en: "Number",       ur: "عدد",         ar: "العدد" },
+  voice:         { en: "Voice",        ur: "حالت",        ar: "الصيغة" },
+  pattern:       { en: "Baab",         ur: "باب",         ar: "الباب" },
+  mood:          { en: "Mood",         ur: "حالتِ اعراب", ar: "الحالة الإعرابية" },
+  noun_type:     { en: "Type",         ur: "نوعیت",       ar: "النوع" },
+  case_:         { en: "Case",         ur: "اعراب",       ar: "الإعراب" },
+  definiteness:  { en: "Definiteness", ur: "تعریف",       ar: "التعريف" },
+  pronoun_type:  { en: "Pronoun type", ur: "ضمیر کی قسم", ar: "نوع الضمير" },
+  seven_types:   { en: "Root type",    ur: "نوعِ جذر",    ar: "نوع الجذر" },
+  sabab_marifah: { en: "Def. reason",  ur: "سببِ معرفہ",  ar: "سبب المعرفة" },
+  irab_wajah:    { en: "I'rab role",   ur: "اعرابی کردار", ar: "الوظيفة الإعرابية" },
+  irab_alamah:   { en: "Case marker",  ur: "اعرابی علامت", ar: "علامة الإعراب" },
+  harf_type:     { en: "Particle type",ur: "نوعِ حرف",     ar: "نوع الحرف" },
+  root:          { en: "Root",         ur: "جذر",         ar: "الجذر" },
+  wazn:          { en: "Pattern (wazn)",ur: "وزن",        ar: "الوزن" },
+  base_form:     { en: "Base form",    ur: "اصل شکل",     ar: "الشكل الأصلي" },
+  variant_reason:{ en: "Variant reason",ur: "وجہِ تبدیلی", ar: "سبب التغيير" },
 };
+function fieldLabel114(key) {
+  return FIELD_LABELS[key]?.[ilalLang] ?? FIELD_LABELS[key]?.en ?? key;
+}
 // Same order the private app's Word Viewer uses -- coded fields decoded via
 // /codes, free-text fields (root/wazn/base_form/variant_reason) shown as-is.
 const ATTR_ORDER = [
@@ -412,7 +432,7 @@ let s114 = null, s114codes = null, s114ayah = 0;
 
 function gloss114(field, code) {
   if (code === null || code === undefined || code === "") return null;
-  return s114codes?.[field]?.[String(code)]?.en ?? String(code);
+  return s114codes?.[field]?.[String(code)]?.[ilalLang] ?? s114codes?.[field]?.[String(code)]?.en ?? String(code);
 }
 
 async function loadSurah114() {
@@ -440,6 +460,7 @@ function renderAyah(ayahNum) {
   const ayah = s114.ayahs.find(a => a.ayah === ayahNum);
   document.getElementById("s114-verse").textContent = ayah.verse_indopak;
   document.getElementById("s114-detail").innerHTML = "";
+  lastS114Words = null;
 
   // Parent (unsplit) words only in the chip row -- a split word (e.g.
   // بِسْمِ -> بِ + سْمِ) shows as one chip for its original combined
@@ -467,9 +488,16 @@ function renderAyah(ayahNum) {
   });
 }
 
+const UNTAGGED_LABEL = { en: "untagged", ur: "غیر منقوط", ar: "غير موسوم" };
+const GARDAAN_NOTE = {
+  en: "اجوف واوی verb (باب نصر) — generate its full conjugation + إعلال:",
+  ur: "اجوف واوی فعل (باب نصر) — مکمل گردان + تعلیل دیکھیں:",
+  ar: "فعل أجوف واوي (باب نصر) — عرض التصريف الكامل مع التعليل:",
+};
+
 function wordDetailCard(w, idx) {
   const attrs = ATTR_ORDER
-    .map(([key, coded]) => ({ label: FIELD_LABELS[key], value: coded ? gloss114(key, w[key]) : (w[key] || null) }))
+    .map(([key, coded]) => ({ label: fieldLabel114(key), value: coded ? gloss114(key, w[key]) : (w[key] || null) }))
     .filter(a => a.value);
 
   const isAjwafWawiVerb = w.word_class === 2 && w.seven_types === 4 && w.root && w.root.length === 3;
@@ -480,15 +508,15 @@ function wordDetailCard(w, idx) {
       <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap">
         <span style="font-family:'NoorehudaUTF',serif; font-size:28px" dir="rtl">${w.word_text}</span>
         ${w.word_class ? `<span class="pill correct">${gloss114("word_class", w.word_class)}</span>` : ""}
-        ${!w.tagged ? "<span class='meta'>untagged</span>" : ""}
+        ${!w.tagged ? `<span class='meta'>${UNTAGGED_LABEL[ilalLang] || UNTAGGED_LABEL.en}</span>` : ""}
       </div>
       ${attrs.length ? `
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:10px; font-size:13px">
-          ${attrs.map(a => `<div><span class="meta">${a.label}:</span> <b dir="auto">${a.value}</b></div>`).join("")}
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:10px; font-size:14px; font-family:${ILAL_LANG_FONT[ilalLang]}" dir="${ILAL_LANG_DIR[ilalLang]}">
+          ${attrs.map(a => `<div><span class="meta" style="font-family:${ILAL_LANG_FONT[ilalLang]}">${a.label}:</span> <b dir="auto" style="font-family:'Amiri',serif">${a.value}</b></div>`).join("")}
         </div>` : ""}
       ${isAjwafWawiVerb ? `
         <div style="margin-top:12px; padding-top:10px; border-top:1px dashed #ccc">
-          <span class="meta">اجوف واوی verb (باب نصر) — generate its full گردان + إعلال:</span>
+          <span class="meta" dir="${ILAL_LANG_DIR[ilalLang]}" style="font-family:${ILAL_LANG_FONT[ilalLang]}">${GARDAAN_NOTE[ilalLang] || GARDAAN_NOTE.en}</span>
           <div style="display:flex; gap:8px; margin-top:6px">
             <button class="gardaan-btn" data-root="${w.root}" data-tense="ماضی" data-target="${gardaanId}">ماضی</button>
             <button class="gardaan-btn" data-root="${w.root}" data-tense="مضارع" data-target="${gardaanId}">مضارع</button>
@@ -501,6 +529,7 @@ function wordDetailCard(w, idx) {
 }
 
 function renderWordDetail(words) {
+  lastS114Words = words;
   const el = document.getElementById("s114-detail");
   el.innerHTML = words.map(wordDetailCard).join("");
   el.querySelectorAll(".gardaan-btn").forEach(btn => {
