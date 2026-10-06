@@ -1,0 +1,6723 @@
+[
+  {
+    "level_code": "past_100",
+    "dim": "number",
+    "correct_value": "تثنیہ جمع",
+    "wrong_given": {
+      "تثنیہ": 6,
+      "جمع": 130,
+      "واحد": 20
+    },
+    "total_answers": 865,
+    "wrong_answers": 156
+  },
+  {
+    "level_code": "past_100",
+    "dim": "person",
+    "correct_value": "غائب",
+    "wrong_given": {
+      "حاضر": 85,
+      "متکلم": 31
+    },
+    "total_answers": 1299,
+    "wrong_answers": 116
+  },
+  {
+    "level_code": "past_100",
+    "dim": "gender",
+    "correct_value": "مذکرمونث",
+    "wrong_given": {
+      "مونث": 14,
+      "مذکر": 65
+    },
+    "total_answers": 946,
+    "wrong_answers": 79
+  },
+  {
+    "level_code": "past_100",
+    "dim": "person",
+    "correct_value": "متکلم",
+    "wrong_given": {
+      "غائب": 38,
+      "حاضر": 29
+    },
+    "total_answers": 946,
+    "wrong_answers": 67
+  },
+  {
+    "level_code": "past_100",
+    "dim": "gender",
+    "correct_value": "مونث",
+    "wrong_given": {
+      "مذکرمونث": 22,
+      "مذکر": 44
+    },
+    "total_answers": 781,
+    "wrong_answers": 66
+  },
+  {
+    "level_code": "past_100",
+    "dim": "number",
+    "correct_value": "واحد",
+    "wrong_given": {
+      "تثنیہ جمع": 23,
+      "جمع": 24,
+      "تثنیہ": 15
+    },
+    "total_answers": 1220,
+    "wrong_answers": 62
+  },
+  {
+    "level_code": "past_100",
+    "dim": "gender",
+    "correct_value": "مذکر",
+    "wrong_given": {
+      "مذکرمونث": 25,
+      "مونث": 29
+    },
+    "total_answers": 1213,
+    "wrong_answers": 54
+  },
+  {
+    "level_code": "past_100",
+    "dim": "voice",
+    "correct_value": "معروف",
+    "wrong_given": {
+      "مجہول": 54
+    },
+    "total_answers": 2867,
+    "wrong_answers": 54
+  },
+  {
+    "level_code": "present_100",
+    "dim": "person",
+    "correct_value": "غائب",
+    "wrong_given": {
+      "حاضر": 47,
+      "متکلم": 3
+    },
+    "total_answers": 352,
+    "wrong_answers": 50
+  },
+  {
+    "level_code": "present_100",
+    "dim": "gender",
+    "correct_value": "مذکر",
+    "wrong_given": {
+      "مونث": 42,
+      "مذکرمونث": 7
+    },
+    "total_answers": 380,
+    "wrong_answers": 49
+  },
+  {
+    "level_code": "past_100",
+    "dim": "person",
+    "correct_value": "حاضر",
+    "wrong_given": {
+      "غائب": 36,
+      "متکلم": 11
+    },
+    "total_answers": 695,
+    "wrong_answers": 47
+  },
+  {
+    "level_code": "present_100",
+    "dim": "gender",
+    "correct_value": "مونث",
+    "wrong_given": {
+      "مذکر": 37,
+      "مذکرمونث": 6
+    },
+    "total_answers": 207,
+    "wrong_answers": 43
+  },
+  {
+    "level_code": "past_100",
+    "dim": "number",
+    "correct_value": "جمع",
+    "wrong_given": {
+      "تثنیہ جمع": 18,
+      "واحد": 14,
+      "تثنیہ": 6
+    },
+    "total_answers": 694,
+    "wrong_answers": 38
+  },
+  {
+    "level_code": "present_100",
+    "dim": "person",
+    "correct_value": "حاضر",
+    "wrong_given": {
+      "غائب": 36,
+      "متکلم": 1
+    },
+    "total_answers": 235,
+    "wrong_answers": 37
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "person",
+    "correct_value": "حاضر",
+    "wrong_given": {
+      "غائب": 24,
+      "متکلم": 11
+    },
+    "total_answers": 260,
+    "wrong_answers": 35
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "gender",
+    "correct_value": "مذکر",
+    "wrong_given": {
+      "مونث": 15,
+      "مذکرمونث": 9
+    },
+    "total_answers": 300,
+    "wrong_answers": 24
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "gender",
+    "correct_value": "مذکر",
+    "wrong_given": {
+      "مونث": 9,
+      "مذکرمونث": 13
+    },
+    "total_answers": 219,
+    "wrong_answers": 22
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "person",
+    "correct_value": "غائب",
+    "wrong_given": {
+      "حاضر": 20,
+      "متکلم": 1
+    },
+    "total_answers": 245,
+    "wrong_answers": 21
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "tense",
+    "correct_value": "نہی",
+    "wrong_given": {
+      "مضارع": 14,
+      "امر": 3,
+      "ماضی": 1
+    },
+    "total_answers": 123,
+    "wrong_answers": 18
+  },
+  {
+    "level_code": "past_100",
+    "dim": "number",
+    "correct_value": "تثنیہ",
+    "wrong_given": {
+      "جمع": 5,
+      "واحد": 12,
+      "تثنیہ جمع": 1
+    },
+    "total_answers": 161,
+    "wrong_answers": 18
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "person",
+    "correct_value": "حاضر",
+    "wrong_given": {
+      "غائب": 17
+    },
+    "total_answers": 224,
+    "wrong_answers": 17
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "gender",
+    "correct_value": "مونث",
+    "wrong_given": {
+      "مذکر": 15,
+      "مذکرمونث": 1
+    },
+    "total_answers": 148,
+    "wrong_answers": 16
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "tense",
+    "correct_value": "نہی",
+    "wrong_given": {
+      "مضارع": 8,
+      "امر": 5,
+      "ماضی": 3
+    },
+    "total_answers": 175,
+    "wrong_answers": 16
+  },
+  {
+    "level_code": "present_100",
+    "dim": "number",
+    "correct_value": "تثنیہ جمع",
+    "wrong_given": {
+      "جمع": 7,
+      "تثنیہ": 2,
+      "واحد": 6
+    },
+    "total_answers": 221,
+    "wrong_answers": 15
+  },
+  {
+    "level_code": "past_100",
+    "dim": "status",
+    "correct_value": "منفی",
+    "wrong_given": {
+      "": 1,
+      "مثبت": 14
+    },
+    "total_answers": 32,
+    "wrong_answers": 15
+  },
+  {
+    "level_code": "past_100",
+    "dim": "status",
+    "correct_value": "مثبت",
+    "wrong_given": {
+      "": 11,
+      "منفی": 2
+    },
+    "total_answers": 343,
+    "wrong_answers": 13
+  },
+  {
+    "level_code": "present_100",
+    "dim": "voice",
+    "correct_value": "مجہول",
+    "wrong_given": {
+      "معروف": 12
+    },
+    "total_answers": 83,
+    "wrong_answers": 12
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "gender",
+    "correct_value": "مذکرمونث",
+    "wrong_given": {
+      "مذکر": 7,
+      "مونث": 5
+    },
+    "total_answers": 168,
+    "wrong_answers": 12
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "gender",
+    "correct_value": "مونث",
+    "wrong_given": {
+      "مذکر": 10,
+      "مذکرمونث": 2
+    },
+    "total_answers": 125,
+    "wrong_answers": 12
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "جعل",
+    "wrong_given": {
+      "جهل": 5,
+      "فعل": 5,
+      "شعل": 1
+    },
+    "total_answers": 291,
+    "wrong_answers": 11
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "person",
+    "correct_value": "غائب",
+    "wrong_given": {
+      "حاضر": 10,
+      "متکلم": 1
+    },
+    "total_answers": 105,
+    "wrong_answers": 11
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "case",
+    "correct_value": "مجرور",
+    "wrong_given": {
+      "منصوب": 10,
+      "مرفوع": 1
+    },
+    "total_answers": 35,
+    "wrong_answers": 11
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "خلق",
+    "wrong_given": {
+      "حلق": 8,
+      "خلف": 1,
+      "فلق": 1
+    },
+    "total_answers": 262,
+    "wrong_answers": 10
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "tense",
+    "correct_value": "امر",
+    "wrong_given": {
+      "ماضی": 6,
+      "نہی": 2,
+      "مضارع": 2
+    },
+    "total_answers": 190,
+    "wrong_answers": 10
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "person",
+    "correct_value": "غائب",
+    "wrong_given": {
+      "حاضر": 8,
+      "متکلم": 2
+    },
+    "total_answers": 41,
+    "wrong_answers": 10
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "gender",
+    "correct_value": "مونث",
+    "wrong_given": {
+      "مذکر": 10
+    },
+    "total_answers": 38,
+    "wrong_answers": 10
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "noun_type",
+    "correct_value": "اسم مفعول",
+    "wrong_given": {
+      "اسم فاعل": 10
+    },
+    "total_answers": 55,
+    "wrong_answers": 10
+  },
+  {
+    "level_code": "past_100",
+    "dim": "voice",
+    "correct_value": "مجہول",
+    "wrong_given": {
+      "معروف": 9
+    },
+    "total_answers": 73,
+    "wrong_answers": 9
+  },
+  {
+    "level_code": "present_100",
+    "dim": "number",
+    "correct_value": "واحد",
+    "wrong_given": {
+      "تثنیہ جمع": 3,
+      "جمع": 5
+    },
+    "total_answers": 324,
+    "wrong_answers": 8
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "number",
+    "correct_value": "تثنیہ جمع",
+    "wrong_given": {
+      "جمع": 8
+    },
+    "total_answers": 135,
+    "wrong_answers": 8
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "voice",
+    "correct_value": "معروف",
+    "wrong_given": {
+      "مجہول": 8
+    },
+    "total_answers": 120,
+    "wrong_answers": 8
+  },
+  {
+    "level_code": "present_100",
+    "dim": "person",
+    "correct_value": "متکلم",
+    "wrong_given": {
+      "حاضر": 3,
+      "غائب": 4
+    },
+    "total_answers": 254,
+    "wrong_answers": 7
+  },
+  {
+    "level_code": "present_100",
+    "dim": "number",
+    "correct_value": "جمع",
+    "wrong_given": {
+      "تثنیہ جمع": 3,
+      "واحد": 3,
+      "تثنیہ": 1
+    },
+    "total_answers": 296,
+    "wrong_answers": 7
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "tense",
+    "correct_value": "مضارع",
+    "wrong_given": {
+      "ماضی": 3,
+      "نہی": 3,
+      "امر": 1
+    },
+    "total_answers": 181,
+    "wrong_answers": 7
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "number",
+    "correct_value": "واحد",
+    "wrong_given": {
+      "جمع": 4,
+      "تثنیہ جمع": 1,
+      "تثنیہ": 2
+    },
+    "total_answers": 203,
+    "wrong_answers": 7
+  },
+  {
+    "level_code": "present_100",
+    "dim": "gender",
+    "correct_value": "مذکرمونث",
+    "wrong_given": {
+      "مذکر": 4,
+      "مونث": 2
+    },
+    "total_answers": 254,
+    "wrong_answers": 6
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "بلغ",
+    "wrong_given": {
+      "بلع": 6
+    },
+    "total_answers": 242,
+    "wrong_answers": 6
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "person",
+    "correct_value": "حاضر",
+    "wrong_given": {
+      "غائب": 6
+    },
+    "total_answers": 47,
+    "wrong_answers": 6
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "pattern",
+    "correct_value": "انفعال",
+    "wrong_given": {
+      "افتعال": 2,
+      "ثلاثی": 2,
+      "افعال": 1,
+      "تفعل": 1
+    },
+    "total_answers": 11,
+    "wrong_answers": 6
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "case",
+    "correct_value": "منصوب",
+    "wrong_given": {
+      "مجرور": 6
+    },
+    "total_answers": 41,
+    "wrong_answers": 6
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "tense",
+    "correct_value": "امر",
+    "wrong_given": {
+      "مضارع": 3,
+      "ماضی": 2
+    },
+    "total_answers": 118,
+    "wrong_answers": 5
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "number",
+    "correct_value": "جمع",
+    "wrong_given": {
+      "تثنیہ": 2,
+      "واحد": 3
+    },
+    "total_answers": 123,
+    "wrong_answers": 5
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "tense",
+    "correct_value": "امر",
+    "wrong_given": {
+      "مضارع": 1,
+      "ماضی": 4
+    },
+    "total_answers": 24,
+    "wrong_answers": 5
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "tense",
+    "correct_value": "ماضی",
+    "wrong_given": {
+      "مضارع": 4,
+      "امر": 1
+    },
+    "total_answers": 38,
+    "wrong_answers": 5
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "pattern",
+    "correct_value": "افعال",
+    "wrong_given": {
+      "ثلاثی": 4,
+      "انفعال": 1
+    },
+    "total_answers": 26,
+    "wrong_answers": 5
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "mood",
+    "correct_value": "مبنی",
+    "wrong_given": {
+      "مجزوم": 4,
+      "منصوب": 1
+    },
+    "total_answers": 80,
+    "wrong_answers": 5
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "mood",
+    "correct_value": "مجزوم",
+    "wrong_given": {
+      "مبنی": 2,
+      "منصوب": 2,
+      "مرفوع": 1
+    },
+    "total_answers": 36,
+    "wrong_answers": 5
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "definiteness",
+    "correct_value": "نکرہ",
+    "wrong_given": {
+      "معرفہ": 5
+    },
+    "total_answers": 60,
+    "wrong_answers": 5
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "افعال",
+    "wrong_given": {
+      "ثلاثی": 4,
+      "مفاعلۃ": 1
+    },
+    "total_answers": 28,
+    "wrong_answers": 5
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "number",
+    "correct_value": "واحد",
+    "wrong_given": {
+      "تثنیہ": 1,
+      "جمع": 3
+    },
+    "total_answers": 235,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "number",
+    "correct_value": "جمع",
+    "wrong_given": {
+      "واحد": 3,
+      "تثنیہ": 1
+    },
+    "total_answers": 185,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "number",
+    "correct_value": "تثنیہ",
+    "wrong_given": {
+      "تثنیہ جمع": 4
+    },
+    "total_answers": 61,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "قتل",
+    "wrong_given": {
+      "قول": 1,
+      "فتل": 3
+    },
+    "total_answers": 36,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "لبث",
+    "wrong_given": {
+      "لبس": 4
+    },
+    "total_answers": 83,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فسد",
+    "wrong_given": {
+      "فسق": 1,
+      "فقد": 1,
+      "فسح": 1,
+      "حسد": 1
+    },
+    "total_answers": 161,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "gender",
+    "correct_value": "مذکرمونث",
+    "wrong_given": {
+      "مونث": 2,
+      "مذکر": 2
+    },
+    "total_answers": 21,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "هبط",
+    "wrong_given": {
+      "حبط": 4
+    },
+    "total_answers": 6,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "gender",
+    "correct_value": "مذکر",
+    "wrong_given": {
+      "مونث": 2,
+      "مذکرمونث": 2
+    },
+    "total_answers": 50,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "pattern",
+    "correct_value": "تفعیل",
+    "wrong_given": {
+      "افعال": 1,
+      "تفعل": 2,
+      "ثلاثی": 1
+    },
+    "total_answers": 26,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "pattern",
+    "correct_value": "تفعل",
+    "wrong_given": {
+      "افتعال": 1,
+      "تفعیل": 2,
+      "انفعال": 1
+    },
+    "total_answers": 15,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "person",
+    "correct_value": "غائب",
+    "wrong_given": {
+      "حاضر": 4
+    },
+    "total_answers": 48,
+    "wrong_answers": 4
+  },
+  {
+    "level_code": "present_100",
+    "dim": "voice",
+    "correct_value": "معروف",
+    "wrong_given": {
+      "مجہول": 3
+    },
+    "total_answers": 758,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "person",
+    "correct_value": "متکلم",
+    "wrong_given": {
+      "غائب": 2,
+      "حاضر": 1
+    },
+    "total_answers": 147,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فعل",
+    "wrong_given": {
+      "جعل": 2,
+      "شعل": 1
+    },
+    "total_answers": 157,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "جمع",
+    "wrong_given": {
+      "جمح": 3
+    },
+    "total_answers": 16,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "pattern",
+    "correct_value": "استفعال",
+    "wrong_given": {
+      "ثلاثی": 2,
+      "انفعال": 1
+    },
+    "total_answers": 17,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "person",
+    "correct_value": "حاضر",
+    "wrong_given": {
+      "غائب": 2,
+      "متکلم": 1
+    },
+    "total_answers": 55,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "gender",
+    "correct_value": "مونث",
+    "wrong_given": {
+      "مذکر": 3
+    },
+    "total_answers": 43,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "افعال",
+    "wrong_given": {
+      "ثلاثی": 1,
+      "استفعال": 1,
+      "سمع": 1
+    },
+    "total_answers": 26,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "number",
+    "correct_value": "تثنیہ",
+    "wrong_given": {
+      "جمع": 3
+    },
+    "total_answers": 23,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "مفاعلۃ",
+    "wrong_given": {
+      "تفاعل": 1,
+      "افعال": 1,
+      "ثلاثی": 1
+    },
+    "total_answers": 9,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "افتعال",
+    "wrong_given": {
+      "استفعال": 3
+    },
+    "total_answers": 11,
+    "wrong_answers": 3
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "عمل",
+    "wrong_given": {
+      "عتل": 2
+    },
+    "total_answers": 48,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نفع",
+    "wrong_given": {
+      "شفع": 2
+    },
+    "total_answers": 28,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "علم",
+    "wrong_given": {
+      "علن": 1,
+      "كلم": 1
+    },
+    "total_answers": 95,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "tense",
+    "correct_value": "ماضی",
+    "wrong_given": {
+      "امر": 2
+    },
+    "total_answers": 194,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "كفر",
+    "wrong_given": {
+      "ظفر": 1,
+      "كفل": 1
+    },
+    "total_answers": 100,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "رهق",
+    "wrong_given": {
+      "رزق": 1,
+      "زهق": 1
+    },
+    "total_answers": 24,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نصح",
+    "wrong_given": {
+      "نصت": 1,
+      "نصب": 1
+    },
+    "total_answers": 9,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "number",
+    "correct_value": "تثنیہ",
+    "wrong_given": {
+      "واحد": 1,
+      "تثنیہ جمع": 1
+    },
+    "total_answers": 39,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "قرب",
+    "wrong_given": {
+      "قرف": 1,
+      "خرب": 1
+    },
+    "total_answers": 23,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "رحم",
+    "wrong_given": {
+      "قحم": 1,
+      "رجم": 1
+    },
+    "total_answers": 29,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "خرج",
+    "wrong_given": {
+      "فرج": 1,
+      "برج": 1
+    },
+    "total_answers": 128,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ذكر",
+    "wrong_given": {
+      "نكر": 1,
+      "فكر": 1
+    },
+    "total_answers": 33,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نزع",
+    "wrong_given": {
+      "نزغ": 2
+    },
+    "total_answers": 15,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "حرص",
+    "wrong_given": {
+      "خرص": 2
+    },
+    "total_answers": 22,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نقص",
+    "wrong_given": {
+      "نقض": 2
+    },
+    "total_answers": 13,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "number",
+    "correct_value": "واحد",
+    "wrong_given": {
+      "تثنیہ جمع": 1,
+      "جمع": 1
+    },
+    "total_answers": 39,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "gender",
+    "correct_value": "مذکرمونث",
+    "wrong_given": {
+      "مذکر": 1,
+      "مونث": 1
+    },
+    "total_answers": 34,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "number",
+    "correct_value": "تثنیہ جمع",
+    "wrong_given": {
+      "واحد": 2
+    },
+    "total_answers": 32,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "tense",
+    "correct_value": "نہی",
+    "wrong_given": {
+      "مضارع": 2
+    },
+    "total_answers": 26,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "number",
+    "correct_value": "جمع",
+    "wrong_given": {
+      "واحد": 1,
+      "تثنیہ": 1
+    },
+    "total_answers": 39,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "جمع",
+    "wrong_given": {
+      "جمح": 2
+    },
+    "total_answers": 3,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "tense",
+    "correct_value": "امر",
+    "wrong_given": {
+      "ماضی": 2
+    },
+    "total_answers": 32,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "gender",
+    "correct_value": "مذکر",
+    "wrong_given": {
+      "مذکرمونث": 1,
+      "مونث": 1
+    },
+    "total_answers": 55,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "ثلاثی",
+    "wrong_given": {
+      "مفاعلۃ": 1,
+      "افعال": 1
+    },
+    "total_answers": 40,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "tense",
+    "correct_value": "ماضی",
+    "wrong_given": {
+      "نہی": 1,
+      "امر": 1
+    },
+    "total_answers": 48,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "gender",
+    "correct_value": "مذکرمونث",
+    "wrong_given": {
+      "مونث": 1,
+      "مذکر": 1
+    },
+    "total_answers": 51,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "تفعیل",
+    "wrong_given": {
+      "تفعل": 1,
+      "ثلاثی": 1
+    },
+    "total_answers": 19,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "tense",
+    "correct_value": "نہی",
+    "wrong_given": {
+      "مضارع": 2
+    },
+    "total_answers": 25,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "انفعال",
+    "wrong_given": {
+      "افتعال": 2
+    },
+    "total_answers": 10,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "tense",
+    "correct_value": "مضارع",
+    "wrong_given": {
+      "ماضی": 1,
+      "امر": 1
+    },
+    "total_answers": 44,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "mood",
+    "correct_value": "مرفوع",
+    "wrong_given": {
+      "منصوب": 1,
+      "مبنی": 1
+    },
+    "total_answers": 20,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "تقم",
+    "wrong_given": {
+      "رقم": 1,
+      "تقن": 1
+    },
+    "total_answers": 3,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "noun_type",
+    "correct_value": "اسم فاعل",
+    "wrong_given": {
+      "اسم مفعول": 2
+    },
+    "total_answers": 57,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "تفعیل",
+    "wrong_given": {
+      "تفعل": 1,
+      "تفاعل": 1
+    },
+    "total_answers": 18,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "ثلاثی",
+    "wrong_given": {
+      "افعال": 2
+    },
+    "total_answers": 17,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "تفعل",
+    "wrong_given": {
+      "تفعیل": 2
+    },
+    "total_answers": 9,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "فتح",
+    "wrong_given": {
+      "نصر": 1,
+      "افعال": 1
+    },
+    "total_answers": 3,
+    "wrong_answers": 2
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "صدق",
+    "wrong_given": {
+      "صدف": 1
+    },
+    "total_answers": 29,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نصر",
+    "wrong_given": {
+      "نضر": 1
+    },
+    "total_answers": 10,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "کسب",
+    "wrong_given": {
+      "كسب": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "عبد",
+    "wrong_given": {
+      "عبر": 1
+    },
+    "total_answers": 27,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "بعث",
+    "wrong_given": {
+      "بحث": 1
+    },
+    "total_answers": 36,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "کفر",
+    "wrong_given": {
+      "كفر": 1
+    },
+    "total_answers": 2,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عمہ",
+    "wrong_given": {
+      "عمه": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فصل",
+    "wrong_given": {
+      "فشل": 1
+    },
+    "total_answers": 2,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "خلق",
+    "wrong_given": {
+      "خرق": 1
+    },
+    "total_answers": 22,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "voice",
+    "correct_value": "مجہول",
+    "wrong_given": {
+      "معروف": 1
+    },
+    "total_answers": 28,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نصر",
+    "wrong_given": {
+      "نظر": 1
+    },
+    "total_answers": 2,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "صبر",
+    "wrong_given": {
+      "صير": 1
+    },
+    "total_answers": 7,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حکم",
+    "wrong_given": {
+      "حكم": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "خشو",
+    "wrong_given": {
+      "خشع": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ظہر",
+    "wrong_given": {
+      "ظهر": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نفخ",
+    "wrong_given": {
+      "نفع": 1
+    },
+    "total_answers": 19,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نزع",
+    "wrong_given": {
+      "نزف": 1
+    },
+    "total_answers": 4,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سمع",
+    "wrong_given": {
+      "سطع": 1
+    },
+    "total_answers": 55,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "كتب",
+    "wrong_given": {
+      "كسب": 1
+    },
+    "total_answers": 57,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "قدر",
+    "wrong_given": {
+      "قدم": 1
+    },
+    "total_answers": 5,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "رفع",
+    "wrong_given": {
+      "رجع": 1
+    },
+    "total_answers": 7,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "رزق",
+    "wrong_given": {
+      "رفق": 1
+    },
+    "total_answers": 70,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "رقب",
+    "wrong_given": {
+      "ركب": 1
+    },
+    "total_answers": 15,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "جرم",
+    "wrong_given": {
+      "حرم": 1
+    },
+    "total_answers": 4,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "حزن",
+    "wrong_given": {
+      "حسن": 1
+    },
+    "total_answers": 34,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "نظر",
+    "wrong_given": {
+      "نضر": 1
+    },
+    "total_answers": 10,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "قسم",
+    "wrong_given": {
+      "قصم": 1
+    },
+    "total_answers": 5,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "قنت",
+    "wrong_given": {
+      "قنط": 1
+    },
+    "total_answers": 8,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "علم",
+    "wrong_given": {
+      "عصم": 1
+    },
+    "total_answers": 95,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "قصم",
+    "wrong_given": {
+      "قسم": 1
+    },
+    "total_answers": 4,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عزم",
+    "wrong_given": {
+      "علم": 1
+    },
+    "total_answers": 24,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سلك",
+    "wrong_given": {
+      "سلط": 1
+    },
+    "total_answers": 7,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نهر",
+    "wrong_given": {
+      "نثر": 1
+    },
+    "total_answers": 2,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نزع",
+    "wrong_given": {
+      "نزغ": 1
+    },
+    "total_answers": 4,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "قنت",
+    "wrong_given": {
+      "قنع": 1
+    },
+    "total_answers": 2,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فتن",
+    "wrong_given": {
+      "فتح": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "تبع",
+    "wrong_given": {
+      "طبع": 1
+    },
+    "total_answers": 2,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نذر",
+    "wrong_given": {
+      "نظر": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "person",
+    "correct_value": "متکلم",
+    "wrong_given": {
+      "غائب": 1
+    },
+    "total_answers": 34,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "number",
+    "correct_value": "تثنیہ",
+    "wrong_given": {
+      "تثنیہ جمع": 1
+    },
+    "total_answers": 12,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نقم",
+    "wrong_given": {
+      "نقب": 1
+    },
+    "total_answers": 5,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نظر",
+    "wrong_given": {
+      "نضر": 1
+    },
+    "total_answers": 7,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "pattern",
+    "correct_value": "مفاعلۃ",
+    "wrong_given": {
+      "افعال": 1
+    },
+    "total_answers": 13,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "فرح",
+    "wrong_given": {
+      "فرج": 1
+    },
+    "total_answers": 4,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "سلك",
+    "wrong_given": {
+      "سلم": 1
+    },
+    "total_answers": 5,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "طبع",
+    "wrong_given": {
+      "طبخ": 1
+    },
+    "total_answers": 10,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "voice",
+    "correct_value": "مجہول",
+    "wrong_given": {
+      "معروف": 1
+    },
+    "total_answers": 2,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "number",
+    "correct_value": "جمع",
+    "wrong_given": {
+      "واحد": 1
+    },
+    "total_answers": 38,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "number",
+    "correct_value": "تثنیہ",
+    "wrong_given": {
+      "واحد": 1
+    },
+    "total_answers": 22,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "كذب",
+    "wrong_given": {
+      "عذب": 1
+    },
+    "total_answers": 3,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "قبض",
+    "wrong_given": {
+      "قرض": 1
+    },
+    "total_answers": 10,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "تبذ",
+    "wrong_given": {
+      "نبذ": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "افتعال",
+    "wrong_given": {
+      "افعال": 1
+    },
+    "total_answers": 9,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "سلم",
+    "wrong_given": {
+      "سوم": 1
+    },
+    "total_answers": 8,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "definiteness",
+    "correct_value": "معرفہ",
+    "wrong_given": {
+      "نکرہ": 1
+    },
+    "total_answers": 52,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "mood",
+    "correct_value": "منصوب",
+    "wrong_given": {
+      "مبنی": 1
+    },
+    "total_answers": 13,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "تفاعل",
+    "wrong_given": {
+      "افتعال": 1
+    },
+    "total_answers": 7,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "دمر",
+    "wrong_given": {
+      "دحر": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "تبذ",
+    "wrong_given": {
+      "نبذ": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "تقم",
+    "wrong_given": {
+      "نقم": 1
+    },
+    "total_answers": 7,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "pattern",
+    "correct_value": "افتعال",
+    "wrong_given": {
+      "استفعال": 1
+    },
+    "total_answers": 11,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "صرو",
+    "wrong_given": {
+      "صرف": 1
+    },
+    "total_answers": 3,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "قرف",
+    "wrong_given": {
+      "قرن": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "ضرب",
+    "wrong_given": {
+      "افعال": 1
+    },
+    "total_answers": 3,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "سمع",
+    "wrong_given": {
+      "حسب": 1
+    },
+    "total_answers": 3,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "عذر",
+    "wrong_given": {
+      "عزر": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "فتح",
+    "wrong_given": {
+      "ثلاثی": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "نصر",
+    "wrong_given": {
+      "ثلاثی": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "عجل",
+    "wrong_given": {
+      "عتل": 1
+    },
+    "total_answers": 1,
+    "wrong_answers": 1
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "دخل",
+    "wrong_given": {},
+    "total_answers": 32,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "كشف",
+    "wrong_given": {},
+    "total_answers": 46,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "ضرب",
+    "wrong_given": {},
+    "total_answers": 11,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نكص",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "رجع",
+    "wrong_given": {},
+    "total_answers": 40,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "voice",
+    "correct_value": "معروف",
+    "wrong_given": {},
+    "total_answers": 588,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فرغ",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سقر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "کفر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "مکر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "علم",
+    "wrong_given": {},
+    "total_answers": 32,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "کسب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فرغ",
+    "wrong_given": {},
+    "total_answers": 19,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "حسب",
+    "wrong_given": {},
+    "total_answers": 8,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "ظلم",
+    "wrong_given": {},
+    "total_answers": 19,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "مرح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "لفح",
+    "wrong_given": {},
+    "total_answers": 10,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "جعل",
+    "wrong_given": {},
+    "total_answers": 57,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عقل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "غفر",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عشر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سحر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "قذف",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حفظ",
+    "wrong_given": {},
+    "total_answers": 15,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "رزق",
+    "wrong_given": {},
+    "total_answers": 10,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ركع",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حشر",
+    "wrong_given": {},
+    "total_answers": 12,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حبط",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فتر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ضرب",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "سمع",
+    "wrong_given": {},
+    "total_answers": 16,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "قبض",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ذهب",
+    "wrong_given": {},
+    "total_answers": 11,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "غرب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حلق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سبق",
+    "wrong_given": {},
+    "total_answers": 11,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عمل",
+    "wrong_given": {},
+    "total_answers": 22,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عجل",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نظر",
+    "wrong_given": {},
+    "total_answers": 12,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "بسط",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فتح",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نفخ",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "لفظ",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نصب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "خلع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "كفر",
+    "wrong_given": {},
+    "total_answers": 11,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "رجع",
+    "wrong_given": {},
+    "total_answers": 8,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حزن",
+    "wrong_given": {},
+    "total_answers": 37,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "شهد",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ذهب",
+    "wrong_given": {},
+    "total_answers": 9,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "قنط",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "صدق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "حصر",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ظلم",
+    "wrong_given": {},
+    "total_answers": 49,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عجب",
+    "wrong_given": {},
+    "total_answers": 20,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ظهر",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "خسر",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "سخر",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "عبث",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ملك",
+    "wrong_given": {},
+    "total_answers": 26,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "حشر",
+    "wrong_given": {},
+    "total_answers": 38,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "كفر",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نبذ",
+    "wrong_given": {},
+    "total_answers": 14,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نصر",
+    "wrong_given": {},
+    "total_answers": 8,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ثقل",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "رفع",
+    "wrong_given": {},
+    "total_answers": 32,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "مرض",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عمل",
+    "wrong_given": {},
+    "total_answers": 11,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حسب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حمل",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فرض",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نفع",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "رحم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "طمع",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "رحم",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "سلك",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "رغب",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عبد",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فسد",
+    "wrong_given": {},
+    "total_answers": 20,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "سخر",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "سمع",
+    "wrong_given": {},
+    "total_answers": 21,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "كسب",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "حسب",
+    "wrong_given": {},
+    "total_answers": 29,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ترك",
+    "wrong_given": {},
+    "total_answers": 123,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ترك",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حكم",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "شعر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فقه",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فرح",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نطق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "جهر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "خلط",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حذر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فرق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ضرب",
+    "wrong_given": {},
+    "total_answers": 25,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عزم",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "قدر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "بخل",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "لعن",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "مكر",
+    "wrong_given": {},
+    "total_answers": 9,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "كسب",
+    "wrong_given": {},
+    "total_answers": 10,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "كره",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "صبر",
+    "wrong_given": {},
+    "total_answers": 14,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "بصر",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نظر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سلف",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "كتب",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "لبس",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "حفظ",
+    "wrong_given": {},
+    "total_answers": 31,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "خدع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "عقل",
+    "wrong_given": {},
+    "total_answers": 21,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فعل",
+    "wrong_given": {},
+    "total_answers": 10,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "دخل",
+    "wrong_given": {},
+    "total_answers": 10,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "سكن",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "خرج",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "قرب",
+    "wrong_given": {},
+    "total_answers": 23,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ذكر",
+    "wrong_given": {},
+    "total_answers": 19,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "لعن",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "ملك",
+    "wrong_given": {},
+    "total_answers": 19,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "جعل",
+    "wrong_given": {},
+    "total_answers": 23,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "كسب",
+    "wrong_given": {},
+    "total_answers": 12,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "خطف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "بخس",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "دخل",
+    "wrong_given": {},
+    "total_answers": 29,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عرض",
+    "wrong_given": {},
+    "total_answers": 13,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "شهد",
+    "wrong_given": {},
+    "total_answers": 15,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "جلد",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ظلم",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "مكث",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فرح",
+    "wrong_given": {},
+    "total_answers": 9,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "خلط",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "تبع",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فرق",
+    "wrong_given": {},
+    "total_answers": 12,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "صرف",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "غتب",
+    "wrong_given": {},
+    "total_answers": 11,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "صلح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "قعد",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "فرح",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "ذكر",
+    "wrong_given": {},
+    "total_answers": 29,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "ذهب",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "رغب",
+    "wrong_given": {},
+    "total_answers": 19,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "طبع",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "بخل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "جمع",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "عجل",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "بطن",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نشر",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فتح",
+    "wrong_given": {},
+    "total_answers": 15,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ضحك",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "ظلم",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "سخر",
+    "wrong_given": {},
+    "total_answers": 12,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "قذف",
+    "wrong_given": {},
+    "total_answers": 16,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "سمع",
+    "wrong_given": {},
+    "total_answers": 18,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "ركع",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "بلع",
+    "wrong_given": {},
+    "total_answers": 9,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عدد",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "شرب",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "بخس",
+    "wrong_given": {},
+    "total_answers": 8,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ختم",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "بسر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "شرب",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "سلك",
+    "wrong_given": {},
+    "total_answers": 10,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "هبط",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نزل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "حبط",
+    "wrong_given": {},
+    "total_answers": 9,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عزل",
+    "wrong_given": {},
+    "total_answers": 23,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "نفر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "صبر",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "حمل",
+    "wrong_given": {},
+    "total_answers": 23,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "قعد",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عدل",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "رقب",
+    "wrong_given": {},
+    "total_answers": 8,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "كبر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "سجد",
+    "wrong_given": {},
+    "total_answers": 9,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "جعل",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "فرج",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "حلق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "جهر",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "خسف",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "جحد",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حلف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فطر",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "سجد",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "قطع",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ملك",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "بلغ",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عتل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "حكم",
+    "wrong_given": {},
+    "total_answers": 21,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ربط",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نقص",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "status",
+    "correct_value": "مثبت",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "بعث",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "طعن",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "سلخ",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "منع",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "درس",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "رهق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فرض",
+    "wrong_given": {},
+    "total_answers": 8,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "بلع",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "شرح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "عمل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "فتح",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "علم",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "بعث",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "رجع",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "ضرب",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "خفض",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "عبد",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "فرق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "غلظ",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "هجر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "خرج",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "طرح",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "درس",
+    "wrong_given": {},
+    "total_answers": 26,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نبذ",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "كتب",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "رزق",
+    "wrong_given": {},
+    "total_answers": 20,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "برز",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نتق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "رجع",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نسف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "فعل",
+    "wrong_given": {},
+    "total_answers": 17,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "غفر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سخر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "بطش",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "فقد",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فرش",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "خطف",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نحت",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "قبل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "حنث",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "صدف",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "قتل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "كثر",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "لبس",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نحر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "حشر",
+    "wrong_given": {},
+    "total_answers": 12,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "نهر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نفش",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "لبث",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "حمل",
+    "wrong_given": {},
+    "total_answers": 16,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "عرض",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "ضحك",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "تبع",
+    "wrong_given": {},
+    "total_answers": 8,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نفخ",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نسل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "طلع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "عرج",
+    "wrong_given": {},
+    "total_answers": 9,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "حضر",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "رجم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "لعب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "لفح",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "غلب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "ركب",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "كشف",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "سبق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "كفل",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "رفع",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عصر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "غضب",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سجد",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "شعر",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "خرج",
+    "wrong_given": {},
+    "total_answers": 8,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "سلخ",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "صرف",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "طلع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نعق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "طمس",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "صلح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "لعن",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "ذكر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "زلف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "نقذ",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "بطل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "tense",
+    "correct_value": "مضارع",
+    "wrong_given": {},
+    "total_answers": 34,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "فصل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "تثر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "طهر",
+    "wrong_given": {},
+    "total_answers": 10,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "قلب",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "كتم",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "ذهب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "خلق",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "صدف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نطق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "حلف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "جحد",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "قذف",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "خلف",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "خلف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "قتل",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "عذب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "خرج",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "عمد",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "بشر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "درج",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "بسط",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "كبت",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "رجم",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "قتل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "خلف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "حسن",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فسق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عبد",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "جنح",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عجل",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نصب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "قدر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "فتن",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "جهل",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "صنع",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "بعث",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "غفر",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "فقه",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "شهد",
+    "wrong_given": {},
+    "total_answers": 9,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نكس",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "فسد",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "سبح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "ختم",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "number",
+    "correct_value": "واحد",
+    "wrong_given": {},
+    "total_answers": 48,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "voice",
+    "correct_value": "معروف",
+    "wrong_given": {},
+    "total_answers": 142,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "نظر",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سقط",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "تبع",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "قذف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "person",
+    "correct_value": "متکلم",
+    "wrong_given": {},
+    "total_answers": 46,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "number",
+    "correct_value": "تثنیہ جمع",
+    "wrong_given": {},
+    "total_answers": 41,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "حرم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "عتد",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "لمس",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "قلع",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نفش",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ذهل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "كذب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "استفعال",
+    "wrong_given": {},
+    "total_answers": 18,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "عجل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "طلق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "غفر",
+    "wrong_given": {},
+    "total_answers": 11,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "عبد",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "سكن",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "كفر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "خسر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "صفح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "سفك",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "حذر",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "غرب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نفد",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "مسخ",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "حزن",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "حرف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "كرم",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "pattern",
+    "correct_value": "تفاعل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "شبه",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "مفاعلۃ",
+    "wrong_given": {},
+    "total_answers": 9,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "سرع",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "voice",
+    "correct_value": "مجہول",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "غشي",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "فطر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "طهر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نقض",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "gender",
+    "correct_value": "مذکر",
+    "wrong_given": {},
+    "total_answers": 62,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "number",
+    "correct_value": "واحد",
+    "wrong_given": {},
+    "total_answers": 45,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "case",
+    "correct_value": "مرفوع",
+    "wrong_given": {},
+    "total_answers": 36,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "سطر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "gender",
+    "correct_value": "مونث",
+    "wrong_given": {},
+    "total_answers": 50,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "قدس",
+    "wrong_given": {},
+    "total_answers": 9,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "number",
+    "correct_value": "جمع",
+    "wrong_given": {},
+    "total_answers": 44,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "سفح",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "حكم",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "حفظ",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "شرب",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "بسط",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "نعم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "ذكر",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "خرج",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "فصل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "حصن",
+    "wrong_given": {},
+    "total_answers": 10,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "لعن",
+    "wrong_given": {},
+    "total_answers": 6,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "تبع",
+    "wrong_given": {},
+    "total_answers": 7,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "استفعال",
+    "wrong_given": {},
+    "total_answers": 8,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "بشر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "قرب",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "دخل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نحت",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "عرف",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "عجب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "فرط",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "ظلم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "ثقل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "سمع",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "نزل",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "عذب",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "غفر",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "فشل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "نقم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "سخر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "فرق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "حمل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "حذر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "سلخ",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "نقذ",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "فسد",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "سطع",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "نفق",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "حرم",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "صلح",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "رسل",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "رفق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "ركم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "عصر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "كمل",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "انفعال",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "قلب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "برق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "بشر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "شفق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "ضعف",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "حزن",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "عبر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "خطف",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "خلف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "برج",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "صرف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "سجب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "صعر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "تفاعل",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "شبه",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "ذهب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "كرم",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عقد",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ضعف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "سبق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "كبر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "رضع",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "هجر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "ربص",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "طلق",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "قطع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "سرع",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "لفت",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "نزل",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "جدل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "متع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "كسب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "نذر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "كهن",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "خلد",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "قصد",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "قرب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "نفر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "ضعف",
+    "wrong_given": {},
+    "total_answers": 5,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "خنق",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "سحر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "خلف",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "جعل",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "مطر",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "جلد",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "شهد",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "صدق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "اخذ",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "ربح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "قعد",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "لفت",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "رسل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "صلح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "كلم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "ظلم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "رضع",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "رجف",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "قطع",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "جنب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "كلف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "شمل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "قتل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "خلص",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "هجر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ختم",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "بلع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "هلك",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "غدر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "نذر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "رغب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "رقب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "سقط",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "كبر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "صنع",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "رفث",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "حبر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "لعب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "مسح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نقم",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "حصب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "ربص",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "مرد",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "نكح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "عمل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "حكم",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "كره",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "جنب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "شفق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "لقف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "برك",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "حكم",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "قدم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "كره",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "قبل",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "شكر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "زرع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نفع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "نفر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "طبع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ظهر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "كتم",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "عزل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "غلب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "combined_100",
+    "dim": "root",
+    "correct_value": "ربط",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "نصر",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "فسق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "طهر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "عرف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "حفظ",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "هلك",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "فكر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "بدل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "نذر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "فرق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "برج",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "سقط",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "فكر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "برك",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "قبس",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "فتح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "حظر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "pattern",
+    "correct_value": "ضرب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "mood_100",
+    "dim": "root",
+    "correct_value": "حمل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "طعم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "عزب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "سبق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "كذب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "فكه",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "pattern",
+    "correct_value": "تفعل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "دخل",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "حسب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "غفر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "عزم",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فرج",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "كذب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "خلص",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "شغف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "شرب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "غلب",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "فزع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "نذر",
+    "wrong_given": {},
+    "total_answers": 3,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عبس",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "خرق",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "رسل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "سطع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "شرك",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "شمت",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "صرف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "سرف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "ظهر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "سجب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "قدس",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "كبر",
+    "wrong_given": {},
+    "total_answers": 4,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "بسط",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "مكر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "نكر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "رغب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "غرب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "شمل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "خفت",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "derived_100",
+    "dim": "root",
+    "correct_value": "نزع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "زهق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "عرف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نقض",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "ركن",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "فصل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "شفع",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "ذبح",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "شخص",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "عدل",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "سجد",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "بلغ",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "نصح",
+    "wrong_given": {},
+    "total_answers": 2,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "كشف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "كنز",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "present_100",
+    "dim": "root",
+    "correct_value": "صبر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سفه",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "past_100",
+    "dim": "root",
+    "correct_value": "سرق",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "cmd_nahi_75",
+    "dim": "root",
+    "correct_value": "فتر",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "كشف",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  },
+  {
+    "level_code": "ism_100",
+    "dim": "root",
+    "correct_value": "حسب",
+    "wrong_given": {},
+    "total_answers": 1,
+    "wrong_answers": 0
+  }
+]

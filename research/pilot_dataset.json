@@ -1,0 +1,845 @@
+[
+  {
+    "dim": "gender",
+    "correct_value": "مونث",
+    "given_value": "مذکر",
+    "occurrences_in_sample": 38,
+    "matched_word": "لَفَسَدَتَا",
+    "verse": "لَوۡ کَانَ فِیۡہِمَاۤ اٰلِہَۃٌ اِلَّا اللّٰہُ لَفَسَدَتَا ۚ فَسُبۡحٰنَ اللّٰہِ رَبِّ الۡعَرۡشِ عَمَّا یَصِفُوۡنَ ﴿۲۲﴾",
+    "ref": "Al-Anbiyaa 21:22",
+    "root": "فسد",
+    "full_correct_answer": {
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "تثنیہ",
+      "voice": "معروف",
+      "root": "فسد",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "voice": "معروف",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "غائب",
+      "root": "فسد",
+      "status": "مثبت"
+    }
+  },
+  {
+    "dim": "number",
+    "correct_value": "تثنیہ",
+    "given_value": "واحد",
+    "occurrences_in_sample": 5,
+    "matched_word": "لَفَسَدَتَا",
+    "verse": "لَوۡ کَانَ فِیۡہِمَاۤ اٰلِہَۃٌ اِلَّا اللّٰہُ لَفَسَدَتَا ۚ فَسُبۡحٰنَ اللّٰہِ رَبِّ الۡعَرۡشِ عَمَّا یَصِفُوۡنَ ﴿۲۲﴾",
+    "ref": "Al-Anbiyaa 21:22",
+    "root": "فسد",
+    "full_correct_answer": {
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "تثنیہ",
+      "voice": "معروف",
+      "root": "فسد",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "voice": "معروف",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "غائب",
+      "root": "فسد",
+      "status": "مثبت"
+    }
+  },
+  {
+    "dim": "tense",
+    "correct_value": "مضارع",
+    "given_value": "ماضی",
+    "occurrences_in_sample": 3,
+    "matched_word": "تَفۡشَلَا",
+    "verse": "اِذۡ ہَمَّتۡ طَّآئِفَتٰنِ مِنۡکُمۡ اَنۡ تَفۡشَلَا ۙ وَ اللّٰہُ وَلِیُّہُمَا ؕ وَ عَلَی اللّٰہِ فَلۡیَتَوَکَّلِ الۡمُؤۡمِنُوۡنَ ﴿۱۲۲﴾",
+    "ref": "Al-i'Imran 3:122",
+    "root": "فشل",
+    "full_correct_answer": {
+      "tense": "مضارع",
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "تثنیہ",
+      "voice": "معروف",
+      "mood": "منصوب",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "فشل",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "tense": "ماضی",
+      "voice": "معروف",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "غائب",
+      "mood": "مبنی",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "فتل",
+      "status": "مثبت"
+    }
+  },
+  {
+    "dim": "mood",
+    "correct_value": "منصوب",
+    "given_value": "مبنی",
+    "occurrences_in_sample": 1,
+    "matched_word": "تَفۡشَلَا",
+    "verse": "اِذۡ ہَمَّتۡ طَّآئِفَتٰنِ مِنۡکُمۡ اَنۡ تَفۡشَلَا ۙ وَ اللّٰہُ وَلِیُّہُمَا ؕ وَ عَلَی اللّٰہِ فَلۡیَتَوَکَّلِ الۡمُؤۡمِنُوۡنَ ﴿۱۲۲﴾",
+    "ref": "Al-i'Imran 3:122",
+    "root": "فشل",
+    "full_correct_answer": {
+      "tense": "مضارع",
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "تثنیہ",
+      "voice": "معروف",
+      "mood": "منصوب",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "فشل",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "tense": "ماضی",
+      "voice": "معروف",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "غائب",
+      "mood": "مبنی",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "فتل",
+      "status": "مثبت"
+    }
+  },
+  {
+    "dim": "root",
+    "correct_value": "فشل",
+    "given_value": "فتل",
+    "occurrences_in_sample": 1,
+    "matched_word": "تَفۡشَلَا",
+    "verse": "اِذۡ ہَمَّتۡ طَّآئِفَتٰنِ مِنۡکُمۡ اَنۡ تَفۡشَلَا ۙ وَ اللّٰہُ وَلِیُّہُمَا ؕ وَ عَلَی اللّٰہِ فَلۡیَتَوَکَّلِ الۡمُؤۡمِنُوۡنَ ﴿۱۲۲﴾",
+    "ref": "Al-i'Imran 3:122",
+    "root": "فشل",
+    "full_correct_answer": {
+      "tense": "مضارع",
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "تثنیہ",
+      "voice": "معروف",
+      "mood": "منصوب",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "فشل",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "tense": "ماضی",
+      "voice": "معروف",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "غائب",
+      "mood": "مبنی",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "فتل",
+      "status": "مثبت"
+    }
+  },
+  {
+    "dim": "person",
+    "correct_value": "غائب",
+    "given_value": "حاضر",
+    "occurrences_in_sample": 56,
+    "matched_word": "لَفَسَدَتَا",
+    "verse": "لَوۡ کَانَ فِیۡہِمَاۤ اٰلِہَۃٌ اِلَّا اللّٰہُ لَفَسَدَتَا ۚ فَسُبۡحٰنَ اللّٰہِ رَبِّ الۡعَرۡشِ عَمَّا یَصِفُوۡنَ ﴿۲۲﴾",
+    "ref": "Al-Anbiyaa 21:22",
+    "root": "فسد",
+    "full_correct_answer": {
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "تثنیہ",
+      "voice": "معروف",
+      "root": "فسد"
+    },
+    "full_given_answer": {
+      "voice": "معروف",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "حاضر",
+      "root": "فسد"
+    }
+  },
+  {
+    "dim": "voice",
+    "correct_value": "معروف",
+    "given_value": "مجہول",
+    "occurrences_in_sample": 25,
+    "matched_word": "حَسِبَ",
+    "verse": "اَمۡ حَسِبَ الَّذِیۡنَ اجۡتَرَحُوا السَّیِّاٰتِ اَنۡ نَّجۡعَلَہُمۡ کَالَّذِیۡنَ اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ ۙ سَوَآءً مَّحۡیَاہُمۡ وَ مَمَاتُہُمۡ ؕ سَآءَ مَا یَحۡکُمُوۡنَ ﴿٪۲۱﴾",
+    "ref": "Al-Jathiya 45:21",
+    "root": "حسب",
+    "full_correct_answer": {
+      "person": "غائب",
+      "gender": "مذکر",
+      "number": "واحد",
+      "voice": "معروف",
+      "root": "حسب"
+    },
+    "full_given_answer": {
+      "voice": "مجہول",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "غائب",
+      "root": "حسب"
+    }
+  },
+  {
+    "dim": "pattern",
+    "correct_value": "نصر",
+    "given_value": "ثلاثی",
+    "occurrences_in_sample": 1,
+    "matched_word": "یَبۡسُطُ",
+    "verse": "اِنَّ رَبَّکَ یَبۡسُطُ الرِّزۡقَ لِمَنۡ یَّشَآءُ وَ یَقۡدِرُ ؕ اِنَّہٗ کَانَ بِعِبَادِہٖ خَبِیۡرًۢا بَصِیۡرًا ﴿٪۳۰﴾",
+    "ref": "Al-Israa 17:30",
+    "root": "بسط",
+    "full_correct_answer": {
+      "tense": "مضارع",
+      "person": "غائب",
+      "gender": "مذکر",
+      "number": "واحد",
+      "voice": "معروف",
+      "mood": "مرفوع",
+      "pattern": "نصر",
+      "root": "بسط"
+    },
+    "full_given_answer": {
+      "tense": "مضارع",
+      "voice": "معروف",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "غائب",
+      "pattern": "ثلاثی",
+      "mood": "مرفوع",
+      "root": "بسط"
+    }
+  },
+  {
+    "dim": "seven_types",
+    "correct_value": "صحیح",
+    "given_value": "مہموز العین",
+    "occurrences_in_sample": 1,
+    "matched_word": "تُحۡشَرُوۡنَ",
+    "verse": "وَ اَنۡ اَقِیۡمُوا الصَّلٰوۃَ وَ اتَّقُوۡہُ ؕ وَ ہُوَ الَّذِیۡۤ اِلَیۡہِ تُحۡشَرُوۡنَ ﴿۷۲﴾",
+    "ref": "Al-An'am 6:72",
+    "root": "حشر",
+    "full_correct_answer": {
+      "tense": "مضارع",
+      "person": "حاضر",
+      "gender": "مذکر",
+      "number": "جمع",
+      "voice": "مجہول",
+      "mood": "مرفوع",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "حشر",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "tense": "ماضی",
+      "voice": "معروف",
+      "status": "منفی",
+      "seven_types": "مہموز العین",
+      "pattern": "تفعل",
+      "mood": "مبنی",
+      "person": "غائب",
+      "gender": "مذکر",
+      "number": "واحد",
+      "root": "بشر"
+    }
+  },
+  {
+    "dim": "noun_type",
+    "correct_value": "اسم مفعول",
+    "given_value": "اسم فاعل",
+    "occurrences_in_sample": 3,
+    "matched_word": "الۡمُحۡصَنٰتِ",
+    "verse": "وَ الَّذِیۡنَ یَرۡمُوۡنَ الۡمُحۡصَنٰتِ ثُمَّ لَمۡ یَاۡتُوۡا بِاَرۡبَعَۃِ شُہَدَآءَ فَاجۡلِدُوۡہُمۡ ثَمٰنِیۡنَ جَلۡدَۃً وَّ لَا تَقۡبَلُوۡا لَہُمۡ شَہَادَۃً اَبَدًا ۚ وَ اُولٰٓئِکَ ہُمُ الۡفٰسِقُوۡنَ ۙ﴿۴﴾",
+    "ref": "An-Nur 24:4",
+    "root": "حصن",
+    "full_correct_answer": {
+      "noun_type": "اسم مفعول",
+      "definiteness": "معرفہ",
+      "gender": "مونث",
+      "number": "جمع",
+      "case": "منصوب",
+      "pattern": "افعال",
+      "root": "حصن"
+    },
+    "full_given_answer": {
+      "root": "حصن",
+      "pattern": "ثلاثی",
+      "number": "جمع",
+      "gender": "مونث",
+      "definiteness": "نکرہ",
+      "noun_type": "اسم فاعل",
+      "case": "مجرور"
+    }
+  },
+  {
+    "dim": "definiteness",
+    "correct_value": "معرفہ",
+    "given_value": "نکرہ",
+    "occurrences_in_sample": 1,
+    "matched_word": "الۡمُحۡصَنٰتِ",
+    "verse": "وَ الَّذِیۡنَ یَرۡمُوۡنَ الۡمُحۡصَنٰتِ ثُمَّ لَمۡ یَاۡتُوۡا بِاَرۡبَعَۃِ شُہَدَآءَ فَاجۡلِدُوۡہُمۡ ثَمٰنِیۡنَ جَلۡدَۃً وَّ لَا تَقۡبَلُوۡا لَہُمۡ شَہَادَۃً اَبَدًا ۚ وَ اُولٰٓئِکَ ہُمُ الۡفٰسِقُوۡنَ ۙ﴿۴﴾",
+    "ref": "An-Nur 24:4",
+    "root": "حصن",
+    "full_correct_answer": {
+      "noun_type": "اسم مفعول",
+      "definiteness": "معرفہ",
+      "gender": "مونث",
+      "number": "جمع",
+      "case": "منصوب",
+      "pattern": "افعال",
+      "root": "حصن"
+    },
+    "full_given_answer": {
+      "root": "حصن",
+      "pattern": "ثلاثی",
+      "number": "جمع",
+      "gender": "مونث",
+      "definiteness": "نکرہ",
+      "noun_type": "اسم فاعل",
+      "case": "مجرور"
+    }
+  },
+  {
+    "dim": "case",
+    "correct_value": "منصوب",
+    "given_value": "مجرور",
+    "occurrences_in_sample": 2,
+    "matched_word": "الۡمُحۡصَنٰتِ",
+    "verse": "وَ الَّذِیۡنَ یَرۡمُوۡنَ الۡمُحۡصَنٰتِ ثُمَّ لَمۡ یَاۡتُوۡا بِاَرۡبَعَۃِ شُہَدَآءَ فَاجۡلِدُوۡہُمۡ ثَمٰنِیۡنَ جَلۡدَۃً وَّ لَا تَقۡبَلُوۡا لَہُمۡ شَہَادَۃً اَبَدًا ۚ وَ اُولٰٓئِکَ ہُمُ الۡفٰسِقُوۡنَ ۙ﴿۴﴾",
+    "ref": "An-Nur 24:4",
+    "root": "حصن",
+    "full_correct_answer": {
+      "noun_type": "اسم مفعول",
+      "definiteness": "معرفہ",
+      "gender": "مونث",
+      "number": "جمع",
+      "case": "منصوب",
+      "pattern": "افعال",
+      "root": "حصن"
+    },
+    "full_given_answer": {
+      "root": "حصن",
+      "pattern": "ثلاثی",
+      "number": "جمع",
+      "gender": "مونث",
+      "definiteness": "نکرہ",
+      "noun_type": "اسم فاعل",
+      "case": "مجرور"
+    }
+  },
+  {
+    "dim": "gender",
+    "correct_value": "مونث",
+    "given_value": "مذکرمونث",
+    "occurrences_in_sample": 10,
+    "matched_word": "لَفَسَدَتَا",
+    "verse": "لَوۡ کَانَ فِیۡہِمَاۤ اٰلِہَۃٌ اِلَّا اللّٰہُ لَفَسَدَتَا ۚ فَسُبۡحٰنَ اللّٰہِ رَبِّ الۡعَرۡشِ عَمَّا یَصِفُوۡنَ ﴿۲۲﴾",
+    "ref": "Al-Anbiyaa 21:22",
+    "root": "فسد",
+    "full_correct_answer": {
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "تثنیہ",
+      "voice": "معروف",
+      "root": "فسد"
+    },
+    "full_given_answer": {
+      "voice": "معروف",
+      "number": "تثنیہ جمع",
+      "gender": "مذکرمونث",
+      "person": "حاضر",
+      "root": "فسد"
+    }
+  },
+  {
+    "dim": "number",
+    "correct_value": "تثنیہ جمع",
+    "given_value": "جمع",
+    "occurrences_in_sample": 42,
+    "matched_word": "قُتِلۡنَا",
+    "verse": "ثُمَّ اَنۡزَلَ عَلَیۡکُمۡ مِّنۡۢ بَعۡدِ الۡغَمِّ اَمَنَۃً نُّعَاسًا یَّغۡشٰی طَآئِفَۃً مِّنۡکُمۡ ۙ وَ طَآئِفَۃٌ قَدۡ اَہَمَّتۡہُمۡ اَنۡفُسُہُمۡ یَظُنُّوۡنَ بِاللّٰہِ غَیۡرَ الۡحَقِّ ظَنَّ الۡجَاہِلِیَّۃِ ؕ یَقُوۡلُوۡنَ ہَلۡ لَّنَا مِنَ الۡاَمۡرِ مِنۡ شَیۡءٍ ؕ قُلۡ اِنَّ الۡاَمۡرَ کُلَّہٗ لِلّٰہِ ؕ یُخۡفُوۡنَ فِیۡۤ اَنۡفُسِہِمۡ مَّا لَا یُبۡدُوۡنَ لَکَ ؕ یَقُوۡلُوۡنَ لَوۡ کَانَ لَنَا مِنَ الۡاَمۡرِ شَیۡءٌ مَّا قُتِلۡنَا ہٰہُنَا ؕ قُلۡ لَّوۡ کُنۡتُمۡ فِیۡ بُیُوۡتِکُمۡ لَبَرَزَ الَّذِیۡنَ کُتِبَ عَلَیۡہِمُ الۡقَتۡلُ اِلٰی مَضَاجِعِہِمۡ ۚ وَ لِیَبۡتَلِیَ اللّٰہُ مَا فِیۡ صُدُوۡرِکُمۡ وَ لِیُمَحِّصَ مَا فِیۡ قُلُوۡبِکُمۡ ؕ وَ اللّٰہُ عَلِیۡمٌۢ بِذَاتِ الصُّدُوۡرِ ﴿۱۵۴﴾",
+    "ref": "Al-i'Imran 3:154",
+    "root": "قتل",
+    "full_correct_answer": {
+      "person": "متکلم",
+      "gender": "مذکرمونث",
+      "number": "تثنیہ جمع",
+      "voice": "مجہول",
+      "root": "قتل",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "voice": "مجہول",
+      "number": "جمع",
+      "gender": "مذکرمونث",
+      "person": "متکلم",
+      "root": "قتل",
+      "status": "منفی"
+    }
+  },
+  {
+    "dim": "tense",
+    "correct_value": "نہی",
+    "given_value": "مضارع",
+    "occurrences_in_sample": 10,
+    "matched_word": "لَا یَخۡشَوۡنَ",
+    "verse": "الَّذِیۡنَ یُبَلِّغُوۡنَ رِسٰلٰتِ اللّٰہِ وَ یَخۡشَوۡنَہٗ وَ لَا یَخۡشَوۡنَ اَحَدًا اِلَّا اللّٰہَ ؕ وَ کَفٰی بِاللّٰہِ حَسِیۡبًا ﴿۳۹﴾",
+    "ref": "Al-Ahzab 33:39",
+    "root": "خشو",
+    "full_correct_answer": {
+      "tense": "نہی",
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "جمع",
+      "voice": "معروف",
+      "root": "خشو"
+    },
+    "full_given_answer": {
+      "tense": "مضارع",
+      "voice": "معروف",
+      "number": "جمع",
+      "gender": "مذکر",
+      "person": "غائب",
+      "root": "خشع"
+    }
+  },
+  {
+    "dim": "mood",
+    "correct_value": "مبنی",
+    "given_value": "منصوب",
+    "occurrences_in_sample": 1,
+    "matched_word": "انۡفِرُوۡا",
+    "verse": "یٰۤاَیُّہَا الَّذِیۡنَ اٰمَنُوۡا مَا لَکُمۡ اِذَا قِیۡلَ لَکُمُ انۡفِرُوۡا فِیۡ سَبِیۡلِ اللّٰہِ اثَّاقَلۡتُمۡ اِلَی الۡاَرۡضِ ؕ اَرَضِیۡتُمۡ بِالۡحَیٰوۃِ الدُّنۡیَا مِنَ الۡاٰخِرَۃِ ۚ فَمَا مَتَاعُ الۡحَیٰوۃِ الدُّنۡیَا فِی الۡاٰخِرَۃِ اِلَّا قَلِیۡلٌ ﴿۳۸﴾",
+    "ref": "At-Tauba 9:38",
+    "root": "نفر",
+    "full_correct_answer": {
+      "tense": "امر",
+      "person": "حاضر",
+      "gender": "مذکر",
+      "number": "جمع",
+      "voice": "معروف",
+      "mood": "مبنی",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "نفر",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "tense": "امر",
+      "voice": "مجہول",
+      "noun_type": "اسم فاعل",
+      "definiteness": "نکرہ",
+      "number": "جمع",
+      "gender": "مذکر",
+      "person": "غائب",
+      "mood": "منصوب",
+      "case": "منصوب",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "نفر",
+      "status": "مثبت"
+    }
+  },
+  {
+    "dim": "root",
+    "correct_value": "كفر",
+    "given_value": "كفل",
+    "occurrences_in_sample": 1,
+    "matched_word": "کَفَرُوۡا",
+    "verse": "یٰۤاَیُّہَا النَّبِیُّ حَرِّضِ الۡمُؤۡمِنِیۡنَ عَلَی الۡقِتَالِ ؕ اِنۡ یَّکُنۡ مِّنۡکُمۡ عِشۡرُوۡنَ صٰبِرُوۡنَ یَغۡلِبُوۡا مِائَتَیۡنِ ۚ وَ اِنۡ یَّکُنۡ مِّنۡکُمۡ مِّائَۃٌ یَّغۡلِبُوۡۤا اَلۡفًا مِّنَ الَّذِیۡنَ کَفَرُوۡا بِاَنَّہُمۡ قَوۡمٌ لَّا یَفۡقَہُوۡنَ ﴿۶۵﴾",
+    "ref": "Al-Anfal 8:65",
+    "root": "كفر",
+    "full_correct_answer": {
+      "person": "غائب",
+      "gender": "مذکر",
+      "number": "جمع",
+      "voice": "معروف",
+      "root": "كفر"
+    },
+    "full_given_answer": {
+      "voice": "مجہول",
+      "number": "تثنیہ",
+      "gender": "مونث",
+      "person": "حاضر",
+      "root": "كفل"
+    }
+  },
+  {
+    "dim": "person",
+    "correct_value": "غائب",
+    "given_value": "متکلم",
+    "occurrences_in_sample": 12,
+    "matched_word": "لَفَسَدَتَا",
+    "verse": "لَوۡ کَانَ فِیۡہِمَاۤ اٰلِہَۃٌ اِلَّا اللّٰہُ لَفَسَدَتَا ۚ فَسُبۡحٰنَ اللّٰہِ رَبِّ الۡعَرۡشِ عَمَّا یَصِفُوۡنَ ﴿۲۲﴾",
+    "ref": "Al-Anbiyaa 21:22",
+    "root": "فسد",
+    "full_correct_answer": {
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "تثنیہ",
+      "voice": "معروف",
+      "root": "فسد"
+    },
+    "full_given_answer": {
+      "voice": "معروف",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "متکلم",
+      "root": "فسد"
+    }
+  },
+  {
+    "dim": "voice",
+    "correct_value": "مجہول",
+    "given_value": "معروف",
+    "occurrences_in_sample": 8,
+    "matched_word": "تُرۡجَعُ",
+    "verse": "وَ لِلّٰہِ مَا فِی السَّمٰوٰتِ وَ مَا فِی الۡاَرۡضِ ؕ وَ اِلَی اللّٰہِ تُرۡجَعُ الۡاُمُوۡرُ ﴿۱۰۹﴾٪",
+    "ref": "Al-i'Imran 3:109",
+    "root": "رجع",
+    "full_correct_answer": {
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "واحد",
+      "voice": "مجہول",
+      "root": "رجع"
+    },
+    "full_given_answer": {
+      "voice": "معروف",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "حاضر",
+      "root": "رجع"
+    }
+  },
+  {
+    "dim": "pattern",
+    "correct_value": "ثلاثی",
+    "given_value": "تفعل",
+    "occurrences_in_sample": 2,
+    "matched_word": "تُحۡشَرُوۡنَ",
+    "verse": "وَ اَنۡ اَقِیۡمُوا الصَّلٰوۃَ وَ اتَّقُوۡہُ ؕ وَ ہُوَ الَّذِیۡۤ اِلَیۡہِ تُحۡشَرُوۡنَ ﴿۷۲﴾",
+    "ref": "Al-An'am 6:72",
+    "root": "حشر",
+    "full_correct_answer": {
+      "tense": "مضارع",
+      "person": "حاضر",
+      "gender": "مذکر",
+      "number": "جمع",
+      "voice": "مجہول",
+      "mood": "مرفوع",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "حشر",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "tense": "ماضی",
+      "voice": "معروف",
+      "status": "منفی",
+      "seven_types": "مہموز العین",
+      "pattern": "تفعل",
+      "mood": "مبنی",
+      "person": "غائب",
+      "gender": "مذکر",
+      "number": "واحد",
+      "root": "بشر"
+    }
+  },
+  {
+    "dim": "seven_types",
+    "correct_value": "صحیح",
+    "given_value": "اجوف واوی",
+    "occurrences_in_sample": 1,
+    "matched_word": "خَرَجۡتَ",
+    "verse": "وَ مِنۡ حَیۡثُ خَرَجۡتَ فَوَلِّ وَجۡہَکَ شَطۡرَ الۡمَسۡجِدِ الۡحَرَامِ ؕ وَ اِنَّہٗ لَلۡحَقُّ مِنۡ رَّبِّکَ ؕ وَ مَا اللّٰہُ بِغَافِلٍ عَمَّا تَعۡمَلُوۡنَ ﴿۱۴۹﴾",
+    "ref": "Al-Baqara 2:149",
+    "root": "خرج",
+    "full_correct_answer": {
+      "tense": "ماضی",
+      "person": "حاضر",
+      "gender": "مذکر",
+      "number": "واحد",
+      "voice": "معروف",
+      "mood": "مبنی",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "خرج",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "root": "خرب",
+      "seven_types": "اجوف واوی",
+      "pattern": "انفعال",
+      "mood": "مرفوع",
+      "person": "متکلم",
+      "gender": "مونث",
+      "number": "تثنیہ جمع",
+      "voice": "مجہول",
+      "tense": "نہی",
+      "status": "منفی"
+    }
+  },
+  {
+    "dim": "noun_type",
+    "correct_value": "اسم فاعل",
+    "given_value": "اسم مفعول",
+    "occurrences_in_sample": 1,
+    "matched_word": "مُسۡلِمَیۡنِ",
+    "verse": "رَبَّنَا وَ اجۡعَلۡنَا مُسۡلِمَیۡنِ لَکَ وَ مِنۡ ذُرِّیَّتِنَاۤ اُمَّۃً مُّسۡلِمَۃً لَّکَ ۪ وَ اَرِنَا مَنَاسِکَنَا وَ تُبۡ عَلَیۡنَا ۚ اِنَّکَ اَنۡتَ التَّوَّابُ الرَّحِیۡمُ ﴿۱۲۸﴾",
+    "ref": "Al-Baqara 2:128",
+    "root": "سلم",
+    "full_correct_answer": {
+      "noun_type": "اسم فاعل",
+      "definiteness": "نکرہ",
+      "gender": "مذکر",
+      "number": "تثنیہ",
+      "case": "منصوب",
+      "pattern": "افعال",
+      "root": "سلم"
+    },
+    "full_given_answer": {
+      "root": "سلم",
+      "pattern": "افعال",
+      "case": "منصوب",
+      "number": "جمع",
+      "gender": "مذکر",
+      "definiteness": "نکرہ",
+      "noun_type": "اسم مفعول"
+    }
+  },
+  {
+    "dim": "definiteness",
+    "correct_value": "نکرہ",
+    "given_value": "معرفہ",
+    "occurrences_in_sample": 2,
+    "matched_word": "خَالِدَیۡنِ",
+    "verse": "فَکَانَ عَاقِبَتَہُمَاۤ اَنَّہُمَا فِی النَّارِ خَالِدَیۡنِ فِیۡہَا ؕ وَ ذٰلِکَ جَزٰٓؤُا الظّٰلِمِیۡنَ ﴿٪۱۷﴾",
+    "ref": "Al-Hashr 59:17",
+    "root": "خلد",
+    "full_correct_answer": {
+      "noun_type": "اسم فاعل",
+      "definiteness": "نکرہ",
+      "gender": "مذکر",
+      "number": "تثنیہ",
+      "case": "منصوب",
+      "pattern": "ثلاثی",
+      "root": "خلد"
+    },
+    "full_given_answer": {
+      "noun_type": "اسم فاعل",
+      "definiteness": "معرفہ",
+      "gender": "مذکر",
+      "number": "تثنیہ",
+      "case": "مجرور",
+      "pattern": "ثلاثی",
+      "root": "خلد"
+    }
+  },
+  {
+    "dim": "case",
+    "correct_value": "مجرور",
+    "given_value": "مرفوع",
+    "occurrences_in_sample": 1,
+    "matched_word": "الۡمُرۡسَلٰتِ",
+    "verse": "وَ الۡمُرۡسَلٰتِ عُرۡفًا ۙ﴿۱﴾",
+    "ref": "Al-Mursalat 77:1",
+    "root": "رسل",
+    "full_correct_answer": {
+      "noun_type": "اسم مفعول",
+      "definiteness": "معرفہ",
+      "gender": "مونث",
+      "number": "جمع",
+      "case": "مجرور",
+      "pattern": "افعال",
+      "root": "رسل"
+    },
+    "full_given_answer": {
+      "noun_type": "اسم فاعل",
+      "definiteness": "معرفہ",
+      "gender": "مونث",
+      "number": "جمع",
+      "case": "مرفوع",
+      "pattern": "ثلاثی",
+      "root": "رسل"
+    }
+  },
+  {
+    "dim": "gender",
+    "correct_value": "مذکر",
+    "given_value": "مونث",
+    "occurrences_in_sample": 33,
+    "matched_word": "کَفَرُوۡا",
+    "verse": "یٰۤاَیُّہَا النَّبِیُّ حَرِّضِ الۡمُؤۡمِنِیۡنَ عَلَی الۡقِتَالِ ؕ اِنۡ یَّکُنۡ مِّنۡکُمۡ عِشۡرُوۡنَ صٰبِرُوۡنَ یَغۡلِبُوۡا مِائَتَیۡنِ ۚ وَ اِنۡ یَّکُنۡ مِّنۡکُمۡ مِّائَۃٌ یَّغۡلِبُوۡۤا اَلۡفًا مِّنَ الَّذِیۡنَ کَفَرُوۡا بِاَنَّہُمۡ قَوۡمٌ لَّا یَفۡقَہُوۡنَ ﴿۶۵﴾",
+    "ref": "Al-Anfal 8:65",
+    "root": "كفر",
+    "full_correct_answer": {
+      "person": "غائب",
+      "gender": "مذکر",
+      "number": "جمع",
+      "voice": "معروف",
+      "root": "كفر"
+    },
+    "full_given_answer": {
+      "voice": "مجہول",
+      "number": "تثنیہ",
+      "gender": "مونث",
+      "person": "حاضر",
+      "root": "كفل"
+    }
+  },
+  {
+    "dim": "number",
+    "correct_value": "تثنیہ",
+    "given_value": "تثنیہ جمع",
+    "occurrences_in_sample": 2,
+    "matched_word": "لَفَسَدَتَا",
+    "verse": "لَوۡ کَانَ فِیۡہِمَاۤ اٰلِہَۃٌ اِلَّا اللّٰہُ لَفَسَدَتَا ۚ فَسُبۡحٰنَ اللّٰہِ رَبِّ الۡعَرۡشِ عَمَّا یَصِفُوۡنَ ﴿۲۲﴾",
+    "ref": "Al-Anbiyaa 21:22",
+    "root": "فسد",
+    "full_correct_answer": {
+      "person": "غائب",
+      "gender": "مونث",
+      "number": "تثنیہ",
+      "voice": "معروف",
+      "root": "فسد"
+    },
+    "full_given_answer": {
+      "voice": "معروف",
+      "number": "تثنیہ جمع",
+      "gender": "مذکرمونث",
+      "person": "حاضر",
+      "root": "فسد"
+    }
+  },
+  {
+    "dim": "tense",
+    "correct_value": "مضارع",
+    "given_value": "امر",
+    "occurrences_in_sample": 1,
+    "matched_word": "فَاَحۡکُمُ",
+    "verse": "اِذۡ قَالَ اللّٰہُ یٰعِیۡسٰۤی اِنِّیۡ مُتَوَفِّیۡکَ وَ رَافِعُکَ اِلَیَّ وَ مُطَہِّرُکَ مِنَ الَّذِیۡنَ کَفَرُوۡا وَ جَاعِلُ الَّذِیۡنَ اتَّبَعُوۡکَ فَوۡقَ الَّذِیۡنَ کَفَرُوۡۤا اِلٰی یَوۡمِ الۡقِیٰمَۃِ ۚ ثُمَّ اِلَیَّ مَرۡجِعُکُمۡ فَاَحۡکُمُ بَیۡنَکُمۡ فِیۡمَا کُنۡتُمۡ فِیۡہِ تَخۡتَلِفُوۡنَ ﴿۵۵﴾",
+    "ref": "Al-i'Imran 3:55",
+    "root": "حكم",
+    "full_correct_answer": {
+      "tense": "مضارع",
+      "person": "متکلم",
+      "gender": "مذکرمونث",
+      "number": "واحد",
+      "voice": "معروف",
+      "root": "حكم"
+    },
+    "full_given_answer": {
+      "tense": "امر",
+      "voice": "معروف",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "حاضر",
+      "root": "حكم"
+    }
+  },
+  {
+    "dim": "mood",
+    "correct_value": "مرفوع",
+    "given_value": "مبنی",
+    "occurrences_in_sample": 1,
+    "matched_word": "تُحۡشَرُوۡنَ",
+    "verse": "وَ اَنۡ اَقِیۡمُوا الصَّلٰوۃَ وَ اتَّقُوۡہُ ؕ وَ ہُوَ الَّذِیۡۤ اِلَیۡہِ تُحۡشَرُوۡنَ ﴿۷۲﴾",
+    "ref": "Al-An'am 6:72",
+    "root": "حشر",
+    "full_correct_answer": {
+      "tense": "مضارع",
+      "person": "حاضر",
+      "gender": "مذکر",
+      "number": "جمع",
+      "voice": "مجہول",
+      "mood": "مرفوع",
+      "pattern": "ثلاثی",
+      "seven_types": "صحیح",
+      "root": "حشر",
+      "status": "مثبت"
+    },
+    "full_given_answer": {
+      "tense": "ماضی",
+      "voice": "معروف",
+      "status": "منفی",
+      "seven_types": "مہموز العین",
+      "pattern": "تفعل",
+      "mood": "مبنی",
+      "person": "غائب",
+      "gender": "مذکر",
+      "number": "واحد",
+      "root": "بشر"
+    }
+  },
+  {
+    "dim": "root",
+    "correct_value": "جعل",
+    "given_value": "فعل",
+    "occurrences_in_sample": 2,
+    "matched_word": "فَجَعَلۡنٰہَا",
+    "verse": "فَجَعَلۡنٰہَا نَکَالًا لِّمَا بَیۡنَ یَدَیۡہَا وَ مَا خَلۡفَہَا وَ مَوۡعِظَۃً لِّلۡمُتَّقِیۡنَ ﴿۶۶﴾",
+    "ref": "Al-Baqara 2:66",
+    "root": "جعل",
+    "full_correct_answer": {
+      "person": "متکلم",
+      "gender": "مذکرمونث",
+      "number": "تثنیہ جمع",
+      "voice": "معروف",
+      "root": "جعل"
+    },
+    "full_given_answer": {
+      "voice": "مجہول",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "غائب",
+      "root": "فعل"
+    }
+  },
+  {
+    "dim": "person",
+    "correct_value": "متکلم",
+    "given_value": "غائب",
+    "occurrences_in_sample": 8,
+    "matched_word": "فَجَعَلۡنٰہَا",
+    "verse": "فَجَعَلۡنٰہَا نَکَالًا لِّمَا بَیۡنَ یَدَیۡہَا وَ مَا خَلۡفَہَا وَ مَوۡعِظَۃً لِّلۡمُتَّقِیۡنَ ﴿۶۶﴾",
+    "ref": "Al-Baqara 2:66",
+    "root": "جعل",
+    "full_correct_answer": {
+      "person": "متکلم",
+      "gender": "مذکرمونث",
+      "number": "تثنیہ جمع",
+      "voice": "معروف",
+      "root": "جعل"
+    },
+    "full_given_answer": {
+      "voice": "مجہول",
+      "number": "واحد",
+      "gender": "مذکر",
+      "person": "غائب",
+      "root": "فعل"
+    }
+  }
+]

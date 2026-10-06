@@ -1,0 +1,848 @@
+{
+  "word_class": {
+    "1": {
+      "ur": "اسم",
+      "ar": "اسم",
+      "en": "Noun",
+      "fr": "Nom"
+    },
+    "2": {
+      "ur": "فعل",
+      "ar": "فعل",
+      "en": "Verb",
+      "fr": "Verbe"
+    },
+    "3": {
+      "ur": "حرف",
+      "ar": "حرف",
+      "en": "Particle",
+      "fr": "Particule"
+    },
+    "4": {
+      "ur": "ضمیر",
+      "ar": "ضمير",
+      "en": "Pronoun",
+      "fr": "Pronom"
+    }
+  },
+  "gender": {
+    "1": {
+      "ur": "مذکر",
+      "ar": "مذكر",
+      "en": "Masculine",
+      "fr": "Masculin"
+    },
+    "2": {
+      "ur": "مونث",
+      "ar": "مؤنث",
+      "en": "Feminine",
+      "fr": "Féminin"
+    },
+    "3": {
+      "ur": "مذکرمونث",
+      "ar": "مذكر/مؤنث",
+      "en": "Masc./Fem. (shared)",
+      "fr": "Masc./Fém."
+    },
+    "0": {
+      "ur": "—",
+      "ar": "—",
+      "en": "—",
+      "fr": "—"
+    }
+  },
+  "number": {
+    "1": {
+      "ur": "واحد",
+      "ar": "مفرد",
+      "en": "Singular",
+      "fr": "Singulier"
+    },
+    "2": {
+      "ur": "مثنی",
+      "ar": "مثنى",
+      "en": "Dual",
+      "fr": "Duel"
+    },
+    "3": {
+      "ur": "جمع",
+      "ar": "جمع",
+      "en": "Plural",
+      "fr": "Pluriel"
+    },
+    "4": {
+      "ur": "تثنیہ جمع",
+      "ar": "مثنى/جمع",
+      "en": "Dual/Plural (shared)",
+      "fr": "Duel/Pluriel"
+    },
+    "0": {
+      "ur": "—",
+      "ar": "—",
+      "en": "—",
+      "fr": "—"
+    }
+  },
+  "case_": {
+    "1": {
+      "ur": "مرفوع",
+      "ar": "مرفوع",
+      "en": "Nominative",
+      "fr": "Nominatif"
+    },
+    "2": {
+      "ur": "منصوب",
+      "ar": "منصوب",
+      "en": "Accusative",
+      "fr": "Accusatif"
+    },
+    "3": {
+      "ur": "مجرور",
+      "ar": "مجرور",
+      "en": "Genitive",
+      "fr": "Génitif"
+    },
+    "4": {
+      "ur": "مبنی",
+      "ar": "مبني",
+      "en": "Indeclinable",
+      "fr": "Indéclinable"
+    },
+    "0": {
+      "ur": "—",
+      "ar": "—",
+      "en": "—",
+      "fr": "—"
+    }
+  },
+  "person": {
+    "1": {
+      "ur": "غائب",
+      "ar": "غائب",
+      "en": "3rd Person",
+      "fr": "3ème personne"
+    },
+    "2": {
+      "ur": "حاضر",
+      "ar": "حاضر",
+      "en": "2nd Person",
+      "fr": "2ème personne"
+    },
+    "3": {
+      "ur": "متکلم",
+      "ar": "متكلم",
+      "en": "1st Person",
+      "fr": "1ère personne"
+    }
+  },
+  "noun_type": {
+    "1": {
+      "ur": "مصدر",
+      "ar": "مصدر",
+      "en": "Verbal Noun",
+      "fr": "Masdar"
+    },
+    "2": {
+      "ur": "اسم فاعل",
+      "ar": "اسم فاعل",
+      "en": "Active Participle",
+      "fr": "Participe actif"
+    },
+    "3": {
+      "ur": "اسم مفعول",
+      "ar": "اسم مفعول",
+      "en": "Passive Participle",
+      "fr": "Participe passif"
+    },
+    "4": {
+      "ur": "صفة مشبهة",
+      "ar": "صفة مشبهة",
+      "en": "Resemblant Adjective",
+      "fr": "Adjectif ressemblant"
+    },
+    "5": {
+      "ur": "اسم آلہ",
+      "ar": "اسم آلة",
+      "en": "Instrument Noun",
+      "fr": "Nom d'instrument"
+    },
+    "6": {
+      "ur": "اسم مکان/زمان",
+      "ar": "اسم مكان/زمان",
+      "en": "Place/Time Noun",
+      "fr": "Nom de lieu/temps"
+    },
+    "7": {
+      "ur": "اسم جامد",
+      "ar": "اسم جامد",
+      "en": "Primitive Noun",
+      "fr": "Nom primitif"
+    },
+    "8": {
+      "ur": "اسم موصول",
+      "ar": "اسم موصول",
+      "en": "Relative Pronoun",
+      "fr": "Pronom relatif"
+    },
+    "9": {
+      "ur": "اسم علم",
+      "ar": "اسم علم",
+      "en": "Proper Noun",
+      "fr": "Nom propre"
+    },
+    "10": {
+      "ur": "اسم اشارہ",
+      "ar": "اسم إشارة",
+      "en": "Demonstrative",
+      "fr": "Démonstratif"
+    },
+    "11": {
+      "ur": "دیگر",
+      "ar": "أخرى",
+      "en": "Other",
+      "fr": "Autre"
+    },
+    "12": {
+      "ur": "اسم مبالغہ",
+      "ar": "صيغة المبالغة",
+      "en": "Intensive Adjective",
+      "fr": "Adjectif intensif"
+    }
+  },
+  "pronoun_type": {
+    "1": {
+      "ur": "منفصل",
+      "ar": "منفصل",
+      "en": "Detached",
+      "fr": "Détaché"
+    },
+    "2": {
+      "ur": "متصل",
+      "ar": "متصل",
+      "en": "Attached",
+      "fr": "Attaché"
+    },
+    "3": {
+      "ur": "مستتر",
+      "ar": "مستتر",
+      "en": "Implied",
+      "fr": "Implicite"
+    }
+  },
+  "definiteness": {
+    "1": {
+      "ur": "معرفہ",
+      "ar": "معرفة",
+      "en": "Definite",
+      "fr": "Défini"
+    },
+    "2": {
+      "ur": "نکرہ",
+      "ar": "نكرة",
+      "en": "Indefinite",
+      "fr": "Indéfini"
+    }
+  },
+  "tense": {
+    "1": {
+      "ur": "ماضی",
+      "ar": "ماضٍ",
+      "en": "Past",
+      "fr": "Passé"
+    },
+    "2": {
+      "ur": "مضارع",
+      "ar": "مضارع",
+      "en": "Present",
+      "fr": "Présent"
+    },
+    "3": {
+      "ur": "امر",
+      "ar": "أمر",
+      "en": "Command",
+      "fr": "Impératif"
+    },
+    "4": {
+      "ur": "نہی",
+      "ar": "نهي",
+      "en": "Prohibition",
+      "fr": "Prohibition"
+    }
+  },
+  "voice": {
+    "1": {
+      "ur": "معروف",
+      "ar": "معلوم",
+      "en": "Active",
+      "fr": "Actif"
+    },
+    "2": {
+      "ur": "مجہول",
+      "ar": "مجهول",
+      "en": "Passive",
+      "fr": "Passif"
+    }
+  },
+  "pattern": {
+    "1": {
+      "ur": "ثلاثی",
+      "ar": "ثلاثي",
+      "en": "Form I (Base)",
+      "fr": "Forme I"
+    },
+    "2": {
+      "ur": "افعال",
+      "ar": "إفعال",
+      "en": "Form IV",
+      "fr": "Forme IV"
+    },
+    "3": {
+      "ur": "تفعیل",
+      "ar": "تفعيل",
+      "en": "Form II",
+      "fr": "Forme II"
+    },
+    "4": {
+      "ur": "مفاعلۃ",
+      "ar": "مفاعلة",
+      "en": "Form III",
+      "fr": "Forme III"
+    },
+    "5": {
+      "ur": "افتعال",
+      "ar": "افتعال",
+      "en": "Form VIII",
+      "fr": "Forme VIII"
+    },
+    "6": {
+      "ur": "استفعال",
+      "ar": "استفعال",
+      "en": "Form X",
+      "fr": "Forme X"
+    },
+    "7": {
+      "ur": "تفعل",
+      "ar": "تفعّل",
+      "en": "Form V",
+      "fr": "Forme V"
+    },
+    "8": {
+      "ur": "انفعال",
+      "ar": "انفعال",
+      "en": "Form VII",
+      "fr": "Forme VII"
+    },
+    "9": {
+      "ur": "تفاعل",
+      "ar": "تفاعل",
+      "en": "Form VI",
+      "fr": "Forme VI"
+    },
+    "10": {
+      "ur": "رباعی مجرد",
+      "ar": "رباعي مجرد",
+      "en": "Quadriliteral Form I",
+      "fr": "Quadrilitere (forme I)"
+    },
+    "11": {
+      "ur": "تَفَعْلَلَ",
+      "ar": "تَفَعْلَلَ",
+      "en": "Quadriliteral Form II (تفعلل)",
+      "fr": "Quadrilitere (forme II)"
+    },
+    "12": {
+      "ur": "اِفْعَنْلَلَ",
+      "ar": "اِفْعَنْلَلَ",
+      "en": "Quadriliteral Form III (افعنلل)",
+      "fr": "Quadrilitere (forme III)"
+    },
+    "13": {
+      "ur": "اِفْعَلَلَّ",
+      "ar": "اِفْعَلَلَّ",
+      "en": "Quadriliteral Form IV (افعلل)",
+      "fr": "Quadrilitere (forme IV)"
+    }
+  },
+  "mood": {
+    "1": {
+      "ur": "مرفوع",
+      "ar": "مرفوع",
+      "en": "Indicative",
+      "fr": "Indicatif"
+    },
+    "2": {
+      "ur": "منصوب",
+      "ar": "منصوب",
+      "en": "Subjunctive",
+      "fr": "Subjonctif"
+    },
+    "3": {
+      "ur": "مجزوم",
+      "ar": "مجزوم",
+      "en": "Jussive",
+      "fr": "Jussif"
+    },
+    "4": {
+      "ur": "مبنی",
+      "ar": "مبني",
+      "en": "Indeclinable",
+      "fr": "Indéclinable"
+    }
+  },
+  "seven_types": {
+    "0": {
+      "ur": "—",
+      "ar": "—",
+      "en": "—",
+      "fr": "—"
+    },
+    "1": {
+      "ur": "صحیح",
+      "ar": "صحيح",
+      "en": "Sound",
+      "fr": "Sain"
+    },
+    "2": {
+      "ur": "مثال واوی",
+      "ar": "مثال واوي",
+      "en": "Assimilated (wāw)",
+      "fr": "Assimilé (wāw)"
+    },
+    "3": {
+      "ur": "مثال یائی",
+      "ar": "مثال يائي",
+      "en": "Assimilated (yā)",
+      "fr": "Assimilé (yā)"
+    },
+    "4": {
+      "ur": "اجوف واوی",
+      "ar": "أجوف واوي",
+      "en": "Hollow (wāw)",
+      "fr": "Creux (wāw)"
+    },
+    "5": {
+      "ur": "اجوف یائی",
+      "ar": "أجوف يائي",
+      "en": "Hollow (yā)",
+      "fr": "Creux (yā)"
+    },
+    "6": {
+      "ur": "ناقص واوی",
+      "ar": "ناقص واوي",
+      "en": "Defective (wāw)",
+      "fr": "Défectif (wāw)"
+    },
+    "7": {
+      "ur": "ناقص یائی",
+      "ar": "ناقص يائي",
+      "en": "Defective (yā)",
+      "fr": "Défectif (yā)"
+    },
+    "8": {
+      "ur": "مہموز الفاء",
+      "ar": "مهموز الفاء",
+      "en": "Hamzated (1st)",
+      "fr": "Hamzé (1er)"
+    },
+    "9": {
+      "ur": "مہموز العین",
+      "ar": "مهموز العين",
+      "en": "Hamzated (2nd)",
+      "fr": "Hamzé (2e)"
+    },
+    "10": {
+      "ur": "مہموز اللام",
+      "ar": "مهموز اللام",
+      "en": "Hamzated (3rd)",
+      "fr": "Hamzé (3e)"
+    },
+    "11": {
+      "ur": "مضاعف",
+      "ar": "مضاعف",
+      "en": "Doubled",
+      "fr": "Redoublé"
+    },
+    "12": {
+      "ur": "لفیف مقرون",
+      "ar": "لفيف مقرون",
+      "en": "Lafif Maqrun",
+      "fr": "Lafif Maqrun"
+    },
+    "13": {
+      "ur": "لفیف مفروق",
+      "ar": "لفيف مفروق",
+      "en": "Lafif Mafruq",
+      "fr": "Lafif Mafruq"
+    },
+    "14": {
+      "ur": "رباعی سالم",
+      "ar": "رباعي سالم",
+      "en": "Quadriliteral - Sound",
+      "fr": "Quadrilitere - sain"
+    },
+    "15": {
+      "ur": "رباعی مضاعف",
+      "ar": "رباعي مضاعف",
+      "en": "Quadriliteral - Reduplicated",
+      "fr": "Quadrilitere - redouble"
+    },
+    "16": {
+      "ur": "رباعی معتل",
+      "ar": "رباعي معتل",
+      "en": "Quadriliteral - Weak",
+      "fr": "Quadrilitere - faible"
+    }
+  },
+  "sabab_marifah": {
+    "1": {
+      "ur": "ال",
+      "ar": "ال",
+      "en": "Definite Article",
+      "fr": "Article défini"
+    },
+    "2": {
+      "ur": "اضافہ",
+      "ar": "إضافة",
+      "en": "Construct State",
+      "fr": "État construit"
+    },
+    "3": {
+      "ur": "اسم علم",
+      "ar": "علمية",
+      "en": "Proper Noun",
+      "fr": "Nom propre"
+    },
+    "4": {
+      "ur": "ضمیر",
+      "ar": "ضمير",
+      "en": "Pronoun",
+      "fr": "Pronom"
+    },
+    "5": {
+      "ur": "اسم اشارہ",
+      "ar": "إشارة",
+      "en": "Demonstrative",
+      "fr": "Démonstratif"
+    },
+    "6": {
+      "ur": "اسم موصول",
+      "ar": "موصولية",
+      "en": "Relative Pronoun",
+      "fr": "Pronom relatif"
+    }
+  },
+  "irab_wajah": {
+    "0": {
+      "ur": "—",
+      "ar": "—",
+      "en": "—",
+      "fr": "—"
+    },
+    "1": {
+      "ur": "فاعل",
+      "ar": "فاعل",
+      "en": "Subject",
+      "fr": "Sujet"
+    },
+    "2": {
+      "ur": "مفعول بہ",
+      "ar": "مفعول به",
+      "en": "Direct Object",
+      "fr": "Objet direct"
+    },
+    "3": {
+      "ur": "مبتدا",
+      "ar": "مبتدأ",
+      "en": "Topic",
+      "fr": "Thème"
+    },
+    "4": {
+      "ur": "خبر",
+      "ar": "خبر",
+      "en": "Predicate",
+      "fr": "Prédicat"
+    },
+    "5": {
+      "ur": "مجرور بحرف",
+      "ar": "مجرور بحرف",
+      "en": "Governed by Preposition",
+      "fr": "Régi par préposition"
+    },
+    "6": {
+      "ur": "مضاف الیہ",
+      "ar": "مضاف إليه",
+      "en": "Genitive Construct",
+      "fr": "Construit génitif"
+    },
+    "7": {
+      "ur": "مفعول مطلق",
+      "ar": "مفعول مطلق",
+      "en": "Cognate Accusative",
+      "fr": "Objet absolu"
+    },
+    "8": {
+      "ur": "مفعول لاجلہ",
+      "ar": "مفعول لأجله",
+      "en": "Object of Purpose",
+      "fr": "Objet causal"
+    },
+    "9": {
+      "ur": "حال",
+      "ar": "حال",
+      "en": "Circumstantial",
+      "fr": "Circonstanciel"
+    },
+    "10": {
+      "ur": "نعت",
+      "ar": "نعت",
+      "en": "Adjective",
+      "fr": "Adjectif"
+    },
+    "11": {
+      "ur": "توکید",
+      "ar": "توكيد",
+      "en": "Emphasis",
+      "fr": "Emphase"
+    },
+    "12": {
+      "ur": "بدل",
+      "ar": "بدل",
+      "en": "Apposition",
+      "fr": "Apposition"
+    },
+    "13": {
+      "ur": "عطف",
+      "ar": "معطوف",
+      "en": "Coordinated",
+      "fr": "Coordonné"
+    },
+    "14": {
+      "ur": "منادی",
+      "ar": "منادى",
+      "en": "Vocative",
+      "fr": "Vocatif"
+    },
+    "15": {
+      "ur": "خبر کان",
+      "ar": "خبر كان",
+      "en": "Predicate of Kāna",
+      "fr": "Prédicat de Kāna"
+    },
+    "16": {
+      "ur": "اسم کان",
+      "ar": "اسم كان",
+      "en": "Subject of Kāna",
+      "fr": "Sujet de Kāna"
+    },
+    "17": {
+      "ur": "خبر إن",
+      "ar": "خبر إن",
+      "en": "Predicate of Inna",
+      "fr": "Prédicat de Inna"
+    },
+    "18": {
+      "ur": "اسم إن",
+      "ar": "اسم إن",
+      "en": "Subject of Inna",
+      "fr": "Sujet de Inna"
+    },
+    "19": {
+      "ur": "ظرف",
+      "ar": "ظرف",
+      "en": "Adverb/Adjunct",
+      "fr": "Adverbe"
+    },
+    "20": {
+      "ur": "تمییز",
+      "ar": "تمييز",
+      "en": "Specification",
+      "fr": "Spécification"
+    },
+    "21": {
+      "ur": "مستثنی",
+      "ar": "مستثنى",
+      "en": "Exception",
+      "fr": "Exception"
+    },
+    "22": {
+      "ur": "نائب فاعل",
+      "ar": "نائب فاعل",
+      "en": "Substitute Subject",
+      "fr": "Sujet passif"
+    }
+  },
+  "sarfi": {
+    "1": {
+      "ur": "منصرف",
+      "ar": "منصرف",
+      "en": "Fully Declinable",
+      "fr": "Pleinement déclinable"
+    },
+    "2": {
+      "ur": "غیر منصرف",
+      "ar": "غير منصرف",
+      "en": "Diptote",
+      "fr": "Diptote"
+    }
+  },
+  "irab_alamah": {
+    "1": {
+      "ur": "ضمہ",
+      "ar": "ضمة",
+      "en": "Damma (u)",
+      "fr": "Damma (u)"
+    },
+    "2": {
+      "ur": "فتحہ",
+      "ar": "فتحة",
+      "en": "Fatha (a)",
+      "fr": "Fatha (a)"
+    },
+    "3": {
+      "ur": "کسرہ",
+      "ar": "كسرة",
+      "en": "Kasra (i)",
+      "fr": "Kasra (i)"
+    },
+    "4": {
+      "ur": "واو",
+      "ar": "واو",
+      "en": "Wāw",
+      "fr": "Wāw"
+    },
+    "5": {
+      "ur": "یاء",
+      "ar": "ياء",
+      "en": "Yā",
+      "fr": "Yā"
+    },
+    "6": {
+      "ur": "الف",
+      "ar": "ألف",
+      "en": "Alif",
+      "fr": "Alif"
+    },
+    "7": {
+      "ur": "تنوین ضم",
+      "ar": "تنوين الضم",
+      "en": "Tanwīn Ḍamma",
+      "fr": "Tanwīn Ḍamma"
+    },
+    "8": {
+      "ur": "تنوین فتح",
+      "ar": "تنوين الفتح",
+      "en": "Tanwīn Fatha",
+      "fr": "Tanwīn Fatha"
+    },
+    "9": {
+      "ur": "تنوین کسر",
+      "ar": "تنوين الكسر",
+      "en": "Tanwīn Kasra",
+      "fr": "Tanwīn Kasra"
+    },
+    "10": {
+      "ur": "سکون",
+      "ar": "سكون",
+      "en": "Sukūn",
+      "fr": "Sukūn"
+    }
+  },
+  "harf_type": {
+    "0": {
+      "ur": "—",
+      "ar": "—",
+      "en": "—",
+      "fr": "—"
+    },
+    "1": {
+      "ur": "حرف جر",
+      "ar": "حرف جر",
+      "en": "Preposition",
+      "fr": "Préposition"
+    },
+    "2": {
+      "ur": "حرف عطف",
+      "ar": "حرف عطف",
+      "en": "Conjunction",
+      "fr": "Conjonction"
+    },
+    "3": {
+      "ur": "حرف نفی",
+      "ar": "حرف نفي",
+      "en": "Negation",
+      "fr": "Négation"
+    },
+    "4": {
+      "ur": "حرف استفہام",
+      "ar": "حرف استفهام",
+      "en": "Interrogative",
+      "fr": "Interrogatif"
+    },
+    "5": {
+      "ur": "حرف نصب",
+      "ar": "حرف نصب",
+      "en": "Accusative particle",
+      "fr": "Particule accusative"
+    },
+    "6": {
+      "ur": "حرف جزم",
+      "ar": "حرف جزم",
+      "en": "Jussive particle",
+      "fr": "Particule jussive"
+    },
+    "7": {
+      "ur": "حرف استئناف",
+      "ar": "حرف استئناف",
+      "en": "Resumptive",
+      "fr": "Reprise"
+    },
+    "8": {
+      "ur": "حرف نداء",
+      "ar": "حرف نداء",
+      "en": "Vocative",
+      "fr": "Vocatif"
+    },
+    "9": {
+      "ur": "حرف قسم",
+      "ar": "حرف قسم",
+      "en": "Oath particle",
+      "fr": "Particule de serment"
+    },
+    "10": {
+      "ur": "حرف شرط",
+      "ar": "حرف شرط",
+      "en": "Conditional",
+      "fr": "Conditionnel"
+    },
+    "11": {
+      "ur": "حرف تنبیہ",
+      "ar": "حرف تنبيه",
+      "en": "Attention particle",
+      "fr": "Particule d’attention"
+    },
+    "12": {
+      "ur": "حرف زائدہ",
+      "ar": "حرف زائد",
+      "en": "Pleonastic",
+      "fr": "Pléonastique"
+    },
+    "13": {
+      "ur": "حرف تعلیل",
+      "ar": "حرف تعليل",
+      "en": "Causal particle",
+      "fr": "Particule causale"
+    },
+    "14": {
+      "ur": "واو حالیہ",
+      "ar": "واو الحال",
+      "en": "Circumstantial waw",
+      "fr": "Waw circonstanciel"
+    },
+    "15": {
+      "ur": "حرف مصدریہ",
+      "ar": "حرف مصدري",
+      "en": "Subordinating (masdar)",
+      "fr": "Subordonnant (masdar)"
+    }
+  }
+}

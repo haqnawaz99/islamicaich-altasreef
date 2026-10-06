@@ -1,0 +1,40 @@
+[
+  {
+    "id": "fasadatā-person",
+    "dim": "person", "correct_value": "غائب", "given_value": "حاضر",
+    "word": "لَفَسَدَتَا", "root": "فسد", "ref": "Al-Anbiya 21:22",
+    "verse": "لَوۡ کَانَ فِیۡہِمَاۤ اٰلِہَۃٌ اِلَّا اللّٰہُ لَفَسَدَتَا",
+    "note": "The #1 confusion in the whole production dataset for this word (56/275 sampled wrong answers)."
+  },
+  {
+    "id": "fasadatā-gender",
+    "dim": "gender", "correct_value": "مونث", "given_value": "مذکر",
+    "word": "لَفَسَدَتَا", "root": "فسد", "ref": "Al-Anbiya 21:22",
+    "verse": "لَوۡ کَانَ فِیۡہِمَاۤ اٰلِہَۃٌ اِلَّا اللّٰہُ لَفَسَدَتَا"
+  },
+  {
+    "id": "kafarū-gender",
+    "dim": "gender", "correct_value": "مذکر", "given_value": "مونث",
+    "word": "کَفَرُوۡا", "root": "كفر", "ref": "Al-Anfal 8:65",
+    "verse": "یٰۤاَیُّہَا النَّبِیُّ حَرِّضِ الۡمُؤۡمِنِیۡنَ عَلَی الۡقِتَالِ ۚ اِنۡ یَّکُنۡ مِّنۡکُمۡ عِشۡرُوۡنَ صٰبِرُوۡنَ یَغۡلِبُوۡا مِائَتَیۡنِ ۚ وَ اِنۡ یَّکُنۡ مِّنۡکُمۡ مِّائَۃٌ یَّغۡلِبُوۡۤا اَلۡفًا مِّنَ الَّذِیۡنَ کَفَرُوۡا"
+  },
+  {
+    "id": "hasiba-voice",
+    "dim": "voice", "correct_value": "معروف", "given_value": "مجہول",
+    "word": "حَسِبَ", "root": "حسب", "ref": "Al-Jathiya 45:21",
+    "verse": "اَمۡ حَسِبَ الَّذِیۡنَ اجۡتَرَحُوا السَّیِّئٰتِ اَنۡ نَّجۡعَلَہُمۡ کَالَّذِیۡنَ اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ"
+  },
+  {
+    "id": "yakhshawna-tense",
+    "dim": "tense", "correct_value": "نہی", "given_value": "مضارع",
+    "word": "لَا یَخۡشَوۡنَ", "root": "خشي", "ref": "Al-Ahzab 33:39",
+    "verse": "الَّذِیۡنَ یُبَلِّغُوۡنَ رِسٰلٰتِ اللّٰہِ وَ یَخۡشَوۡنَہٗ وَ لَا یَخۡشَوۡنَ اَحَدًا اِلَّا اللّٰہَ"
+  },
+  {
+    "id": "qutilnā-number-limitation",
+    "dim": "number", "correct_value": "تثنیہ جمع", "given_value": "جمع",
+    "word": "قُتِلۡنَا", "root": "قتل", "ref": "Al-i'Imran 3:154",
+    "verse": "یَقُوۡلُوۡنَ لَوۡ کَانَ لَنَا مِنَ الۡاَمۡرِ شَیۡءٌ مَّا قُتِلۡنَا ہٰہُنَا",
+    "note": "The #1 confusion overall in the live production data (145/1627 weighted wrong answers across levels) -- this is the transparency/known-limitation rule, not a real grammar mistake."
+  }
+]

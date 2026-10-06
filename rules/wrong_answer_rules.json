@@ -1,0 +1,185 @@
+{
+  "_meta": {
+    "description": "Pre-authored explanation templates for the top real wrong-answer confusions in the Altasreef Evaluation System, pulled live from production (5,215 real answer rows, 2026-10-06). Retrieval-only: the matcher below picks one of these by exact (dim, correct_value, given_value) key; it never generates explanation text. {word}/{root}/{ref} placeholders are filled in per-instance from the specific question. FLAGGED FOR REVIEW by the project's own Sarf authority before publishing -- drafted here from the documented morphology tables (CLAUDE.md / taaleelat_rules.py AlaamatMaazi/AlaamatMuzaraStart/End), not independently verified against every edge case.",
+    "needs_human_review": true
+  },
+  "rules": [
+    {
+      "dim": "person", "correct": "غائب", "given": "حاضر",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is 3rd person (غائب — \"he/she/they\"), not 2nd person (حاضر — \"you\"). In ماضی, حاضر forms carry a sakin-letter-then-تَ suffix (ـْتَ، ـْتُمَا، ـْتُمْ، ـْتِ، ـْتُنَّ) — the ت always follows a jazm (sakin) letter. غائب مذکر has no ت at all (ـَ، ـَا، ـُوْا، ـْنَ for the plural feminine), and غائب مؤنث's ت (نَصَرَتْ، نَصَرَتَا) sits right after a fatha on the stem, not after a sakin letter the way حاضر's does. In مضارع, حاضر forms start with تَ- and غائب مذکر starts with یَ- (غائب مؤنث واحد also starts with تَ-, but is distinguished by context/number endings, not the prefix alone).",
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ الغائب، لا الحاضر. في الماضي تلحق صيغ الحاضر تاء بعد حرف ساكن (ـْتَ، ـْتُمَا، ـْتُمْ...)، بخلاف الغائب الذي لا تاء فيه أصلاً (المذكر) أو تأتي تاؤه بعد فتحة لا بعد ساكن (المؤنث: نَصَرَتْ)."
+      }
+    },
+    {
+      "dim": "person", "correct": "حاضر", "given": "غائب",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is 2nd person (حاضر — \"you\"), not 3rd person (غائب). In ماضی, every حاضر form's ending-ت follows a sakin letter (ـْتَ، ـْتُمَا، ـْتُمْ، ـْتِ، ـْتُنَّ) — look for that sakin-then-ت shape. In مضارع, حاضر forms begin with تَ- (تَفْعَلُ), the same prefix as 3rd-person-feminine-singular مضارع, so if the prefix alone looks ambiguous, check whether the sentence is addressing someone directly (a command/response) versus describing a third party.",
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ الحاضر (المخاطَب)، لا الغائب. في الماضي تلحق تاء الحاضر حرفاً ساكناً قبلها (ـْتَ...)، وفي المضارع تبدأ صيغ الحاضر بـ تَ-."
+      }
+    },
+    {
+      "dim": "person", "correct": "غائب", "given": "متکلم",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is 3rd person (غائب), not 1st person (متکلم — \"I/we\"). متکلم ماضی forms end in ـتُ (واحد, نَصَرْتُ) or ـنَا (جمع/تثنیہ, نَصَرْنَا); متکلم مضارع forms start with اَ- (singular) or نَ- (plural). غائب has none of these — مذکر uses ـَ/ـَا/ـُوْا, مؤنث uses ـَتْ/ـَتَا/ـْنَ, and مضارع غائب starts with یَ- (or تَ- for مؤنث واحد).",
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ الغائب، لا المتكلم. صيغ المتكلم في الماضي تنتهي بـ ـتُ أو ـنَا، وفي المضارع تبدأ بـ اَ- أو نَ-، وهذا غير موجود هنا."
+      }
+    },
+    {
+      "dim": "person", "correct": "متکلم", "given": "غائب",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is 1st person (متکلم — \"I/we\"), not 3rd person (غائب). Look for the متکلم markers: ـتُ (نَصَرْتُ, \"I...\") or ـنَا (نَصَرْنَا, \"we...\") in ماضی, or the اَ-/نَ- prefix in مضارع — none of these appear on a غائب form.",
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ المتكلم، لا الغائب. علامته ـتُ أو ـنَا في الماضي، أو اَ-/نَ- في المضارع."
+      }
+    },
+    {
+      "dim": "person", "correct": "متکلم", "given": "حاضر",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is 1st person (متکلم — \"I/we\"), not 2nd person (حاضر — \"you\"). متکلم's ماضی ending is ـتُ or ـنَا (no gender distinction at all); حاضر's endings (ـْتَ، ـْتِ، ـْتُمَا، ـْتُمْ، ـْتُنَّ) always encode a specific gender/number the way متکلم's never does. In مضارع, متکلم starts with اَ-/نَ-, حاضر starts with تَ-.",
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ المتكلم، لا الحاضر. المتكلم لا يفرّق بين المذكر والمؤنث (ـتُ/ـنَا)، بخلاف صيغ الحاضر."
+      }
+    },
+    {
+      "dim": "person", "correct": "حاضر", "given": "متکلم",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is 2nd person (حاضر — \"you\"), not 1st person (متکلم — \"I/we\"). حاضر's ماضی endings mark a specific gender/number (ـْتَ مذکر واحد، ـْتِ مؤنث واحد، ـْتُمَا تثنیہ، ـْتُمْ/ـْتُنَّ جمع) — متکلم never distinguishes gender (always ـتُ or ـنَا regardless of مذکر/مونث). In مضارع, حاضر starts with تَ-, متکلم with اَ-/نَ-.",
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ الحاضر، لا المتكلم. صيغ الحاضر تفرّق بين المذكر والمؤنث، بخلاف المتكلم."
+      }
+    },
+    {
+      "dim": "gender", "correct": "مونث", "given": "مذکر",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is feminine (مونث), not masculine (مذکر). In ماضی, feminine غائب/حاضر forms carry a fatha-then-ت (ـَتْ، ـَتَا for غائب) or a kasra-ت (ـْتِ for حاضر), markers masculine forms never take. In مضارع, feminine singular/dual غائب forms start with تَ- (the same prefix as حاضر, which is why person and gender confusions often travel together), and feminine plural ends in ـْنَ.",
+        "ar": "{word} (الجذر {root}، {ref}) مؤنث، لا مذكر. علامة التأنيث في الماضي: ـَتْ أو ـْتِ، وفي المضارع: التاء في أول الفعل (للغائبة) أو ـْنَ لجمع المؤنث."
+      }
+    },
+    {
+      "dim": "gender", "correct": "مذکر", "given": "مونث",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is masculine (مذکر), not feminine (مونث). It has none of the feminine markers — no fatha-ت/kasra-ت ending in ماضی, no leading تَ- (غائب) or trailing ـْنَ (مضارع) that would mark it feminine.",
+        "ar": "{word} (الجذر {root}، {ref}) مذكر، لا مؤنث. لا توجد فيه علامة تأنيث (ـَتْ، ـْتِ، تَ- في أول المضارع، أو ـْنَ)."
+      }
+    },
+    {
+      "dim": "gender", "correct": "مذکرمونث", "given": "مذکر",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is a تثنیہ (dual) form. Arabic dual verb conjugation does not mark gender separately the way singular/plural forms do — the same ending serves both a masculine pair and a feminine pair (e.g. ماضی ـَا for غائب dual, حاضر/متکلم ـْتُمَا) — so the correct answer is the combined مذکرمونث value, not a plain مذکر pick.",
+        "ar": "{word} (الجذر {root}، {ref}) صيغة تثنیہ، وصيغ التثنیہ في الفعل لا تفرّق بين المذكر والمؤنث (نفس العلامة لكليهما)، فالجواب الصحيح هو مذکرمونث وليس مذكراً فقط."
+      }
+    },
+    {
+      "dim": "gender", "correct": "مذکرمونث", "given": "مونث",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is a تثنیہ (dual) form. Dual verb endings don't distinguish gender (the same ending covers a masculine pair and a feminine pair), so the correct value is the combined مذکرمونث, not a plain مونث pick.",
+        "ar": "{word} (الجذر {root}، {ref}) صيغة تثنیہ، ولا تفرّق التثنیہ بين المذكر والمؤنث، فالجواب الصحيح مذکرمونث لا مؤنث فقط."
+      }
+    },
+    {
+      "dim": "gender", "correct": "مذکر", "given": "مذکرمونث",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is واحد/جمع (singular or sound plural), not تثنیہ (dual) — only dual forms share one ending across both genders. Since this isn't a dual, it takes a plain مذکر/مونث value, and here the ending marks masculine specifically (no fatha-ت/kasra-ت feminine marker).",
+        "ar": "{word} (الجذر {root}، {ref}) ليست صيغة تثنیہ، فلا ينطبق عليها الجمع بين المذكر والمؤنث؛ وهي هنا مذكرة لعدم وجود علامة التأنيث."
+      }
+    },
+    {
+      "dim": "gender", "correct": "مونث", "given": "مذکرمونث",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is واحد/جمع (singular or sound plural), not تثنیہ (dual) — the combined مذکرمونث value only applies to dual forms. This form carries a real feminine marker (fatha-ت/kasra-ت, or a leading تَ-/trailing ـْنَ in مضارع), so the correct value is a plain مونث.",
+        "ar": "{word} (الجذر {root}، {ref}) ليست تثنیہ، وفيها علامة تأنيث حقيقية، فالجواب مؤنث لا مذکرمونث."
+      }
+    },
+    {
+      "dim": "number", "correct": "واحد", "given": "جمع",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is singular (واحد), not plural (جمع). Sound plural forms carry their own distinct ending (ـُوْا مذکر غائب، ـْنَ مؤنث، ـُوْنَ/ـِیْنَ مضارع) that this word's ending does not have.",
+        "ar": "{word} (الجذر {root}، {ref}) مفرد، لا جمع. علامة الجمع (ـُوْا، ـْنَ، ـُوْنَ...) غير موجودة في هذه الصيغة."
+      }
+    },
+    {
+      "dim": "number", "correct": "جمع", "given": "واحد",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is plural (جمع), not singular (واحد) — it carries a plural ending (ـُوْا، ـْنَ in ماضی, or ـُوْنَ/ـِیْنَ/ـْنَ in مضارع) that a singular form wouldn't have.",
+        "ar": "{word} (الجذر {root}، {ref}) جمع، لا مفرد، لوجود علامة الجمع في آخره."
+      }
+    },
+    {
+      "dim": "number", "correct": "واحد", "given": "تثنیہ",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is singular (واحد), not dual (تثنیہ). Dual forms have their own distinct ending (ماضی: ـَا، ـَتَا، ـْتُمَا; مضارع/امر: ـَانِ) — this word's ending doesn't match that shape.",
+        "ar": "{word} (الجذر {root}، {ref}) مفرد، لا مثنى. علامة التثنیہ (ـَا، ـَتَا، ـَانِ...) غير موجودة هنا."
+      }
+    },
+    {
+      "dim": "number", "correct": "تثنیہ", "given": "واحد",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is dual (تثنیہ — \"two\"), not singular (واحد). It carries the dual ending (ماضی: ـَا، ـَتَا، ـْتُمَا; مضارع/امر: ـَانِ), distinct from any singular ending.",
+        "ar": "{word} (الجذر {root}، {ref}) مثنى، لا مفرد، لوجود علامة التثنیہ (ـَا، ـَتَا، ـَانِ) في آخره."
+      }
+    },
+    {
+      "dim": "number", "correct": "جمع", "given": "تثنیہ",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is plural (جمع — three or more), not dual (تثنیہ — exactly two). Compare the endings: dual is ـَا/ـَتَا/ـْتُمَا/ـَانِ, while this word's plural ending (ـُوْا/ـْنَ/ـُوْنَ/ـِیْنَ) is a different shape entirely.",
+        "ar": "{word} (الجذر {root}، {ref}) جمع لا مثنى؛ علامته (ـُوْا، ـْنَ، ـُوْنَ) تختلف عن علامة التثنیہ (ـَا، ـَتَا، ـَانِ)."
+      }
+    },
+    {
+      "dim": "number", "correct": "تثنیہ", "given": "جمع",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is dual (تثنیہ — exactly two), not plural (جمع — three or more). It carries the dual-specific ending (ـَا/ـَتَا/ـْتُمَا in ماضی, ـَانِ in مضارع/امر) rather than a plural one.",
+        "ar": "{word} (الجذر {root}، {ref}) مثنى لا جمع، لوجود علامة التثنیہ الخاصة (ـَا، ـَتَا، ـَانِ) لا علامة الجمع."
+      }
+    },
+    {
+      "dim": "voice", "correct": "معروف", "given": "مجہول",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is active voice (معروف — the subject does the action), not passive (مجہول — the subject receives it). Passive ماضی regularly shifts the stem's vowels to ضمہ-then-کسرہ (فُعِلَ shape) and passive مضارع to ضمہ-then-فتحہ (یُفۡعَلُ shape) — this word's own vowel pattern doesn't carry that shift.",
+        "ar": "{word} (الجذر {root}، {ref}) معروف (الفاعل يفعل الفعل)، لا مجهول. صيغة المجهول تُحوّل حركات الفعل (فُعِلَ في الماضي، یُفۡعَلُ في المضارع)، وهذا غير موجود هنا."
+      }
+    },
+    {
+      "dim": "voice", "correct": "مجہول", "given": "معروف",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is passive voice (مجہول — the subject receives the action), not active (معروف). Its vowel pattern follows the passive shift (ماضی: فُعِلَ shape, ضمہ-then-کسرہ; مضارع: یُفۡعَلُ shape, ضمہ-then-فتحہ) rather than the active pattern.",
+        "ar": "{word} (الجذر {root}، {ref}) مجهول (الفاعل يقع عليه الفعل)، لا معروف، لأن حركاته تتبع صيغة المجهول (فُعِلَ / یُفۡعَلُ)."
+      }
+    },
+    {
+      "dim": "tense", "correct": "نہی", "given": "مضارع",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is نہی (prohibition — \"don't...\"), not plain مضارع (present/future). نہی is built from a جزم (jussive) مضارع form preceded by لَا النَّاهِیَۃ (\"don't\"/\"may you not\"), which gives it the same jussive ending a plain negated مضارع would have — check the verse for a preceding لَا used as a command not to do something, which is what makes this نہی rather than a simple negated present-tense statement.",
+        "ar": "{word} (الجذر {root}، {ref}) نہی (نهي، \"لا تفعل\")، لا مضارعاً عادياً. النهي فعل مضارع مجزوم سبقته \"لا الناهیۃ\" على سبيل الأمر بالترك، لا مجرد نفي."
+      }
+    },
+    {
+      "dim": "tense", "correct": "مضارع", "given": "نہی",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is plain مضارع (present/future), not نہی (prohibition). نہی requires a preceding لَا used specifically as a command not to act (لَا النَّاهِیَۃ) with the verb in جزم — if that's not the structure here (e.g. a plain negation or no لَا at all), it stays a regular مضارع.",
+        "ar": "{word} (الجذر {root}، {ref}) مضارع عادي، لا نہي، لعدم وجود \"لا الناهیۃ\" التي تجزم الفعل على سبيل النهي."
+      }
+    },
+    {
+      "dim": "tense", "correct": "امر", "given": "ماضی",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is امر (command — \"do...!\"), not ماضی (past). امر forms are built on the جزم stem of مضارع with the person-marking prefix dropped (e.g. اُفْعُلْ/افۡعَلۡ-shape), which can visually resemble a short ماضی form — but the context here is a direct command, not a completed past action.",
+        "ar": "{word} (الجذر {root}، {ref}) أمر (افعل!)، لا ماضٍ. صيغة الأمر مبنية من جزم المضارع بعد حذف حرف المضارعة، وقد تشبه الماضي ظاهرياً لكن السياق أمر لا فعل تم وقوعه."
+      }
+    },
+    {
+      "dim": "number", "correct": "تثنیہ جمع", "given": "*",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is a متکلم (1st person) \"we\" form. Arabic's متکلم plural ending (ـنَا) does not distinguish \"we two\" from \"we many\" the way 3rd/2nd person forms do — the same نَا ending covers both. This app's data model records that as a combined تثنیہ جمع value, so a plain جمع (or تثنیہ) answer reflects a real, defensible reading of the actual Arabic -- it is being scored strictly against the combined value today, which is a known limitation of the current system, not a grammar mistake on your part.",
+        "ar": "{word} (الجذر {root}، {ref}) صيغة متكلم (\"نحن\"). لا تفرّق صيغة المتكلم الجمعية (ـنَا) بين الاثنين والجمع، فجوابك ليس خطأً نحوياً حقيقياً، وإنما هذا تقييم صارم في نظامنا الحالي يعدّه خطأً وهو قيد المراجعة."
+      },
+      "is_system_limitation_disclosure": true
+    },
+    {
+      "dim": "number", "correct": "*", "given": "تثنیہ جمع",
+      "tier_a": {
+        "en": "{word} (root {root}, {ref}) is a متکلم (1st person) \"we\" form, whose Arabic ending (ـنَا) is genuinely ambiguous between \"we two\" and \"we many\" -- it doesn't distinguish dual from plural the way other persons do. You answered the combined تثنیہ جمع reading; this app's data model happens to record a single value ({correct_label}) for this particular occurrence, so the mismatch reflects a known scoring limitation in how that ambiguity is represented today, not a real grammar error.",
+        "ar": "{word} (الجذر {root}، {ref}) صيغة متكلم (\"نحن\")، وعلامتها (ـنَا) تحتمل الاثنين والجمع معاً. أجبتَ بالقيمة المجموعة، بينما يسجّل النظام هنا قيمة واحدة فقط ({correct_label})؛ هذا قيد معروف في طريقة تمثيل هذا الالتباس حالياً، لا خطأ نحوي حقيقي منك."
+      },
+      "is_system_limitation_disclosure": true
+    }
+  ]
+}

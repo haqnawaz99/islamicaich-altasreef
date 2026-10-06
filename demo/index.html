@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altasreef AI Tutor — Live Demo</title>
+<style>
+  :root {
+    --navy: #1B2183; --coral: #EA6150; --green: #2CEF2C; --tint: #F2F4FF;
+  }
+  body {
+    font-family: -apple-system, 'Segoe UI', Tahoma, sans-serif;
+    background: var(--tint);
+    margin: 0;
+    color: #1a1a2e;
+  }
+  header {
+    background: var(--navy);
+    color: white;
+    padding: 24px 20px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 6px; font-size: 24px; }
+  header p { margin: 0; opacity: 0.85; font-size: 14px; }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(27,33,131,0.08);
+  }
+  select, button {
+    font-size: 15px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  select { width: 100%; margin-bottom: 14px; }
+  button {
+    background: var(--coral);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .verse {
+    font-family: 'Noto Naskh Arabic', 'Scheherazade New', serif;
+    font-size: 24px;
+    direction: rtl;
+    line-height: 1.8;
+    margin: 10px 0;
+  }
+  .word { color: var(--coral); font-weight: bold; }
+  .meta { font-size: 13px; color: #555; margin-bottom: 4px; }
+  .answer-row { display: flex; gap: 10px; margin: 10px 0; font-size: 14px; }
+  .pill {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+  }
+  .pill.correct { background: #d9f7d9; color: #1a7a1a; }
+  .pill.wrong { background: #fde0dc; color: #a3291e; }
+  .explanation {
+    background: var(--tint);
+    border-left: 4px solid var(--navy);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.6;
+    direction: auto;
+  }
+  .disclosure {
+    border-left-color: var(--coral);
+    background: #fff4f2;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--navy);
+    color: white;
+    margin-bottom: 8px;
+  }
+  .badge.disclosure-badge { background: var(--coral); }
+  .abstain {
+    color: #888;
+    font-style: italic;
+    padding: 14px 16px;
+  }
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    padding: 20px;
+  }
+  .api-note {
+    font-size: 12px;
+    color: #888;
+    margin-top: 6px;
+  }
+  .lang-row { display: flex; gap: 8px; margin-bottom: 14px; }
+  .lang-row button {
+    background: white;
+    color: var(--navy);
+    border: 1px solid var(--navy);
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  .lang-row button.active { background: var(--navy); color: white; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Altasreef AI Tutor — Live Demo</h1>
+  <p>Grounded, retrieval-only explanations for Quranic Arabic morphology mistakes — no login required</p>
+</header>
+
+<main>
+  <div class="card">
+    <div class="meta">Pick a real wrong answer sampled from production (Altasreef Evaluation System):</div>
+    <select id="scenario-select"></select>
+    <div class="verse" id="verse-display"></div>
+    <div class="answer-row">
+      <span class="meta">Dimension: <b id="dim-label"></b></span>
+      <span class="pill wrong">Student answered: <span id="given-label"></span></span>
+      <span class="pill correct">Correct: <span id="correct-label"></span></span>
+    </div>
+    <div class="lang-row">
+      <button data-lang="en" class="active">English</button>
+      <button data-lang="ar">العربية</button>
+    </div>
+    <button id="explain-btn">Explain</button>
+    <div id="result"></div>
+  </div>
+
+  <div class="card">
+    <div class="meta" style="margin-bottom:10px">
+      <b>A second, separate mode:</b> step-by-step إعلال (morphological derivation) for اجوف واوی roots in باب نصر —
+      e.g. why قَوَلَ becomes قَالَ.
+    </div>
+    <button id="ilal-btn">Show derivation for قول (ماضی)</button>
+    <div id="ilal-result"></div>
+  </div>
+
+  <p class="api-note">
+    API base: <code id="api-base"></code> — this page calls <code>/explain</code> and <code>/ilal</code> directly,
+    both retrieval-only (no LLM call, no generated text — see README).
+  </p>
+</main>
+
+<footer>
+  Team Altasreef — Islamic AI Challenge, Track 3. Quran text: Tanzil Project (CC-BY 3.0, tanzil.net).
+</footer>
+
+<script>
+// Change this to your deployed Render URL before publishing.
+const API_BASE = window.ALTASREEF_API_BASE || "http://127.0.0.1:8077";
+document.getElementById("api-base").textContent = API_BASE;
+
+let scenarios = [];
+let lang = "en";
+
+async function loadScenarios() {
+  const res = await fetch(API_BASE + "/sample");
+  scenarios = await res.json();
+  const sel = document.getElementById("scenario-select");
+  sel.innerHTML = scenarios.map((s, i) =>
+    `<option value="${i}">${s.word} — ${s.dim} (${s.ref})</option>`
+  ).join("");
+  renderScenario(0);
+}
+
+function renderScenario(i) {
+  const s = scenarios[i];
+  document.getElementById("verse-display").innerHTML =
+    s.verse.replace(s.word, `<span class="word">${s.word}</span>`);
+  document.getElementById("dim-label").textContent = s.dim;
+  document.getElementById("given-label").textContent = s.given_value;
+  document.getElementById("correct-label").textContent = s.correct_value;
+  document.getElementById("result").innerHTML = "";
+}
+
+document.getElementById("scenario-select").addEventListener("change", (e) => {
+  renderScenario(parseInt(e.target.value));
+});
+
+document.querySelectorAll(".lang-row button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".lang-row button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    lang = btn.dataset.lang;
+  });
+});
+
+document.getElementById("explain-btn").addEventListener("click", async () => {
+  const i = parseInt(document.getElementById("scenario-select").value);
+  const s = scenarios[i];
+  const resultDiv = document.getElementById("result");
+  resultDiv.innerHTML = "<p class='meta'>Looking up...</p>";
+
+  const res = await fetch(API_BASE + "/explain", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      dim: s.dim, correct_value: s.correct_value, given_value: s.given_value,
+      word: s.word, root: s.root, ref: s.ref, lang,
+    }),
+  });
+  const data = await res.json();
+
+  if (!data.matched) {
+    resultDiv.innerHTML = `<div class="abstain">No pre-authored rule matches this case — the system abstains rather than guess (reason: ${data.reason}).</div>`;
+    return;
+  }
+
+  const isDisclosure = data.is_system_limitation_disclosure;
+  resultDiv.innerHTML = `
+    <div class="badge ${isDisclosure ? 'disclosure-badge' : ''}">${isDisclosure ? 'KNOWN SYSTEM LIMITATION — NOT A REAL MISTAKE' : 'RULE: ' + data.rule_id}</div>
+    <div class="explanation ${isDisclosure ? 'disclosure' : ''}" dir="${lang === 'ar' ? 'rtl' : 'ltr'}">${data.tier_a}</div>
+  `;
+});
+
+document.getElementById("ilal-btn").addEventListener("click", async () => {
+  const resultDiv = document.getElementById("ilal-result");
+  resultDiv.innerHTML = "<p class='meta'>Loading...</p>";
+  const res = await fetch(API_BASE + "/ilal", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ root_word: "قول", baab_name: "نصر", tense: "ماضی" }),
+  });
+  const data = await res.json();
+  if (!data.matched) {
+    resultDiv.innerHTML = "<div class='abstain'>Unsupported combination.</div>";
+    return;
+  }
+  resultDiv.innerHTML = data.rows.slice(0, 3).map(row => `
+    <div class="explanation">
+      <b>${row.person_reference}</b> → <span class="verse" style="font-size:20px">${row.final_form}</span>
+      <div style="margin-top:8px; direction:rtl">
+        ${row.ilal_chain.map(step =>
+          `<div>${step.form}${step.rule ? ' <span style="color:#888">(' + step.rule + ')</span>' : ' (الأصل)'}</div>`
+        ).join("")}
+      </div>
+    </div>
+  `).join("");
+});
+
+loadScenarios();
+</script>
+
+</body>
+</html>
