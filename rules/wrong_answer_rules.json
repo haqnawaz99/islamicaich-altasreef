@@ -5,306 +5,435 @@
   },
   "rules": [
     {
-      "dim": "person", "correct": "غائب", "given": "حاضر",
+      "dim": "person",
+      "correct": "غائب",
+      "given": "حاضر",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is 3rd person (غائب — \"he/she/they\"), not 2nd person (حاضر — \"you\"). In ماضی, حاضر forms carry a sakin-letter-then-تَ suffix (ـْتَ، ـْتُمَا، ـْتُمْ، ـْتِ، ـْتُنَّ) — the ت always follows a jazm (sakin) letter. غائب مذکر has no ت at all (ـَ، ـَا، ـُوْا، ـْنَ for the plural feminine), and غائب مؤنث's ت (نَصَرَتْ، نَصَرَتَا) sits right after a fatha on the stem, not after a sakin letter the way حاضر's does. In مضارع, حاضر forms start with تَ- and غائب مذکر starts with یَ- (غائب مؤنث واحد also starts with تَ-, but is distinguished by context/number endings, not the prefix alone).",
-        "ar": "{word} (الجذر {root}، {ref}) من صيغ الغائب، لا الحاضر. في الماضي تلحق صيغ الحاضر تاء بعد حرف ساكن (ـْتَ، ـْتُمَا، ـْتُمْ...)، بخلاف الغائب الذي لا تاء فيه أصلاً (المذكر) أو تأتي تاؤه بعد فتحة لا بعد ساكن (المؤنث: نَصَرَتْ)."
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ الغائب، لا الحاضر. في الماضي تلحق صيغ الحاضر تاء بعد حرف ساكن (ـْتَ، ـْتُمَا، ـْتُمْ...)، بخلاف الغائب الذي لا تاء فيه أصلاً (المذكر) أو تأتي تاؤه بعد فتحة لا بعد ساكن (المؤنث: نَصَرَتْ).",
+        "ur": "{word} (جذر {root}، {ref}) غائب (تیسرا شخص) ہے، حاضر (دوسرا شخص) نہیں۔ ماضی میں حاضر کی علامت ساکن حرف کے بعد تَ ہے (ـْتَ، ـْتُمَا، ـْتُمْ، ـْتِ، ـْتُنَّ)— یعنی ت ہمیشہ جزم والے حرف کے بعد آتی ہے۔ غائب مذکر میں بالکل ت نہیں ہوتی (ـَ، ـَا، ـُوْا، اور جمع مؤنث میں ـْنَ)، جبکہ غائب مؤنث کی ت (نَصَرَتْ، نَصَرَتَا) فتحہ کے فوراً بعد آتی ہے، نہ کہ ساکن حرف کے بعد جیسا حاضر میں ہوتا ہے۔ مضارع میں حاضر کی علامت تَ- ہے اور غائب مذکر کی یَ- (غائب مؤنث واحد بھی تَ- سے شروع ہوتی ہے، مگر سیاق اور عدد کی علامت سے پہچانی جاتی ہے، صرف سابقے سے نہیں)۔"
       }
     },
     {
-      "dim": "person", "correct": "حاضر", "given": "غائب",
+      "dim": "person",
+      "correct": "حاضر",
+      "given": "غائب",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is 2nd person (حاضر — \"you\"), not 3rd person (غائب). In ماضی, every حاضر form's ending-ت follows a sakin letter (ـْتَ، ـْتُمَا، ـْتُمْ، ـْتِ، ـْتُنَّ) — look for that sakin-then-ت shape. In مضارع, حاضر forms begin with تَ- (تَفْعَلُ), the same prefix as 3rd-person-feminine-singular مضارع, so if the prefix alone looks ambiguous, check whether the sentence is addressing someone directly (a command/response) versus describing a third party.",
-        "ar": "{word} (الجذر {root}، {ref}) من صيغ الحاضر (المخاطَب)، لا الغائب. في الماضي تلحق تاء الحاضر حرفاً ساكناً قبلها (ـْتَ...)، وفي المضارع تبدأ صيغ الحاضر بـ تَ-."
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ الحاضر (المخاطَب)، لا الغائب. في الماضي تلحق تاء الحاضر حرفاً ساكناً قبلها (ـْتَ...)، وفي المضارع تبدأ صيغ الحاضر بـ تَ-.",
+        "ur": "{word} (جذر {root}، {ref}) حاضر (دوسرا شخص) ہے، غائب نہیں۔ ماضی میں حاضر کی ہر صورت کی آخری ت ساکن حرف کے بعد آتی ہے (ـْتَ، ـْتُمَا، ـْتُمْ، ـْتِ، ـْتُنَّ) — یہی ساکن-پھر-ت کی شکل دیکھیں۔ مضارع میں حاضر تَ- سے شروع ہوتا ہے (تَفْعَلُ)، جو غائب مؤنث واحد مضارع کے سابقے سے ملتا جلتا ہے، اس لیے اگر صرف سابقے سے فرق واضح نہ ہو تو دیکھیں کہ کیا جملہ کسی کو براہ راست مخاطب کر رہا ہے (حکم/جواب) یا کسی غائب شخص کا بیان ہے۔"
       }
     },
     {
-      "dim": "person", "correct": "غائب", "given": "متکلم",
+      "dim": "person",
+      "correct": "غائب",
+      "given": "متکلم",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is 3rd person (غائب), not 1st person (متکلم — \"I/we\"). متکلم ماضی forms end in ـتُ (واحد, نَصَرْتُ) or ـنَا (جمع/تثنیہ, نَصَرْنَا); متکلم مضارع forms start with اَ- (singular) or نَ- (plural). غائب has none of these — مذکر uses ـَ/ـَا/ـُوْا, مؤنث uses ـَتْ/ـَتَا/ـْنَ, and مضارع غائب starts with یَ- (or تَ- for مؤنث واحد).",
-        "ar": "{word} (الجذر {root}، {ref}) من صيغ الغائب، لا المتكلم. صيغ المتكلم في الماضي تنتهي بـ ـتُ أو ـنَا، وفي المضارع تبدأ بـ اَ- أو نَ-، وهذا غير موجود هنا."
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ الغائب، لا المتكلم. صيغ المتكلم في الماضي تنتهي بـ ـتُ أو ـنَا، وفي المضارع تبدأ بـ اَ- أو نَ-، وهذا غير موجود هنا.",
+        "ur": "{word} (جذر {root}، {ref}) غائب ہے، متکلم (پہلا شخص، میں/ہم) نہیں۔ متکلم کی ماضی میں علامت ـتُ (واحد، نَصَرْتُ) یا ـنَا (جمع/تثنیہ، نَصَرْنَا) ہے؛ مضارع میں اَ- (واحد) یا نَ- (جمع) سے شروع ہوتا ہے۔ غائب میں ان میں سے کوئی علامت نہیں — مذکر میں ـَ/ـَا/ـُوْا، مؤنث میں ـَتْ/ـَتَا/ـْنَ، اور مضارع غائب یَ- سے (یا مؤنث واحد میں تَ- سے) شروع ہوتا ہے۔"
       }
     },
     {
-      "dim": "person", "correct": "متکلم", "given": "غائب",
+      "dim": "person",
+      "correct": "متکلم",
+      "given": "غائب",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is 1st person (متکلم — \"I/we\"), not 3rd person (غائب). Look for the متکلم markers: ـتُ (نَصَرْتُ, \"I...\") or ـنَا (نَصَرْنَا, \"we...\") in ماضی, or the اَ-/نَ- prefix in مضارع — none of these appear on a غائب form.",
-        "ar": "{word} (الجذر {root}، {ref}) من صيغ المتكلم، لا الغائب. علامته ـتُ أو ـنَا في الماضي، أو اَ-/نَ- في المضارع."
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ المتكلم، لا الغائب. علامته ـتُ أو ـنَا في الماضي، أو اَ-/نَ- في المضارع.",
+        "ur": "{word} (جذر {root}، {ref}) متکلم ہے، غائب نہیں۔ متکلم کی علامتیں دیکھیں: ماضی میں ـتُ (نَصَرْتُ، \"میں نے...\") یا ـنَا (نَصَرْنَا، \"ہم نے...\")، یا مضارع میں اَ-/نَ- کا سابقہ — یہ کوئی بھی علامت غائب کی صورت میں نہیں ہوتی۔"
       }
     },
     {
-      "dim": "person", "correct": "متکلم", "given": "حاضر",
+      "dim": "person",
+      "correct": "متکلم",
+      "given": "حاضر",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is 1st person (متکلم — \"I/we\"), not 2nd person (حاضر — \"you\"). متکلم's ماضی ending is ـتُ or ـنَا (no gender distinction at all); حاضر's endings (ـْتَ، ـْتِ، ـْتُمَا، ـْتُمْ، ـْتُنَّ) always encode a specific gender/number the way متکلم's never does. In مضارع, متکلم starts with اَ-/نَ-, حاضر starts with تَ-.",
-        "ar": "{word} (الجذر {root}، {ref}) من صيغ المتكلم، لا الحاضر. المتكلم لا يفرّق بين المذكر والمؤنث (ـتُ/ـنَا)، بخلاف صيغ الحاضر."
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ المتكلم، لا الحاضر. المتكلم لا يفرّق بين المذكر والمؤنث (ـتُ/ـنَا)، بخلاف صيغ الحاضر.",
+        "ur": "{word} (جذر {root}، {ref}) متکلم ہے، حاضر نہیں۔ متکلم کی ماضی میں علامت ـتُ یا ـنَا ہے (جس میں جنس کی کوئی تفریق نہیں)؛ حاضر کی علامتیں (ـْتَ، ـْتِ، ـْتُمَا، ـْتُمْ، ـْتُنَّ) ہمیشہ جنس/عدد کی خاص شکل بتاتی ہیں، جو متکلم میں کبھی نہیں ہوتا۔ مضارع میں متکلم اَ-/نَ- سے شروع ہوتا ہے، حاضر تَ- سے۔"
       }
     },
     {
-      "dim": "person", "correct": "حاضر", "given": "متکلم",
+      "dim": "person",
+      "correct": "حاضر",
+      "given": "متکلم",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is 2nd person (حاضر — \"you\"), not 1st person (متکلم — \"I/we\"). حاضر's ماضی endings mark a specific gender/number (ـْتَ مذکر واحد، ـْتِ مؤنث واحد، ـْتُمَا تثنیہ، ـْتُمْ/ـْتُنَّ جمع) — متکلم never distinguishes gender (always ـتُ or ـنَا regardless of مذکر/مونث). In مضارع, حاضر starts with تَ-, متکلم with اَ-/نَ-.",
-        "ar": "{word} (الجذر {root}، {ref}) من صيغ الحاضر، لا المتكلم. صيغ الحاضر تفرّق بين المذكر والمؤنث، بخلاف المتكلم."
+        "ar": "{word} (الجذر {root}، {ref}) من صيغ الحاضر، لا المتكلم. صيغ الحاضر تفرّق بين المذكر والمؤنث، بخلاف المتكلم.",
+        "ur": "{word} (جذر {root}، {ref}) حاضر ہے، متکلم نہیں۔ حاضر کی ماضی کی علامتیں مخصوص جنس/عدد بتاتی ہیں (ـْتَ مذکر واحد، ـْتِ مؤنث واحد، ـْتُمَا تثنیہ، ـْتُمْ/ـْتُنَّ جمع) — متکلم میں جنس کی کبھی تفریق نہیں ہوتی (ہمیشہ ـتُ یا ـنَا، چاہے مذکر ہو یا مونث)۔ مضارع میں حاضر تَ- سے شروع ہوتا ہے، متکلم اَ-/نَ- سے۔"
       }
     },
     {
-      "dim": "gender", "correct": "مونث", "given": "مذکر",
+      "dim": "gender",
+      "correct": "مونث",
+      "given": "مذکر",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is feminine (مونث), not masculine (مذکر). In ماضی, feminine غائب/حاضر forms carry a fatha-then-ت (ـَتْ، ـَتَا for غائب) or a kasra-ت (ـْتِ for حاضر), markers masculine forms never take. In مضارع, feminine singular/dual غائب forms start with تَ- (the same prefix as حاضر, which is why person and gender confusions often travel together), and feminine plural ends in ـْنَ.",
-        "ar": "{word} (الجذر {root}، {ref}) مؤنث، لا مذكر. علامة التأنيث في الماضي: ـَتْ أو ـْتِ، وفي المضارع: التاء في أول الفعل (للغائبة) أو ـْنَ لجمع المؤنث."
+        "ar": "{word} (الجذر {root}، {ref}) مؤنث، لا مذكر. علامة التأنيث في الماضي: ـَتْ أو ـْتِ، وفي المضارع: التاء في أول الفعل (للغائبة) أو ـْنَ لجمع المؤنث.",
+        "ur": "{word} (جذر {root}، {ref}) مؤنث ہے، مذکر نہیں۔ ماضی میں مؤنث غائب/حاضر کی علامت فتحہ کے بعد ت (ـَتْ، ـَتَا — غائب کے لیے) یا کسرہ کے بعد ت (ـْتِ — حاضر کے لیے) ہے، جو مذکر کی صورت میں کبھی نہیں آتی۔ مضارع میں مؤنث واحد/تثنیہ غائب تَ- سے شروع ہوتی ہے (جو حاضر کے سابقے جیسی ہے، اسی لیے شخص اور جنس کی غلطیاں اکثر ساتھ ہوتی ہیں)، اور مؤنث جمع ـْنَ پر ختم ہوتی ہے۔"
       }
     },
     {
-      "dim": "gender", "correct": "مذکر", "given": "مونث",
+      "dim": "gender",
+      "correct": "مذکر",
+      "given": "مونث",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is masculine (مذکر), not feminine (مونث). It has none of the feminine markers — no fatha-ت/kasra-ت ending in ماضی, no leading تَ- (غائب) or trailing ـْنَ (مضارع) that would mark it feminine.",
-        "ar": "{word} (الجذر {root}، {ref}) مذكر، لا مؤنث. لا توجد فيه علامة تأنيث (ـَتْ، ـْتِ، تَ- في أول المضارع، أو ـْنَ)."
+        "ar": "{word} (الجذر {root}، {ref}) مذكر، لا مؤنث. لا توجد فيه علامة تأنيث (ـَتْ، ـْتِ، تَ- في أول المضارع، أو ـْنَ).",
+        "ur": "{word} (جذر {root}، {ref}) مذکر ہے، مؤنث نہیں۔ اس میں تانیث کی کوئی علامت نہیں — نہ ماضی میں فتحہ-ت/کسرہ-ت کی علامت، نہ مضارع میں شروع میں تَ- یا آخر میں ـْنَ جو اسے مؤنث بناتی۔"
       }
     },
     {
-      "dim": "gender", "correct": "مذکرمونث", "given": "مذکر",
+      "dim": "gender",
+      "correct": "مذکرمونث",
+      "given": "مذکر",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is a تثنیہ (dual) form. Arabic dual verb conjugation does not mark gender separately the way singular/plural forms do — the same ending serves both a masculine pair and a feminine pair (e.g. ماضی ـَا for غائب dual, حاضر/متکلم ـْتُمَا) — so the correct answer is the combined مذکرمونث value, not a plain مذکر pick.",
-        "ar": "{word} (الجذر {root}، {ref}) صيغة تثنیہ، وصيغ التثنیہ في الفعل لا تفرّق بين المذكر والمؤنث (نفس العلامة لكليهما)، فالجواب الصحيح هو مذکرمونث وليس مذكراً فقط."
+        "ar": "{word} (الجذر {root}، {ref}) صيغة تثنیہ، وصيغ التثنیہ في الفعل لا تفرّق بين المذكر والمؤنث (نفس العلامة لكليهما)، فالجواب الصحيح هو مذکرمونث وليس مذكراً فقط.",
+        "ur": "{word} (جذر {root}، {ref}) تثنیہ کی صورت ہے۔ عربی میں فعل کی تثنیہ، واحد/جمع کی طرح جنس کی الگ علامت نہیں رکھتی — ایک ہی علامت مذکر جوڑے اور مؤنث جوڑے دونوں کے لیے استعمال ہوتی ہے (مثلاً ماضی میں غائب تثنیہ کی ـَا، حاضر/متکلم کی ـْتُمَا)، اس لیے صحیح جواب مذکرمونث (دونوں) ہے، صرف مذکر نہیں۔"
       }
     },
     {
-      "dim": "gender", "correct": "مذکرمونث", "given": "مونث",
+      "dim": "gender",
+      "correct": "مذکرمونث",
+      "given": "مونث",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is a تثنیہ (dual) form. Dual verb endings don't distinguish gender (the same ending covers a masculine pair and a feminine pair), so the correct value is the combined مذکرمونث, not a plain مونث pick.",
-        "ar": "{word} (الجذر {root}، {ref}) صيغة تثنیہ، ولا تفرّق التثنیہ بين المذكر والمؤنث، فالجواب الصحيح مذکرمونث لا مؤنث فقط."
+        "ar": "{word} (الجذر {root}، {ref}) صيغة تثنیہ، ولا تفرّق التثنیہ بين المذكر والمؤنث، فالجواب الصحيح مذکرمونث لا مؤنث فقط.",
+        "ur": "{word} (جذر {root}، {ref}) تثنیہ کی صورت ہے۔ تثنیہ کی فعلی علامت جنس کی تفریق نہیں کرتی (ایک ہی علامت مذکر اور مؤنث جوڑے کے لیے)، اس لیے صحیح جواب مذکرمونث ہے، صرف مونث نہیں۔"
       }
     },
     {
-      "dim": "gender", "correct": "مذکر", "given": "مذکرمونث",
+      "dim": "gender",
+      "correct": "مذکر",
+      "given": "مذکرمونث",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is واحد/جمع (singular or sound plural), not تثنیہ (dual) — only dual forms share one ending across both genders. Since this isn't a dual, it takes a plain مذکر/مونث value, and here the ending marks masculine specifically (no fatha-ت/kasra-ت feminine marker).",
-        "ar": "{word} (الجذر {root}، {ref}) ليست صيغة تثنیہ، فلا ينطبق عليها الجمع بين المذكر والمؤنث؛ وهي هنا مذكرة لعدم وجود علامة التأنيث."
+        "ar": "{word} (الجذر {root}، {ref}) ليست صيغة تثنیہ، فلا ينطبق عليها الجمع بين المذكر والمؤنث؛ وهي هنا مذكرة لعدم وجود علامة التأنيث.",
+        "ur": "{word} (جذر {root}، {ref}) واحد/جمع (مفرد یا جمع سالم) ہے، تثنیہ نہیں — صرف تثنیہ کی صورت میں ہی ایک علامت دونوں جنسوں کے لیے مشترک ہوتی ہے۔ چونکہ یہ تثنیہ نہیں، اس لیے صرف مذکر یا مونث کی قدر لی جائے گی، اور یہاں علامت خاص طور پر مذکر کی ہے (تانیث کی فتحہ-ت/کسرہ-ت کی کوئی علامت موجود نہیں)۔"
       }
     },
     {
-      "dim": "gender", "correct": "مونث", "given": "مذکرمونث",
+      "dim": "gender",
+      "correct": "مونث",
+      "given": "مذکرمونث",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is واحد/جمع (singular or sound plural), not تثنیہ (dual) — the combined مذکرمونث value only applies to dual forms. This form carries a real feminine marker (fatha-ت/kasra-ت, or a leading تَ-/trailing ـْنَ in مضارع), so the correct value is a plain مونث.",
-        "ar": "{word} (الجذر {root}، {ref}) ليست تثنیہ، وفيها علامة تأنيث حقيقية، فالجواب مؤنث لا مذکرمونث."
+        "ar": "{word} (الجذر {root}، {ref}) ليست تثنیہ، وفيها علامة تأنيث حقيقية، فالجواب مؤنث لا مذکرمونث.",
+        "ur": "{word} (جذر {root}، {ref}) واحد/جمع ہے، تثنیہ نہیں — مذکرمونث کی مشترکہ قدر صرف تثنیہ کی صورتوں پر لاگو ہوتی ہے۔ اس صورت میں تانیث کی حقیقی علامت موجود ہے (فتحہ-ت/کسرہ-ت، یا مضارع میں شروع میں تَ-/آخر میں ـْنَ)، اس لیے صحیح جواب صرف مونث ہے۔"
       }
     },
     {
-      "dim": "number", "correct": "واحد", "given": "جمع",
+      "dim": "number",
+      "correct": "واحد",
+      "given": "جمع",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is singular (واحد), not plural (جمع). Sound plural forms carry their own distinct ending (ـُوْا مذکر غائب، ـْنَ مؤنث، ـُوْنَ/ـِیْنَ مضارع) that this word's ending does not have.",
-        "ar": "{word} (الجذر {root}، {ref}) مفرد، لا جمع. علامة الجمع (ـُوْا، ـْنَ، ـُوْنَ...) غير موجودة في هذه الصيغة."
+        "ar": "{word} (الجذر {root}، {ref}) مفرد، لا جمع. علامة الجمع (ـُوْا، ـْنَ، ـُوْنَ...) غير موجودة في هذه الصيغة.",
+        "ur": "{word} (جذر {root}، {ref}) واحد ہے، جمع نہیں۔ جمع سالم کی اپنی الگ علامت ہوتی ہے (ـُوْا مذکر غائب، ـْنَ مؤنث، ـُوْنَ/ـِیْنَ مضارع میں) جو اس لفظ کی علامت میں موجود نہیں۔"
       }
     },
     {
-      "dim": "number", "correct": "جمع", "given": "واحد",
+      "dim": "number",
+      "correct": "جمع",
+      "given": "واحد",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is plural (جمع), not singular (واحد) — it carries a plural ending (ـُوْا، ـْنَ in ماضی, or ـُوْنَ/ـِیْنَ/ـْنَ in مضارع) that a singular form wouldn't have.",
-        "ar": "{word} (الجذر {root}، {ref}) جمع، لا مفرد، لوجود علامة الجمع في آخره."
+        "ar": "{word} (الجذر {root}، {ref}) جمع، لا مفرد، لوجود علامة الجمع في آخره.",
+        "ur": "{word} (جذر {root}، {ref}) جمع ہے، واحد نہیں — اس میں جمع کی علامت موجود ہے (ماضی میں ـُوْا، ـْنَ، یا مضارع میں ـُوْنَ/ـِیْنَ/ـْنَ) جو واحد کی صورت میں نہیں ہوتی۔"
       }
     },
     {
-      "dim": "number", "correct": "واحد", "given": "تثنیہ",
+      "dim": "number",
+      "correct": "واحد",
+      "given": "تثنیہ",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is singular (واحد), not dual (تثنیہ). Dual forms have their own distinct ending (ماضی: ـَا، ـَتَا، ـْتُمَا; مضارع/امر: ـَانِ) — this word's ending doesn't match that shape.",
-        "ar": "{word} (الجذر {root}، {ref}) مفرد، لا مثنى. علامة التثنیہ (ـَا، ـَتَا، ـَانِ...) غير موجودة هنا."
+        "ar": "{word} (الجذر {root}، {ref}) مفرد، لا مثنى. علامة التثنیہ (ـَا، ـَتَا، ـَانِ...) غير موجودة هنا.",
+        "ur": "{word} (جذر {root}، {ref}) واحد ہے، تثنیہ نہیں۔ تثنیہ کی اپنی الگ علامت ہوتی ہے (ماضی: ـَا، ـَتَا، ـْتُمَا؛ مضارع/امر: ـَانِ) — اس لفظ کی علامت اس شکل سے میل نہیں کھاتی۔"
       }
     },
     {
-      "dim": "number", "correct": "تثنیہ", "given": "واحد",
+      "dim": "number",
+      "correct": "تثنیہ",
+      "given": "واحد",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is dual (تثنیہ — \"two\"), not singular (واحد). It carries the dual ending (ماضی: ـَا، ـَتَا، ـْتُمَا; مضارع/امر: ـَانِ), distinct from any singular ending.",
-        "ar": "{word} (الجذر {root}، {ref}) مثنى، لا مفرد، لوجود علامة التثنیہ (ـَا، ـَتَا، ـَانِ) في آخره."
+        "ar": "{word} (الجذر {root}، {ref}) مثنى، لا مفرد، لوجود علامة التثنیہ (ـَا، ـَتَا، ـَانِ) في آخره.",
+        "ur": "{word} (جذر {root}، {ref}) تثنیہ (دو کے لیے) ہے، واحد نہیں۔ اس میں تثنیہ کی علامت موجود ہے (ماضی: ـَا، ـَتَا، ـْتُمَا؛ مضارع/امر: ـَانِ)، جو واحد کی کسی علامت سے مختلف ہے۔"
       }
     },
     {
-      "dim": "number", "correct": "جمع", "given": "تثنیہ",
+      "dim": "number",
+      "correct": "جمع",
+      "given": "تثنیہ",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is plural (جمع — three or more), not dual (تثنیہ — exactly two). Compare the endings: dual is ـَا/ـَتَا/ـْتُمَا/ـَانِ, while this word's plural ending (ـُوْا/ـْنَ/ـُوْنَ/ـِیْنَ) is a different shape entirely.",
-        "ar": "{word} (الجذر {root}، {ref}) جمع لا مثنى؛ علامته (ـُوْا، ـْنَ، ـُوْنَ) تختلف عن علامة التثنیہ (ـَا، ـَتَا، ـَانِ)."
+        "ar": "{word} (الجذر {root}، {ref}) جمع لا مثنى؛ علامته (ـُوْا، ـْنَ، ـُوْنَ) تختلف عن علامة التثنیہ (ـَا، ـَتَا، ـَانِ).",
+        "ur": "{word} (جذر {root}، {ref}) جمع (تین یا زیادہ) ہے، تثنیہ (بالکل دو) نہیں۔ علامتوں کا موازنہ کریں: تثنیہ کی علامت ـَا/ـَتَا/ـْتُمَا/ـَانِ ہے، جبکہ اس لفظ کی جمع کی علامت (ـُوْا/ـْنَ/ـُوْنَ/ـِیْنَ) بالکل الگ شکل کی ہے۔"
       }
     },
     {
-      "dim": "number", "correct": "تثنیہ", "given": "جمع",
+      "dim": "number",
+      "correct": "تثنیہ",
+      "given": "جمع",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is dual (تثنیہ — exactly two), not plural (جمع — three or more). It carries the dual-specific ending (ـَا/ـَتَا/ـْتُمَا in ماضی, ـَانِ in مضارع/امر) rather than a plural one.",
-        "ar": "{word} (الجذر {root}، {ref}) مثنى لا جمع، لوجود علامة التثنیہ الخاصة (ـَا، ـَتَا، ـَانِ) لا علامة الجمع."
+        "ar": "{word} (الجذر {root}، {ref}) مثنى لا جمع، لوجود علامة التثنیہ الخاصة (ـَا، ـَتَا، ـَانِ) لا علامة الجمع.",
+        "ur": "{word} (جذر {root}، {ref}) تثنیہ (بالکل دو) ہے، جمع (تین یا زیادہ) نہیں۔ اس میں تثنیہ کی خاص علامت موجود ہے (ماضی میں ـَا/ـَتَا/ـْتُمَا، مضارع/امر میں ـَانِ)، جمع کی نہیں۔"
       }
     },
     {
-      "dim": "voice", "correct": "معروف", "given": "مجہول",
+      "dim": "voice",
+      "correct": "معروف",
+      "given": "مجہول",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is active voice (معروف — the subject does the action), not passive (مجہول — the subject receives it). Passive ماضی regularly shifts the stem's vowels to ضمہ-then-کسرہ (فُعِلَ shape) and passive مضارع to ضمہ-then-فتحہ (یُفۡعَلُ shape) — this word's own vowel pattern doesn't carry that shift.",
-        "ar": "{word} (الجذر {root}، {ref}) معروف (الفاعل يفعل الفعل)، لا مجهول. صيغة المجهول تُحوّل حركات الفعل (فُعِلَ في الماضي، یُفۡعَلُ في المضارع)، وهذا غير موجود هنا."
+        "ar": "{word} (الجذر {root}، {ref}) معروف (الفاعل يفعل الفعل)، لا مجهول. صيغة المجهول تُحوّل حركات الفعل (فُعِلَ في الماضي، یُفۡعَلُ في المضارع)، وهذا غير موجود هنا.",
+        "ur": "{word} (جذر {root}، {ref}) معروف (فاعل خود کام کرتا ہے) ہے، مجہول (فاعل پر کام واقع ہوتا ہے) نہیں۔ مجہول ماضی میں اصل حرکات بدل کر ضمہ-پھر-کسرہ (فُعِلَ کی شکل) ہو جاتی ہیں اور مجہول مضارع میں ضمہ-پھر-فتحہ (یُفۡعَلُ کی شکل)— اس لفظ کی اپنی حرکات میں یہ تبدیلی نہیں ملتی۔"
       }
     },
     {
-      "dim": "voice", "correct": "مجہول", "given": "معروف",
+      "dim": "voice",
+      "correct": "مجہول",
+      "given": "معروف",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is passive voice (مجہول — the subject receives the action), not active (معروف). Its vowel pattern follows the passive shift (ماضی: فُعِلَ shape, ضمہ-then-کسرہ; مضارع: یُفۡعَلُ shape, ضمہ-then-فتحہ) rather than the active pattern.",
-        "ar": "{word} (الجذر {root}، {ref}) مجهول (الفاعل يقع عليه الفعل)، لا معروف، لأن حركاته تتبع صيغة المجهول (فُعِلَ / یُفۡعَلُ)."
+        "ar": "{word} (الجذر {root}، {ref}) مجهول (الفاعل يقع عليه الفعل)، لا معروف، لأن حركاته تتبع صيغة المجهول (فُعِلَ / یُفۡعَلُ).",
+        "ur": "{word} (جذر {root}، {ref}) مجہول (فاعل پر کام واقع ہوتا ہے) ہے، معروف نہیں۔ اس کی حرکات مجہول کی تبدیلی کے مطابق ہیں (ماضی: فُعِلَ کی شکل، ضمہ-پھر-کسرہ؛ مضارع: یُفۡعَلُ کی شکل، ضمہ-پھر-فتحہ)، نہ کہ معروف کی اصل حرکات کے۔"
       }
     },
     {
-      "dim": "tense", "correct": "نہی", "given": "مضارع",
+      "dim": "tense",
+      "correct": "نہی",
+      "given": "مضارع",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is نہی (prohibition — \"don't...\"), not plain مضارع (present/future). نہی is built from a جزم (jussive) مضارع form preceded by لَا النَّاهِیَۃ (\"don't\"/\"may you not\"), which gives it the same jussive ending a plain negated مضارع would have — check the verse for a preceding لَا used as a command not to do something, which is what makes this نہی rather than a simple negated present-tense statement.",
-        "ar": "{word} (الجذر {root}، {ref}) نہی (نهي، \"لا تفعل\")، لا مضارعاً عادياً. النهي فعل مضارع مجزوم سبقته \"لا الناهیۃ\" على سبيل الأمر بالترك، لا مجرد نفي."
+        "ar": "{word} (الجذر {root}، {ref}) نہی (نهي، \"لا تفعل\")، لا مضارعاً عادياً. النهي فعل مضارع مجزوم سبقته \"لا الناهیۃ\" على سبيل الأمر بالترك، لا مجرد نفي.",
+        "ur": "{word} (جذر {root}، {ref}) نہی (ممانعت — \"مت کرو\") ہے، عام مضارع نہیں۔ نہی دراصل مجزوم مضارع ہوتا ہے جس سے پہلے \"لَا النَّاهِیَۃ\" (مت کرو) آتی ہے، جس سے اس کی علامت نفی والے عام مضارع جیسی ہی بن جاتی ہے — آیت میں دیکھیں کہ کیا لَا کسی کام سے روکنے کے حکم کے طور پر آئی ہے، یہی چیز اسے صرف نفی والے عام مضارع سے الگ کر کے نہی بناتی ہے۔"
       }
     },
     {
-      "dim": "tense", "correct": "مضارع", "given": "نہی",
+      "dim": "tense",
+      "correct": "مضارع",
+      "given": "نہی",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is plain مضارع (present/future), not نہی (prohibition). نہی requires a preceding لَا used specifically as a command not to act (لَا النَّاهِیَۃ) with the verb in جزم — if that's not the structure here (e.g. a plain negation or no لَا at all), it stays a regular مضارع.",
-        "ar": "{word} (الجذر {root}، {ref}) مضارع عادي، لا نہي، لعدم وجود \"لا الناهیۃ\" التي تجزم الفعل على سبيل النهي."
+        "ar": "{word} (الجذر {root}، {ref}) مضارع عادي، لا نہي، لعدم وجود \"لا الناهیۃ\" التي تجزم الفعل على سبيل النهي.",
+        "ur": "{word} (جذر {root}، {ref}) عام مضارع ہے، نہی نہیں۔ نہی کے لیے لَا کا خاص طور پر ممانعت کے حکم کے لیے آنا ضروری ہے (لَا النَّاهِیَۃ) جس کے ساتھ فعل مجزوم ہو — اگر یہاں یہ ساخت موجود نہیں (مثلاً عام نفی ہے یا لَا سرے سے ہے ہی نہیں) تو یہ عام مضارع ہی رہتا ہے۔"
       }
     },
     {
-      "dim": "tense", "correct": "امر", "given": "ماضی",
+      "dim": "tense",
+      "correct": "امر",
+      "given": "ماضی",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is امر (command — \"do...!\"), not ماضی (past). امر forms are built on the جزم stem of مضارع with the person-marking prefix dropped (e.g. اُفْعُلْ/افۡعَلۡ-shape), which can visually resemble a short ماضی form — but the context here is a direct command, not a completed past action.",
-        "ar": "{word} (الجذر {root}، {ref}) أمر (افعل!)، لا ماضٍ. صيغة الأمر مبنية من جزم المضارع بعد حذف حرف المضارعة، وقد تشبه الماضي ظاهرياً لكن السياق أمر لا فعل تم وقوعه."
+        "ar": "{word} (الجذر {root}، {ref}) أمر (افعل!)، لا ماضٍ. صيغة الأمر مبنية من جزم المضارع بعد حذف حرف المضارعة، وقد تشبه الماضي ظاهرياً لكن السياق أمر لا فعل تم وقوعه.",
+        "ur": "{word} (جذر {root}، {ref}) امر (حکم — \"کرو!\") ہے، ماضی نہیں۔ امر کی ساخت مضارع کی مجزوم شکل سے بنتی ہے جس سے حرفِ مضارعت گرا دیا جاتا ہے (مثلاً اُفْعُلْ/افۡعَلۡ کی شکل)، جو بظاہر مختصر ماضی جیسی لگ سکتی ہے — مگر یہاں سیاق براہ راست حکم کا ہے، کسی مکمل ہو چکے ماضی کے کام کا بیان نہیں۔"
       }
     },
     {
-      "dim": "number", "correct": "تثنیہ جمع", "given": "*",
+      "dim": "number",
+      "correct": "تثنیہ جمع",
+      "given": "*",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is a متکلم (1st person) \"we\" form. Arabic's متکلم plural ending (ـنَا) does not distinguish \"we two\" from \"we many\" the way 3rd/2nd person forms do — the same نَا ending covers both. This app's data model records that as a combined تثنیہ جمع value, so a plain جمع (or تثنیہ) answer reflects a real, defensible reading of the actual Arabic -- it is being scored strictly against the combined value today, which is a known limitation of the current system, not a grammar mistake on your part.",
-        "ar": "{word} (الجذر {root}، {ref}) صيغة متكلم (\"نحن\"). لا تفرّق صيغة المتكلم الجمعية (ـنَا) بين الاثنين والجمع، فجوابك ليس خطأً نحوياً حقيقياً، وإنما هذا تقييم صارم في نظامنا الحالي يعدّه خطأً وهو قيد المراجعة."
+        "ar": "{word} (الجذر {root}، {ref}) صيغة متكلم (\"نحن\"). لا تفرّق صيغة المتكلم الجمعية (ـنَا) بين الاثنين والجمع، فجوابك ليس خطأً نحوياً حقيقياً، وإنما هذا تقييم صارم في نظامنا الحالي يعدّه خطأً وهو قيد المراجعة.",
+        "ur": "{word} (جذر {root}، {ref}) متکلم (پہلا شخص) کی \"ہم\" والی صورت ہے۔ عربی میں متکلم جمع کی علامت (ـنَا) \"ہم دو\" اور \"ہم سب\" میں فرق نہیں کرتی، جیسا غائب/حاضر کی صورتوں میں ہوتا ہے — ایک ہی ـنَا دونوں کو ظاہر کرتی ہے۔ اس ایپ کا ڈیٹا ماڈل اسے مشترکہ تثنیہ جمع کی قدر کے طور پر ریکارڈ کرتا ہے، اس لیے خالص جمع (یا تثنیہ) کا جواب دراصل عربی کی ایک حقیقی اور درست قرات ہے — آج اسے مشترکہ قدر کے خلاف سختی سے جانچا جا رہا ہے، جو موجودہ نظام کی ایک معلوم کمی ہے، آپ کی نحوی غلطی نہیں۔"
       },
       "is_system_limitation_disclosure": true
     },
     {
-      "dim": "number", "correct": "*", "given": "تثنیہ جمع",
+      "dim": "number",
+      "correct": "*",
+      "given": "تثنیہ جمع",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is a متکلم (1st person) \"we\" form, whose Arabic ending (ـنَا) is genuinely ambiguous between \"we two\" and \"we many\" -- it doesn't distinguish dual from plural the way other persons do. You answered the combined تثنیہ جمع reading; this app's data model happens to record a single value ({correct_label}) for this particular occurrence, so the mismatch reflects a known scoring limitation in how that ambiguity is represented today, not a real grammar error.",
-        "ar": "{word} (الجذر {root}، {ref}) صيغة متكلم (\"نحن\")، وعلامتها (ـنَا) تحتمل الاثنين والجمع معاً. أجبتَ بالقيمة المجموعة، بينما يسجّل النظام هنا قيمة واحدة فقط ({correct_label})؛ هذا قيد معروف في طريقة تمثيل هذا الالتباس حالياً، لا خطأ نحوي حقيقي منك."
+        "ar": "{word} (الجذر {root}، {ref}) صيغة متكلم (\"نحن\")، وعلامتها (ـنَا) تحتمل الاثنين والجمع معاً. أجبتَ بالقيمة المجموعة، بينما يسجّل النظام هنا قيمة واحدة فقط ({correct_label})؛ هذا قيد معروف في طريقة تمثيل هذا الالتباس حالياً، لا خطأ نحوي حقيقي منك.",
+        "ur": "{word} (جذر {root}، {ref}) متکلم (پہلا شخص) کی \"ہم\" والی صورت ہے، جس کی علامت (ـنَا) حقیقتاً \"ہم دو\" اور \"ہم سب\" کے درمیان مبہم ہے — یہ دیگر اشخاص کی طرح تثنیہ اور جمع میں فرق نہیں کرتی۔ آپ نے مشترکہ تثنیہ جمع کا جواب دیا؛ اس ایپ کا ڈیٹا ماڈل اس مخصوص موقع کے لیے صرف ایک قدر ({correct_label}) ریکارڈ کرتا ہے، اس لیے یہ فرق دراصل اس ابہام کو ظاہر کرنے کے موجودہ طریقے کی ایک معلوم کمی ہے، حقیقی نحوی غلطی نہیں۔"
       },
       "is_system_limitation_disclosure": true
     },
     {
-      "dim": "root", "correct": "جعل", "given": "فعل",
+      "dim": "root",
+      "correct": "جعل",
+      "given": "فعل",
       "tier_a": {
         "en": "{word} (root {root}, {ref})'s root is ج-ع-ل, not ف-ع-ل. The leading ف in فَجَعَلۡنٰہَا is the connective particle \"فَ\" (\"so/then\"), not part of the root — strip it off first, and the three radicals left (ج، ع، ل) are the real root.",
-        "ar": "{word} (الجذر {root}، {ref}) جذره ج-ع-ل، لا ف-ع-ل. الفاء في أول الكلمة هي فاء العطف/السببية، وليست من أصل الكلمة — بعد حذفها يبقى الجذر الحقيقي ج-ع-ل."
+        "ar": "{word} (الجذر {root}، {ref}) جذره ج-ع-ل، لا ف-ع-ل. الفاء في أول الكلمة هي فاء العطف/السببية، وليست من أصل الكلمة — بعد حذفها يبقى الجذر الحقيقي ج-ع-ل.",
+        "ur": "{word} (جذر {root}، {ref}) کا جذر ج-ع-ل ہے، ف-ع-ل نہیں۔ فَجَعَلۡنٰہَا کے شروع میں موجود ف دراصل حرفِ عطف/سببیت \"فَ\" (پھر/تو) ہے، جذر کا حصہ نہیں — اسے پہلے الگ کریں تو باقی تین حروف (ج، ع، ل) ہی اصل جذر ہیں۔"
       }
     },
     {
-      "dim": "root", "correct": "فشل", "given": "فتل",
+      "dim": "root",
+      "correct": "فشل",
+      "given": "فتل",
       "tier_a": {
         "en": "{word} (root {root}, {ref})'s root is ف-ش-ل, not ف-ت-ل — the middle radical is ش, not ت. Compare the two letters directly on the word itself.",
-        "ar": "{word} (الجذر {root}، {ref}) جذره ف-ش-ل لا ف-ت-ل؛ الحرف الأوسط هو الشين لا التاء."
+        "ar": "{word} (الجذر {root}، {ref}) جذره ف-ش-ل لا ف-ت-ل؛ الحرف الأوسط هو الشين لا التاء.",
+        "ur": "{word} (جذر {root}، {ref}) کا جذر ف-ش-ل ہے، ف-ت-ل نہیں — درمیانی حرف ش ہے، ت نہیں۔ لفظ پر دونوں حروف کا براہ راست موازنہ کریں۔"
       }
     },
     {
-      "dim": "root", "correct": "كفر", "given": "كفل",
+      "dim": "root",
+      "correct": "كفر",
+      "given": "كفل",
       "tier_a": {
         "en": "{word} (root {root}, {ref})'s root is ك-ف-ر, not ك-ف-ل — the third radical is ر, not ل. Look at the final letter of the stem before the ending.",
-        "ar": "{word} (الجذر {root}، {ref}) جذره ك-ف-ر لا ك-ف-ل؛ الحرف الأخير هو الراء لا اللام."
+        "ar": "{word} (الجذر {root}، {ref}) جذره ك-ف-ر لا ك-ف-ل؛ الحرف الأخير هو الراء لا اللام.",
+        "ur": "{word} (جذر {root}، {ref}) کا جذر ك-ف-ر ہے، ك-ف-ل نہیں — تیسرا حرف ر ہے، ل نہیں۔ علامت سے پہلے لفظ کے آخری حرف کو دیکھیں۔"
       }
     },
     {
-      "dim": "seven_types", "correct": "صحیح", "given": "اجوف واوی",
+      "dim": "seven_types",
+      "correct": "صحیح",
+      "given": "اجوف واوی",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is صحیح (sound) -- none of its three radicals is a weak letter (و/ي/ا). اجوف واوی specifically means the middle radical is و; this root's middle radical is ر, a plain consonant, so the word is sound.",
-        "ar": "{word} (الجذر {root}، {ref}) صحیح؛ لا يوجد حرف علة بين أحرفه الثلاثة. الأجوف الواوي عينه حرف الواو تحديداً، وهذا الجذر عينه راء، فهو صحیح."
+        "ar": "{word} (الجذر {root}، {ref}) صحیح؛ لا يوجد حرف علة بين أحرفه الثلاثة. الأجوف الواوي عينه حرف الواو تحديداً، وهذا الجذر عينه راء، فهو صحیح.",
+        "ur": "{word} (جذر {root}، {ref}) صحیح ہے -- اس کے تین حروف میں سے کوئی بھی حرفِ علت (و/ي/ا) نہیں۔ اجوف واوی کا مطلب خاص طور پر یہ ہے کہ عین کلمہ (درمیانی حرف) واو ہو؛ اس جذر کا درمیانی حرف ر ہے، جو ایک عام صامت حرف ہے، اس لیے یہ لفظ صحیح ہے۔"
       }
     },
     {
-      "dim": "seven_types", "correct": "صحیح", "given": "مہموز العین",
+      "dim": "seven_types",
+      "correct": "صحیح",
+      "given": "مہموز العین",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is صحیح (sound) -- مہموز العین specifically means the middle radical is a hamza (ء). This root's middle radical is ش, not ء, so the word is sound, not hamzated.",
-        "ar": "{word} (الجذر {root}، {ref}) صحیح؛ المهموز العین عينه همزة تحديداً، وهذا الجذر عينه شین لا همزة."
+        "ar": "{word} (الجذر {root}، {ref}) صحیح؛ المهموز العین عينه همزة تحديداً، وهذا الجذر عينه شین لا همزة.",
+        "ur": "{word} (جذر {root}، {ref}) صحیح ہے -- مہموز العین کا مطلب خاص طور پر یہ ہے کہ عین کلمہ ہمزہ (ء) ہو۔ اس جذر کا درمیانی حرف ش ہے، ء نہیں، اس لیے یہ لفظ صحیح ہے، مہموز نہیں۔"
       }
     },
     {
-      "dim": "pattern", "correct": "ثلاثی", "given": "تفعل",
+      "dim": "pattern",
+      "correct": "ثلاثی",
+      "given": "تفعل",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is a plain Form I (ثلاثی) verb, not Form V (تفعل). تفعل has its own distinct shape -- a تَ-prefix plus a doubled (gemmated) middle radical (تَفَعَّلَ) -- neither of which appears here: this word is a passive مضارع of the unaugmented three-letter root.",
-        "ar": "{word} (الجذر {root}، {ref}) من الثلاثي المجرد، لا وزن تفعل. وزن تفعل له شكل خاص (تاء في أوله وتشديد العین)، وهذا غير موجود هنا."
+        "ar": "{word} (الجذر {root}، {ref}) من الثلاثي المجرد، لا وزن تفعل. وزن تفعل له شكل خاص (تاء في أوله وتشديد العین)، وهذا غير موجود هنا.",
+        "ur": "{word} (جذر {root}، {ref}) خالص ثلاثی مجرد (باب اول) فعل ہے، تفعل (باب پنجم) نہیں۔ تفعل کی اپنی الگ شکل ہوتی ہے -- شروع میں تَ اور درمیانی حرف پر تشدید (تَفَعَّلَ) -- ان میں سے کوئی بھی یہاں موجود نہیں: یہ لفظ خالص تین حرفی جذر کا مجہول مضارع ہے۔"
       }
     },
     {
-      "dim": "pattern", "correct": "نصر", "given": "ثلاثی",
+      "dim": "pattern",
+      "correct": "نصر",
+      "given": "ثلاثی",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) belongs specifically to باب نصر, not just the generic \"ثلاثی\" bucket. باب نصر's own signature is fatha in ماضی and damma in مضارع -- the damma on this word's مضارع stem is exactly that marker.",
-        "ar": "{word} (الجذر {root}، {ref}) من باب نصر تحديداً. علامة باب نصر فتح الماضي وضم المضارع، وهذا هو الضم الظاهر في هذه الكلمة."
+        "ar": "{word} (الجذر {root}، {ref}) من باب نصر تحديداً. علامة باب نصر فتح الماضي وضم المضارع، وهذا هو الضم الظاهر في هذه الكلمة.",
+        "ur": "{word} (جذر {root}، {ref}) خاص طور پر باب نصر سے تعلق رکھتا ہے، نہ کہ محض عمومی \"ثلاثی\" کی قسم سے۔ باب نصر کی اپنی پہچان ماضی میں فتحہ اور مضارع میں ضمہ ہے -- اس لفظ کے مضارع کے سٹیم پر موجود ضمہ یہی علامت ہے۔"
       }
     },
     {
-      "dim": "noun_type", "correct": "اسم فاعل", "given": "اسم مفعول",
+      "dim": "noun_type",
+      "correct": "اسم فاعل",
+      "given": "اسم مفعول",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is اسم فاعل (\"one who does/is\"), not اسم مفعول (\"one to whom it's done\"). Compare the vowel under the middle radical: اسم فاعل here has a kasra (مُفْعِل shape, \"-lim-\"), while اسم مفعول would carry a fatha instead (مُفْعَل shape, \"-lam-\").",
-        "ar": "{word} (الجذر {root}، {ref}) اسم فاعل لا اسم مفعول. الفرق في حركة العین: اسم الفاعل بالكسر (مُفْعِل)، واسم المفعول بالفتح (مُفْعَل)."
+        "ar": "{word} (الجذر {root}، {ref}) اسم فاعل لا اسم مفعول. الفرق في حركة العین: اسم الفاعل بالكسر (مُفْعِل)، واسم المفعول بالفتح (مُفْعَل).",
+        "ur": "{word} (جذر {root}، {ref}) اسم فاعل ہے (\"کرنے والا\")، اسم مفعول نہیں (\"جس پر کام کیا جائے\")۔ درمیانی حرف کی حرکت دیکھیں: یہاں اسم فاعل میں کسرہ ہے (مُفْعِل کی شکل)، جبکہ اسم مفعول میں فتحہ ہوتی (مُفْعَل کی شکل)۔"
       }
     },
     {
-      "dim": "noun_type", "correct": "اسم مفعول", "given": "اسم فاعل",
+      "dim": "noun_type",
+      "correct": "اسم مفعول",
+      "given": "اسم فاعل",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is اسم مفعول (\"one to whom it's done\"), not اسم فاعل. Compare the vowel under the middle radical: اسم مفعول here has a fatha (مُفْعَل shape), while اسم فاعل would carry a kasra instead (مُفْعِل shape).",
-        "ar": "{word} (الجذر {root}، {ref}) اسم مفعول لا اسم فاعل. حركة العین هنا فتحة (مُفْعَل)، بخلاف اسم الفاعل الذي يكون بالكسر (مُفْعِل)."
+        "ar": "{word} (الجذر {root}، {ref}) اسم مفعول لا اسم فاعل. حركة العین هنا فتحة (مُفْعَل)، بخلاف اسم الفاعل الذي يكون بالكسر (مُفْعِل).",
+        "ur": "{word} (جذر {root}، {ref}) اسم مفعول ہے (\"جس پر کام کیا جائے\")، اسم فاعل نہیں۔ درمیانی حرف کی حرکت دیکھیں: یہاں اسم مفعول میں فتحہ ہے (مُفْعَل کی شکل)، جبکہ اسم فاعل میں کسرہ ہوتی (مُفْعِل کی شکل)۔"
       }
     },
     {
-      "dim": "definiteness", "correct": "معرفہ", "given": "نکرہ",
+      "dim": "definiteness",
+      "correct": "معرفہ",
+      "given": "نکرہ",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is معرفہ (definite), not نکرہ (indefinite) -- it carries the definite article ال, which alone makes a noun definite.",
-        "ar": "{word} (الجذر {root}، {ref}) معرفة لا نكرة، لدخول \"ال\" عليها وهي وحدها كافية للتعريف."
+        "ar": "{word} (الجذر {root}، {ref}) معرفة لا نكرة، لدخول \"ال\" عليها وهي وحدها كافية للتعريف.",
+        "ur": "{word} (جذر {root}، {ref}) معرفہ ہے، نکرہ نہیں -- اس پر الف لام (ال) موجود ہے، جو اکیلے ہی کسی اسم کو معرفہ بنا دیتا ہے۔"
       }
     },
     {
-      "dim": "definiteness", "correct": "نکرہ", "given": "معرفہ",
+      "dim": "definiteness",
+      "correct": "نکرہ",
+      "given": "معرفہ",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is نکرہ (indefinite), not معرفہ -- it carries none of the definiteness markers (no ال, no إضافہ to a definite noun, no attached pronoun, not a proper name).",
-        "ar": "{word} (الجذر {root}، {ref}) نكرة لا معرفة، لعدم وجود \"ال\" أو إضافة أو ضمير متصل يعرّفها."
+        "ar": "{word} (الجذر {root}، {ref}) نكرة لا معرفة، لعدم وجود \"ال\" أو إضافة أو ضمير متصل يعرّفها.",
+        "ur": "{word} (جذر {root}، {ref}) نکرہ ہے، معرفہ نہیں -- اس میں تعریف کی کوئی علامت موجود نہیں (نہ ال، نہ کسی معرفہ اسم کی طرف اضافت، نہ متصل ضمیر، نہ یہ کوئی اسم علم ہے)۔"
       }
     },
     {
-      "dim": "mood", "correct": "مبنی", "given": "منصوب",
+      "dim": "mood",
+      "correct": "مبنی",
+      "given": "منصوب",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is an امر (command) form, and امر verbs are always مبنی (indeclinable) -- اعراب categories like منصوب/مرفوع/مجزوم only apply to مضارع, never to امر.",
-        "ar": "{word} (الجذر {root}، {ref}) فعل أمر، وفعل الأمر دائماً مبني لا معرب؛ تقسيمات الإعراب (منصوب/مرفوع/مجزوم) خاصة بالمضارع فقط."
+        "ar": "{word} (الجذر {root}، {ref}) فعل أمر، وفعل الأمر دائماً مبني لا معرب؛ تقسيمات الإعراب (منصوب/مرفوع/مجزوم) خاصة بالمضارع فقط.",
+        "ur": "{word} (جذر {root}، {ref}) امر کی صورت ہے، اور فعل امر ہمیشہ مبنی (غیر معرب) ہوتا ہے -- منصوب/مرفوع/مجزوم جیسی اعرابی تقسیمات صرف مضارع پر لاگو ہوتی ہیں، امر پر کبھی نہیں۔"
       }
     },
     {
-      "dim": "mood", "correct": "مرفوع", "given": "مبنی",
+      "dim": "mood",
+      "correct": "مرفوع",
+      "given": "مبنی",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is مضارع, and مضارع verbs are مُعرَب (declinable), never مبنی. With no نواصب (مضارع-نصب particle like اَنۡ/لَنۡ) or جوازم (jussive particle) present before it, a مضارع defaults to مرفوع.",
-        "ar": "{word} (الجذر {root}، {ref}) فعل مضارع، والمضارع معرب لا مبني. لعدم وجود ناصب أو جازم قبله، فالأصل فيه الرفع."
+        "ar": "{word} (الجذر {root}، {ref}) فعل مضارع، والمضارع معرب لا مبني. لعدم وجود ناصب أو جازم قبله، فالأصل فيه الرفع.",
+        "ur": "{word} (جذر {root}، {ref}) مضارع ہے، اور فعل مضارع معرب ہوتا ہے، کبھی مبنی نہیں۔ چونکہ اس سے پہلے کوئی ناصب (جیسے اَنۡ/لَنۡ) یا جازم موجود نہیں، اس لیے مضارع کی اصل حالت مرفوع ہی ہوتی ہے۔"
       }
     },
     {
-      "dim": "mood", "correct": "منصوب", "given": "مبنی",
+      "dim": "mood",
+      "correct": "منصوب",
+      "given": "مبنی",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is مضارع, and مضارع verbs are مُعرَب (declinable), never مبنی. This one is preceded by اَنۡ (\"اَنۡ تَفۡشَلَا\"-shape), one of the نواصب particles that puts a following مضارع into منصوب.",
-        "ar": "{word} (الجذر {root}، {ref}) فعل مضارع معرب لا مبني، وقد سبقه \"أنْ\" وهي من حروف النصب، فنصبت المضارع بعدها."
+        "ar": "{word} (الجذر {root}، {ref}) فعل مضارع معرب لا مبني، وقد سبقه \"أنْ\" وهي من حروف النصب، فنصبت المضارع بعدها.",
+        "ur": "{word} (جذر {root}، {ref}) مضارع ہے، اور فعل مضارع معرب ہوتا ہے، کبھی مبنی نہیں۔ اس سے پہلے اَنۡ آیا ہے (\"اَنۡ تَفۡشَلَا\" کی طرز پر)، جو انہی ناصب حروف میں سے ہے جو بعد والے مضارع کو منصوب کر دیتے ہیں۔"
       }
     },
     {
-      "dim": "case", "correct": "مجرور", "given": "مرفوع",
+      "dim": "case",
+      "correct": "مجرور",
+      "given": "مرفوع",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is مجرور, not مرفوع. It's preceded by وَ as a واو القسم (oath particle, \"by the...\"), and the object of an oath particle is always مجرور.",
-        "ar": "{word} (الجذر {root}، {ref}) مجرور لا مرفوع؛ سبقته واو القسم، والمقسم به بعد واو القسم مجرور دائماً."
+        "ar": "{word} (الجذر {root}، {ref}) مجرور لا مرفوع؛ سبقته واو القسم، والمقسم به بعد واو القسم مجرور دائماً.",
+        "ur": "{word} (جذر {root}، {ref}) مجرور ہے، مرفوع نہیں۔ اس سے پہلے وَ بطور واو القسم (قسم کا حرف، \"...کی قسم\") آیا ہے، اور حرفِ قسم کے بعد آنے والا مقسم بہ ہمیشہ مجرور ہوتا ہے۔"
       }
     },
     {
-      "dim": "case", "correct": "منصوب", "given": "مجرور",
+      "dim": "case",
+      "correct": "منصوب",
+      "given": "مجرور",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is منصوب, not مجرور, despite looking like it -- it's the direct object (مفعول بہ) of یَرۡمُوۡنَ, which takes منصوب. Sound feminine plurals (جمع مؤنث سالم) are a known exception: they mark منصوب with the same کسرہ ending that مجرور also uses, so spelling alone can't tell them apart here -- the grammatical role (direct object) is what settles it.",
-        "ar": "{word} (الجذر {root}، {ref}) منصوب لا مجرور رغم ظاهر الكسرة -- فهو مفعول به لـ \"یَرۡمُوۡنَ\". جمع المؤنث السالم ينصب بالكسرة لا بالفتحة، فلا يمكن التمييز بالشكل وحده، والموقع الإعرابي (المفعولية) هو الفيصل هنا."
+        "ar": "{word} (الجذر {root}، {ref}) منصوب لا مجرور رغم ظاهر الكسرة -- فهو مفعول به لـ \"یَرۡمُوۡنَ\". جمع المؤنث السالم ينصب بالكسرة لا بالفتحة، فلا يمكن التمييز بالشكل وحده، والموقع الإعرابي (المفعولية) هو الفيصل هنا.",
+        "ur": "{word} (جذر {root}، {ref}) منصوب ہے، مجرور نہیں، باوجود اس کے کہ بظاہر ایسا لگتا ہے -- یہ یَرۡمُوۡنَ کا مفعول بہ ہے، جو منصوب لیتا ہے۔ جمع مؤنث سالم ایک معروف استثنا ہے: یہ منصوب میں بھی وہی کسرہ کی علامت رکھتی ہے جو مجرور میں ہوتی ہے، اس لیے صرف ہجے سے فرق معلوم نہیں ہو سکتا -- یہاں اعرابی موقع (مفعولیت) ہی فیصلہ کن ہے۔"
       }
     },
     {
-      "dim": "tense", "correct": "مضارع", "given": "امر",
+      "dim": "tense",
+      "correct": "مضارع",
+      "given": "امر",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is مضارع, not امر -- امر only exists for 2nd-person (حاضر) addressees; this is a 1st-person (متکلم, \"I will...\") form, and متکلم forms can never be امر.",
-        "ar": "{word} (الجذر {root}، {ref}) مضارع لا أمر -- فعل الأمر لا يكون إلا للمخاطَب، وهذه صيغة متكلم، والمتكلم لا يُبنى منه أمر."
+        "ar": "{word} (الجذر {root}، {ref}) مضارع لا أمر -- فعل الأمر لا يكون إلا للمخاطَب، وهذه صيغة متكلم، والمتكلم لا يُبنى منه أمر.",
+        "ur": "{word} (جذر {root}، {ref}) مضارع ہے، امر نہیں -- امر صرف حاضر (دوسرے شخص) کے لیے ہوتا ہے؛ یہ متکلم (پہلا شخص، \"میں کروں گا...\") کی صورت ہے، اور متکلم سے امر کبھی نہیں بنتا۔"
       }
     },
     {
-      "dim": "tense", "correct": "مضارع", "given": "ماضی",
+      "dim": "tense",
+      "correct": "مضارع",
+      "given": "ماضی",
       "tier_a": {
         "en": "{word} (root {root}, {ref}) is مضارع, not ماضی. It carries the leading تَ- prefix that marks مضارع (تَفْعَلَا-shape) -- a ماضی dual form of the same meaning would have no such prefix, just the bare stem plus a ـَا ending (فَشَلَا).",
-        "ar": "{word} (الجذر {root}، {ref}) مضارع لا ماضٍ، لوجود تاء المضارعة في أوله. الماضي المقابل له لا يحمل هذه التاء في أوله، بل ينتهي بـ ـَا فقط (فَشَلَا)."
+        "ar": "{word} (الجذر {root}، {ref}) مضارع لا ماضٍ، لوجود تاء المضارعة في أوله. الماضي المقابل له لا يحمل هذه التاء في أوله، بل ينتهي بـ ـَا فقط (فَشَلَا).",
+        "ur": "{word} (جذر {root}، {ref}) مضارع ہے، ماضی نہیں۔ اس میں شروع میں تاءِ مضارعت موجود ہے (تَفْعَلَا کی شکل) -- اسی معنی کی ماضی تثنیہ میں یہ تاء شروع میں نہیں ہوتی، بلکہ صرف آخر میں ـَا کی علامت ہوتی ہے (فَشَلَا)۔"
       }
     }
   ]
