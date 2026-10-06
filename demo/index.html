@@ -168,17 +168,7 @@
   </div>
 
   <div class="card">
-    <div class="meta" style="margin-bottom:10px">
-      <b>A second mode:</b> full verse-by-verse tagging for Surah 114 (الناس) — every word, every
-      ayah, fully tagged (root, pattern, case, i'rab role, etc), the same data the private app's
-      Word Viewer shows internally, redacted down to just this one surah for public, independent
-      inspection. Click any word for its full grammatical breakdown — and for an اجوف واوی verb
-      like قُلۡ (word 1 of ayah 1), pick Past/Present/Imperative right there to generate its full
-      conjugation table, with a step-by-step إعلال (morphological derivation) chain for every
-      single generated word, e.g. why قَوَلَ becomes قَالَ
-      (<code>app/taaleelat_rules.py</code>, root-generic, not hardcoded to one word).
-      إعلال rule text is available in three languages — pick one below.
-    </div>
+    <div class="meta" style="margin-bottom:10px" id="s114-card-header"></div>
     <div class="lang-row" id="ilal-lang-row">
       <span class="meta" style="align-self:center">تعلیل language:</span>
       <button data-ilal-lang="ur" class="active">اردو</button>
@@ -303,11 +293,46 @@ let lastS114Words = null; // currently-shown word detail card(s), same idea
 const ILAL_LANG_FONT = { ur: "'Noto Nastaliq Urdu', serif", ar: "'Amiri', serif", en: "-apple-system, sans-serif" };
 const ILAL_LANG_DIR = { ur: "rtl", ar: "rtl", en: "ltr" };
 
+const S114_CARD_HEADER = {
+  en: `<b>A second mode:</b> full verse-by-verse tagging for Surah 114 (الناس) — every word, every
+    ayah, fully tagged (root, pattern, case, i'rab role, etc), the same data the private app's
+    Word Viewer shows internally, redacted down to just this one surah for public, independent
+    inspection. Click any word for its full grammatical breakdown — and for an اجوف واوی verb
+    like قُلۡ (word 1 of ayah 1), pick Past/Present/Imperative right there to generate its full
+    conjugation table, with a step-by-step إعلال (morphological derivation) chain for every
+    single generated word, e.g. why قَوَلَ becomes قَالَ
+    (<code>app/taaleelat_rules.py</code>, root-generic, not hardcoded to one word).
+    إعلال rule text is available in three languages — pick one below.`,
+  ur: `<b>دوسرا موڈ:</b> سورہ ۱۱۴ (الناس) کی مکمل آیت بہ آیت تشکیل — ہر لفظ، ہر آیت، مکمل طور پر
+    نشان زدہ (جذر، باب، اعراب، اعرابی کردار وغیرہ)، وہی ڈیٹا جو نجی ایپ کا Word Viewer اندرونی طور
+    پر دکھاتا ہے، صرف اسی سورہ تک محدود تاکہ عوامی اور آزادانہ طور پر جانچا جا سکے۔ کسی بھی لفظ پر
+    کلک کر کے اس کی مکمل صرفی تفصیل دیکھیں — اور کسی اجوف واوی فعل کے لیے، جیسے قُلۡ (آیت ۱ کا پہلا
+    لفظ)، وہیں ماضی/مضارع/امر منتخب کر کے اس کی مکمل گردان دیکھیں، جس میں ہر بنائے گئے لفظ کے لیے
+    تعلیل (اعلال) کا مرحلہ وار سلسلہ بھی شامل ہے، مثلاً قَوَلَ کیسے قَالَ بنتا ہے
+    (<code>app/taaleelat_rules.py</code>، جو کسی ایک لفظ تک محدود نہیں، ہر جذر کے لیے کام کرتا ہے)۔
+    تعلیل کا متن تین زبانوں میں دستیاب ہے — نیچے سے زبان منتخب کریں۔`,
+  ar: `<b>الوضع الثاني:</b> وسم كامل آية بآية لسورة ١١٤ (الناس) — كل كلمة، كل آية، موسومة بالكامل
+    (الجذر، الباب، الإعراب، الوظيفة الإعرابية وغيرها)، نفس البيانات التي يعرضها عارض الكلمات في
+    التطبيق الخاص داخلياً، مقتصرة على هذه السورة فقط للفحص العام والمستقل. انقر على أي كلمة لعرض
+    تحليلها الصرفي الكامل — ولأي فعل أجوف واوي، مثل قُلۡ (الكلمة الأولى من الآية ١)، اختر
+    الماضي/المضارع/الأمر هناك مباشرة لعرض تصريفه الكامل، مع سلسلة تعليل (إعلال) خطوة بخطوة لكل كلمة
+    مولّدة، مثلاً كيف تصبح قَوَلَ كلمة قَالَ
+    (<code>app/taaleelat_rules.py</code>، عام لكل جذر، غير مقتصر على كلمة واحدة).
+    نص قواعد التعليل متوفر بثلاث لغات — اختر واحدة أدناه.`,
+};
+function renderS114Header() {
+  document.getElementById("s114-card-header").innerHTML = S114_CARD_HEADER[ilalLang] || S114_CARD_HEADER.en;
+  document.getElementById("s114-card-header").dir = ILAL_LANG_DIR[ilalLang];
+  document.getElementById("s114-card-header").style.fontFamily = ILAL_LANG_FONT[ilalLang];
+}
+renderS114Header();
+
 document.getElementById("ilal-lang-row").querySelectorAll("button").forEach(btn => {
   btn.addEventListener("click", () => {
     document.getElementById("ilal-lang-row").querySelectorAll("button").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     ilalLang = btn.dataset.ilalLang;
+    renderS114Header();
     if (lastGardaan) renderGardaanTable(lastGardaan.containerEl, lastGardaan.root, lastGardaan.tense);
     if (lastS114Words) renderWordDetail(lastS114Words);
   });
@@ -496,8 +521,16 @@ const GARDAAN_NOTE = {
 };
 
 function wordDetailCard(w, idx) {
+  // Non-coded fields (root/wazn/base_form/variant_reason) are always real
+  // Arabic-script letters, never translated -- always Amiri regardless of
+  // the active language. Coded fields are decoded INTO the active language
+  // (gloss114 already does this), so their font should follow it too.
   const attrs = ATTR_ORDER
-    .map(([key, coded]) => ({ label: fieldLabel114(key), value: coded ? gloss114(key, w[key]) : (w[key] || null) }))
+    .map(([key, coded]) => ({
+      label: fieldLabel114(key),
+      value: coded ? gloss114(key, w[key]) : (w[key] || null),
+      font: coded ? ILAL_LANG_FONT[ilalLang] : "'Amiri',serif",
+    }))
     .filter(a => a.value);
 
   const isAjwafWawiVerb = w.word_class === 2 && w.seven_types === 4 && w.root && w.root.length === 3;
@@ -507,12 +540,12 @@ function wordDetailCard(w, idx) {
     <div class="explanation" style="margin-bottom:10px">
       <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap">
         <span style="font-family:'NoorehudaUTF',serif; font-size:28px" dir="rtl">${w.word_text}</span>
-        ${w.word_class ? `<span class="pill correct">${gloss114("word_class", w.word_class)}</span>` : ""}
+        ${w.word_class ? `<span class="pill correct" style="font-family:${ILAL_LANG_FONT[ilalLang]}">${gloss114("word_class", w.word_class)}</span>` : ""}
         ${!w.tagged ? `<span class='meta'>${UNTAGGED_LABEL[ilalLang] || UNTAGGED_LABEL.en}</span>` : ""}
       </div>
       ${attrs.length ? `
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:10px; font-size:14px; font-family:${ILAL_LANG_FONT[ilalLang]}" dir="${ILAL_LANG_DIR[ilalLang]}">
-          ${attrs.map(a => `<div><span class="meta" style="font-family:${ILAL_LANG_FONT[ilalLang]}">${a.label}:</span> <b dir="auto" style="font-family:'Amiri',serif">${a.value}</b></div>`).join("")}
+          ${attrs.map(a => `<div><span class="meta" style="font-family:${ILAL_LANG_FONT[ilalLang]}">${a.label}:</span> <b dir="auto" style="font-family:${a.font}">${a.value}</b></div>`).join("")}
         </div>` : ""}
       ${isAjwafWawiVerb ? `
         <div style="margin-top:12px; padding-top:10px; border-top:1px dashed #ccc">
